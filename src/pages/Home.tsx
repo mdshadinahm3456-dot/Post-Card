@@ -4,6 +4,7 @@ import { CardGrid } from '../components/CardGrid';
 import { SearchBar } from '../components/SearchBar';
 import { RecentlyUsed } from '../components/RecentlyUsed';
 import { postcards } from '../data/postcards';
+import { quotes } from '../data/quotes';
 import { gallery } from '../data/gallery';
 import { POPULAR_CATEGORIES, cardMatchesCategory, getCategoryById } from '../data/categories';
 import { PostcardTemplate, Quote, SavedCreation } from '../types';
@@ -116,14 +117,18 @@ export const Home: React.FC<HomeProps> = ({
             </p>
           </div>
 
-          <button
-            type="button"
-            onClick={() => onNavigate('categories')}
+          <a
+            href="/categories"
+            onClick={(e) => {
+              e.preventDefault();
+              onNavigate('categories');
+            }}
             className="self-start sm:self-auto text-xs sm:text-sm font-bengali-body text-[#ffd166] hover:text-[#f8edd6] flex items-center gap-1.5 cursor-pointer transition-colors group"
+            title="সব উপলক্ষের ক্যাটাগরি দেখুন"
           >
             <span>সব ক্যাটাগরি দেখুন</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-          </button>
+          </a>
         </div>
 
         {/* Popular Occasions Grid & Mobile Horizontal Scroll */}
@@ -258,22 +263,26 @@ export const Home: React.FC<HomeProps> = ({
                 <Flame className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-bengali-serif text-xl sm:text-2xl font-bold text-[#f7f0df]">
+                <h2 className="font-bengali-serif text-xl sm:text-2xl font-bold text-[#f7f0df]">
                   🔥 জনপ্রিয় কার্ড (Popular Collection)
-                </h3>
+                </h2>
                 <p className="font-bengali-body text-xs text-[#a89882]">
                   ব্যবহারকারীদের সর্বাধিক পছন্দের ভিন্টেজ প্রেমপত্র ও শুভেচ্ছা কার্ড
                 </p>
               </div>
             </div>
-            <button
-              type="button"
-              onClick={() => onNavigate('postcards')}
+            <a
+              href="/postcards"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('postcards');
+              }}
               className="text-xs sm:text-sm font-bengali-body text-[#d4af37] hover:text-[#ffd166] flex items-center gap-1 cursor-pointer transition-colors"
+              title="জনপ্রিয় ভিন্টেজ কার্ড সবগুলো দেখুন"
             >
               <span>সবগুলো দেখুন</span>
               <ArrowRight className="w-4 h-4" />
-            </button>
+            </a>
           </div>
           <CardGrid cards={popularCards} onSelectCard={onSelectCardToCreate} />
         </section>
@@ -286,22 +295,26 @@ export const Home: React.FC<HomeProps> = ({
                 <Heart className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-bengali-serif text-xl sm:text-2xl font-bold text-[#f7f0df]">
+                <h2 className="font-bengali-serif text-xl sm:text-2xl font-bold text-[#f7f0df]">
                   ❤️ Romantic Collection (রোমান্টিক সংগ্রহ)
-                </h3>
+                </h2>
                 <p className="font-bengali-body text-xs text-[#a89882]">
                   চিরন্তন প্রেম ও গভীর অনুরাগে সিক্ত ভিন্টেজ ডিজাইন
                 </p>
               </div>
             </div>
-            <button
-              type="button"
-              onClick={() => onNavigate('postcards')}
+            <a
+              href="/postcards"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('postcards');
+              }}
               className="text-xs sm:text-sm font-bengali-body text-[#d4af37] hover:text-[#ffd166] flex items-center gap-1 cursor-pointer transition-colors"
+              title="রোমান্টিক ভিন্টেজ কার্ড সবগুলো দেখুন"
             >
               <span>সবগুলো দেখুন</span>
               <ArrowRight className="w-4 h-4" />
-            </button>
+            </a>
           </div>
           <CardGrid cards={romanticCards} onSelectCard={onSelectCardToCreate} />
         </section>
@@ -314,22 +327,26 @@ export const Home: React.FC<HomeProps> = ({
                 <CloudRain className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-bengali-serif text-xl sm:text-2xl font-bold text-[#f7f0df]">
+                <h2 className="font-bengali-serif text-xl sm:text-2xl font-bold text-[#f7f0df]">
                   🌧️ Rainy Love Collection (বৃষ্টিভেজা প্রেম)
-                </h3>
+                </h2>
                 <p className="font-bengali-body text-xs text-[#a89882]">
                   আষাঢ়ের মেঘ, কদম ফুল আর ভিজে যাওয়া অনুভূতির পোস্টকার্ড
                 </p>
               </div>
             </div>
-            <button
-              type="button"
-              onClick={() => onNavigate('postcards')}
+            <a
+              href="/postcards"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('postcards');
+              }}
               className="text-xs sm:text-sm font-bengali-body text-[#d4af37] hover:text-[#ffd166] flex items-center gap-1 cursor-pointer transition-colors"
+              title="বৃষ্টিভেজা প্রেমের কার্ড সবগুলো দেখুন"
             >
               <span>সবগুলো দেখুন</span>
               <ArrowRight className="w-4 h-4" />
-            </button>
+            </a>
           </div>
           <CardGrid cards={rainyCards} onSelectCard={onSelectCardToCreate} />
         </section>
@@ -342,22 +359,26 @@ export const Home: React.FC<HomeProps> = ({
                 <Mail className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-bengali-serif text-xl sm:text-2xl font-bold text-[#f7f0df]">
+                <h2 className="font-bengali-serif text-xl sm:text-2xl font-bold text-[#f7f0df]">
                   💌 Vintage Letter Collection (পুরনো চিঠির পোস্টকার্ড)
-                </h3>
+                </h2>
                 <p className="font-bengali-body text-xs text-[#a89882]">
                   ডাকটিকিট, টাইপরাইটার ও লাল মোমের সীলমোহর যুক্ত চিঠি
                 </p>
               </div>
             </div>
-            <button
-              type="button"
-              onClick={() => onNavigate('postcards')}
+            <a
+              href="/postcards"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('postcards');
+              }}
               className="text-xs sm:text-sm font-bengali-body text-[#d4af37] hover:text-[#ffd166] flex items-center gap-1 cursor-pointer transition-colors"
+              title="পুরনো চিঠির পোস্টকার্ড সবগুলো দেখুন"
             >
               <span>সবগুলো দেখুন</span>
               <ArrowRight className="w-4 h-4" />
-            </button>
+            </a>
           </div>
           <CardGrid cards={vintageLetterCards} onSelectCard={onSelectCardToCreate} />
         </section>
@@ -370,24 +391,96 @@ export const Home: React.FC<HomeProps> = ({
                 <Sparkles className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-bengali-serif text-xl sm:text-2xl font-bold text-[#f7f0df]">
+                <h2 className="font-bengali-serif text-xl sm:text-2xl font-bold text-[#f7f0df]">
                   ✨ নতুন কার্ড (New Additions)
-                </h3>
+                </h2>
                 <p className="font-bengali-body text-xs text-[#a89882]">
                   সম্প্রতি যুক্ত হওয়া বিশেষ ভিন্টেজ আর্টওয়ার্ক ও শুভেচ্ছা কার্ড
                 </p>
               </div>
             </div>
-            <button
-              type="button"
-              onClick={() => onNavigate('postcards')}
+            <a
+              href="/postcards"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('postcards');
+              }}
               className="text-xs sm:text-sm font-bengali-body text-[#d4af37] hover:text-[#ffd166] flex items-center gap-1 cursor-pointer transition-colors"
+              title="নতুন ভিন্টেজ কার্ড সবগুলো দেখুন"
             >
               <span>সবগুলো দেখুন</span>
               <ArrowRight className="w-4 h-4" />
-            </button>
+            </a>
           </div>
           <CardGrid cards={newCards} onSelectCard={onSelectCardToCreate} />
+        </section>
+
+        {/* Bengali Love Quotes Section - Internal Linking: Homepage → Quotes & Generator */}
+        <section className="bg-[#181310] border border-[#2e231c] rounded-3xl p-6 sm:p-10 shadow-xl space-y-6">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-[#2e231c] pb-4">
+            <div className="space-y-1">
+              <span className="text-xs font-vintage-serif tracking-widest text-[#d4af37] uppercase">
+                BENGALI LOVE QUOTES
+              </span>
+              <h2 className="font-bengali-serif text-2xl sm:text-3xl font-bold text-[#f7f0df]">
+                বাংলা প্রেমের উক্তি ও বার্তা
+              </h2>
+              <p className="font-bengali-body text-xs sm:text-sm text-[#b8a791]">
+                প্রিয় মানুষকে পাঠানোর জন্য সুন্দর বাংলা প্রেমের উক্তি ও রোমান্টিক বার্তা থেকে বেছে নিন।
+              </p>
+            </div>
+            <a
+              href="/quotes"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('quotes');
+              }}
+              className="text-xs sm:text-sm font-bengali-body text-[#d4af37] hover:text-[#ffd166] flex items-center gap-1 cursor-pointer transition-colors"
+              title="সকল বাংলা প্রেমের উক্তি ও Romantic Quotes দেখুন"
+            >
+              <span>সকল উক্তি দেখুন</span>
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {quotes.slice(0, 3).map((q) => (
+              <div
+                key={q.id}
+                className="bg-[#1f1712] border border-[#36271e] hover:border-[#d4af37]/40 rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-md transition-all"
+              >
+                <div className="space-y-2">
+                  <span className="text-[11px] font-bengali-body px-2.5 py-0.5 rounded-full bg-[#2a1d16] text-[#ffd166] border border-[#422e22]">
+                    {q.category}
+                  </span>
+                  <p className="font-bengali-body text-sm text-[#ece4d0] leading-relaxed italic">
+                    "{q.text}"
+                  </p>
+                </div>
+                <div className="flex items-center justify-between pt-2 border-t border-[#2e231c]">
+                  <span className="text-[11px] font-bengali-body text-[#8e7e6c]">
+                    — {q.author || 'অজ্ঞাত'}
+                  </span>
+                  <a
+                    href="/generator"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (onSelectQuoteToCreate) {
+                        onSelectQuoteToCreate(q);
+                      } else {
+                        onNavigate('generator');
+                      }
+                    }}
+                    className="text-xs font-bengali-body text-[#ffd166] hover:underline flex items-center gap-1 cursor-pointer"
+                    title="এই উক্তি দিয়ে কার্ড তৈরি করুন"
+                  >
+                    <span>কার্ড তৈরি করুন</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* Ready-made Art Gallery */}
@@ -397,34 +490,47 @@ export const Home: React.FC<HomeProps> = ({
               <span className="text-xs font-vintage-serif tracking-widest text-[#d4af37] uppercase">
                 READY-MADE ARTWORKS
               </span>
-              <h3 className="font-bengali-serif text-2xl sm:text-3xl font-bold text-[#f7f0df]">
+              <h2 className="font-bengali-serif text-2xl sm:text-3xl font-bold text-[#f7f0df]">
                 🖼️ Vintage Quote Gallery (রেডিমেড আর্ট গ্যালারি)
-              </h3>
+              </h2>
               <p className="font-bengali-body text-sm text-[#b8a791] max-w-xl">
                 যদি কাস্টমাইজেশন ছাড়া সরাসরি তৈরি করা ভিন্টেজ উক্তি কার্ড চান, তবে আমাদের প্রি-ডিজাইনড
                 গ্যালারি থেকে সরাসরি HD ডাউনলোড করে নিন।
               </p>
             </div>
-            <button
-              type="button"
-              onClick={() => onNavigate('gallery')}
+            <a
+              href="/vintage-gallery"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('gallery');
+              }}
               className="px-6 py-3 rounded-xl bg-[#7a1f26] hover:bg-[#91252d] text-[#f8edd6] border border-[#d4af37]/40 font-bengali-body font-semibold text-sm shadow-lg flex items-center gap-2 cursor-pointer transition-all active:scale-95"
+              title="সম্পূর্ণ ভিন্টেজ গ্যালারি এক্সপ্লোর করুন"
             >
               <ImageIcon className="w-4 h-4 text-[#ffd166]" />
               <span>গ্যালারি এক্সপ্লোর করুন</span>
-            </button>
+            </a>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
             {gallery.slice(0, 4).map((item) => (
-              <div
+              <a
                 key={item.id}
-                onClick={() => onNavigate('gallery')}
-                className="group relative aspect-[4/3] rounded-xl overflow-hidden border border-[#3b2c22] hover:border-[#d4af37] cursor-pointer transition-all shadow-md"
+                href="/vintage-gallery"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('gallery');
+                }}
+                className="group relative aspect-[4/3] rounded-xl overflow-hidden border border-[#3b2c22] hover:border-[#d4af37] cursor-pointer transition-all shadow-md block"
+                title={`${item.title} – ভিন্টেজ আর্টওয়ার্ক দেখুন`}
               >
                 <img
                   src={item.image}
-                  alt={item.title}
+                  alt={item.alt || `${item.title} – ভিন্টেজ প্রেমের পোস্টকার্ড আর্ট`}
+                  width={item.width || 800}
+                  height={item.height || 600}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
@@ -432,7 +538,7 @@ export const Home: React.FC<HomeProps> = ({
                     {item.title}
                   </span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </section>

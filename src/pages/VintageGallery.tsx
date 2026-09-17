@@ -4,7 +4,7 @@ import { GalleryItem, PostcardTemplate } from '../types';
 import { FavoriteButton } from '../components/FavoriteButton';
 import { DownloadGate } from '../components/DownloadGate';
 import { exportElementToImage } from '../utils/exportCard';
-import { Download, Sparkles, Image as ImageIcon, Eye } from 'lucide-react';
+import { Download, Sparkles, Image as ImageIcon, Eye, ArrowRight } from 'lucide-react';
 
 interface VintageGalleryProps {
   onCustomizeItem: (galleryItem: GalleryItem) => void;
@@ -76,12 +76,24 @@ export const VintageGallery: React.FC<VintageGalleryProps> = ({ onCustomizeItem 
           <span>CURATED VINTAGE ARTWORKS</span>
         </div>
         <h1 className="font-bengali-serif text-3xl sm:text-4xl font-bold text-[#f7f0df]">
-          🖼️ Vintage Love Gallery
+          Vintage Love Card Gallery
         </h1>
         <p className="font-bengali-body text-sm sm:text-base text-[#b8a791] leading-relaxed">
-          বিশেষভাবে নির্বাচিত ক্লাসিক উক্তি ও নস্টালজিক ভিন্টেজ আর্টওয়ার্ক। এক ক্লিকে ডাউনলোড করুন
-          অথবা আপনার মনমতো কাস্টমাইজ করে নিন।
+          দেখুন সুন্দর Vintage Love Card Gallery এবং পছন্দের ডিজাইন থেকে নিজের Magic Card তৈরি করুন।
         </p>
+        <div className="pt-1">
+          <a
+            href="/generator"
+            onClick={(e) => {
+              e.preventDefault();
+              onCustomizeItem(gallery[0]);
+            }}
+            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bengali-body text-[#ffd166] hover:text-[#f8edd6] transition-colors cursor-pointer group"
+          >
+            <span>পছন্দের ডিজাইন থেকে কাস্টম কার্ড তৈরি করতে জেনারেটরে যান</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+          </a>
+        </div>
       </div>
 
       {/* Filter Tabs */}
@@ -104,7 +116,7 @@ export const VintageGallery: React.FC<VintageGalleryProps> = ({ onCustomizeItem 
 
       {/* Gallery Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {filteredItems.map((item) => (
+        {filteredItems.map((item, index) => (
           <div
             key={item.id}
             className="group bg-[#16110e] border border-[#2e231c] hover:border-[#d4af37]/50 rounded-2xl overflow-hidden shadow-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1"
@@ -116,8 +128,11 @@ export const VintageGallery: React.FC<VintageGalleryProps> = ({ onCustomizeItem 
             >
               <img
                 src={item.image}
-                alt={item.title}
-                loading="lazy"
+                alt={item.alt || `${item.title} – ভিন্টেজ প্রেমের পোস্টকার্ড আর্ট`}
+                width={item.width || 800}
+                height={item.height || 600}
+                loading={index < 2 ? 'eager' : 'lazy'}
+                decoding="async"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent pointer-events-none" />

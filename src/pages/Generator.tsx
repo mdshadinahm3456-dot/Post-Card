@@ -298,10 +298,10 @@ export const Generator: React.FC<GeneratorProps> = ({
           <span>💌 MAGIC CARD GENERATOR</span>
         </div>
         <h1 className="font-bengali-serif text-2xl sm:text-4xl font-bold text-[#f7f0df]">
-          ভিন্টেজ কার্ড জেনারেটর
+          Magic Card Generator
         </h1>
         <p className="font-bengali-body text-xs sm:text-sm text-[#b8a791]">
-          যেখানে প্রতিটি কার্ড একটি গল্প বলে। নিচের ধাপগুলো অনুসরণ করে প্রিয়জনের জন্য মনের মতো কার্ড তৈরি করুন।
+          পছন্দের Vintage Card নির্বাচন করুন, বাংলা প্রেমের উক্তি বা নিজের লেখা যোগ করুন, সাজিয়ে নিন এবং HD Card Download করুন।
         </p>
 
         {/* 7-Step Workflow breadcrumbs */}
@@ -601,7 +601,11 @@ export const Generator: React.FC<GeneratorProps> = ({
                     >
                       <img
                         src={card.image}
-                        alt={card.title}
+                        alt={card.alt || `${card.title} - Vintage Love Postcard`}
+                        width={104}
+                        height={80}
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex items-end p-1">

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <!-- Eternal Bengal Dawn Golden Sky Gradient -->
+    <linearGradient id="dawnSky_mc024" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2b1410" />
+      <stop offset="30%" stop-color="#5c2619" />
+      <stop offset="60%" stop-color="#9e4722" />
+      <stop offset="85%" stop-color="#e07d2b" />
+      <stop offset="100%" stop-color="#f7be54" />
+    </linearGradient>
+
+    <!-- Rising Dawn Sun Radiance -->
+    <radialGradient id="dawnSun_mc024" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8db" stop-opacity="1" />
+      <stop offset="25%" stop-color="#ffd56b" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#e86b23" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#5c2619" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Padma / Meghna River Dawn Water Gradient -->
+    <linearGradient id="riverWater_mc024" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e07d2b" />
+      <stop offset="35%" stop-color="#8a3f1d" />
+      <stop offset="70%" stop-color="#421a0d" />
+      <stop offset="100%" stop-color="#190904" />
+    </linearGradient>
+
+    <pattern id="grain_mc024" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="0.7" fill="#ffe099" opacity="0.08" />
+      <circle cx="16" cy="18" r="0.8" fill="#ffffff" opacity="0.04" />
+      <circle cx="23" cy="11" r="0.6" fill="#000000" opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <!-- Golden Dawn Sky Canvas -->
+  <rect width="900" height="360" fill="url(#dawnSky_mc024)" />
+
+  <!-- Rising Dawn Sun on the Far River Horizon -->
+  <g transform="translate(680, 260)">
+    <circle cx="0" cy="0" r="160" fill="url(#dawnSun_mc024)" />
+    <circle cx="0" cy="0" r="46" fill="#fffbe8" stroke="#ffd56b" stroke-width="2" />
+  </g>
+
+  <!-- Distant Birds Soaring in Dawn Light -->
+  <g stroke="#260f0a" stroke-width="1.8" fill="none" opacity="0.75">
+    <path d="M420,110 Q426,104 432,110 Q438,104 444,110" />
+    <path d="M450,95 Q455,90 460,95 Q465,90 470,95" />
+    <path d="M475,115 Q480,110 485,115 Q490,110 495,115" />
+    <path d="M500,105 Q504,101 508,105 Q512,101 516,105" />
+  </g>
+
+  <!-- Far Distant Shoreline with Palm Trees & Thatched Roof Huts -->
+  <g fill="#210e08">
+    <path d="M0,325 Q320,315 640,322 T900,318 L900,360 L0,360 Z" />
+    <!-- Distant Palm Fronds Silhouettes -->
+    <path d="M520,320 Q522,280 525,250" stroke="#210e08" stroke-width="2" fill="none" />
+    <path d="M525,250 Q510,235 500,250" stroke="#210e08" stroke-width="1.5" fill="none" />
+    <path d="M525,250 Q535,230 550,245" stroke="#210e08" stroke-width="1.5" fill="none" />
+    <path d="M525,250 Q545,245 550,260" stroke="#210e08" stroke-width="1.5" fill="none" />
+    <path d="M560,320 Q563,285 565,260" stroke="#210e08" stroke-width="2" fill="none" />
+    <path d="M565,260 Q550,245 540,260" stroke="#210e08" stroke-width="1.5" fill="none" />
+    <path d="M565,260 Q575,245 590,255" stroke="#210e08" stroke-width="1.5" fill="none" />
+  </g>
+
+  <!-- Vast Shimmering Bengal River (Padma / Meghna at Dawn) -->
+  <polygon points="0,325 900,325 900,600 0,600" fill="url(#riverWater_mc024)" />
+  <!-- Golden Sunrise Horizon Shimmer Line -->
+  <line x1="0" y1="325" x2="900" y2="325" stroke="#f7be54" stroke-width="2" opacity="0.7" />
+
+  <!-- Earthen Village River Ghat & Shoreline (Left Foreground) -->
+  <path d="M0,330 Q160,350 280,420 T440,600 L0,600 Z" fill="#170804" />
+  <path d="M0,340 Q150,360 260,430 T410,600" fill="none" stroke="#693018" stroke-width="2" opacity="0.6" />
+
+  <!-- Majestic Grand Banyan Tree (বটগাছ) on the High Riverbank -->
+  <g fill="#100502" stroke="#100502">
+    <!-- Massive Gnarled Trunk Rooting into Bank -->
+    <path d="M60,420 Q90,260 120,180 Q150,110 240,70 Q160,110 130,220 Q100,340 80,450 Z" />
+
+    <!-- Aerial Roots (ঝুড়ি) Hanging Down to the Earth -->
+    <line x1="110" y1="180" x2="100" y2="380" stroke-width="2.5" />
+    <line x1="135" y1="160" x2="130" y2="400" stroke-width="3" />
+    <line x1="170" y1="150" x2="180" y2="420" stroke-width="2.5" />
+    <line x1="210" y1="140" x2="225" y2="420" stroke-width="2" />
+    <line x1="260" y1="130" x2="275" y2="390" stroke-width="2" />
+
+    <!-- Sprawling Tree Crown & Foliage Masses -->
+    <ellipse cx="140" cy="110" rx="90" ry="50" />
+    <ellipse cx="230" cy="85" rx="105" ry="55" />
+    <ellipse cx="320" cy="100" rx="85" ry="45" />
+    <ellipse cx="180" cy="65" rx="75" ry="40" />
+  </g>
+
+  <!-- Wooden Bamboo Mooring Post (খুঁটি) Driven into Riverbed -->
+  <line x1="320" y1="410" x2="315" y2="490" stroke="#240c06" stroke-width="6" stroke-linecap="round" />
+  <line x1="320" y1="410" x2="320" y2="425" stroke="#f7be54" stroke-width="1.5" opacity="0.6" />
+
+  <!-- Traditional Bengal Country Wooden Boat (নৌকা) Moored at the Ghat -->
+  <g transform="translate(340, 420)">
+    <!-- Water Cast Shadow & Shimmer -->
+    <ellipse cx="120" cy="55" rx="130" ry="18" fill="#080302" opacity="0.75" />
+
+    <!-- Mooring Jute Rope Tied to the Bamboo Post -->
+    <path d="M-22,25 Q-5,35 15,30" fill="none" stroke="#e07d2b" stroke-width="2" stroke-dasharray="3 2" />
+
+    <!-- Slender Crescent Boat Hull (ডিঙ্গি নৌকা) -->
+    <path d="M0,25 Q120,68 240,22 Q180,55 30,52 Z" fill="#120502" stroke="#2b0e06" stroke-width="2" />
+    <!-- Wooden Planks along Hull -->
+    <path d="M15,35 Q120,60 225,32" fill="none" stroke="#3b1509" stroke-width="1.5" />
+    <!-- Curved High Stern & Prow (গলুই) -->
+    <path d="M0,25 Q-15,10 -10,0 Q-5,8 5,26 Z" fill="#120502" />
+    <path d="M240,22 Q255,8 250,-2 Q245,7 235,23 Z" fill="#120502" />
+
+    <!-- Arched Woven Bamboo Canopy (ছই / গোলুই) -->
+    <path d="M70,36 C70,2 170,2 170,36 Z" fill="#1f0904" stroke="#0a0201" stroke-width="2" />
+    <!-- Bamboo Canopy Ribs -->
+    <path d="M95,34 C95,6 145,6 145,34" fill="none" stroke="#4a1c0d" stroke-width="1.5" />
+    <path d="M120,34 C120,8 120,8 120,34" fill="none" stroke="#4a1c0d" stroke-width="1.5" />
+
+    <!-- Boatman's Long Bamboo Steering Oar (বৈঠা) Resting Across Stern -->
+    <line x1="160" y1="28" x2="270" y2="55" stroke="#3d160a" stroke-width="2.5" stroke-linecap="round" />
+    <polygon points="260,50 275,56 268,62 255,56" fill="#3d160a" />
+  </g>
+
+  <!-- Reeds & Water Lilies (শাপলা) along Water's Edge (Foreground Right) -->
+  <g stroke="#170804" stroke-width="2" stroke-linecap="round">
+    <path d="M840,600 Q830,530 815,480" />
+    <path d="M870,600 Q860,540 850,490" />
+    <path d="M890,600 Q885,550 875,510" />
+  </g>
+  <!-- Single Wild Water Lily Floating near Reeds -->
+  <ellipse cx="800" cy="530" rx="14" ry="5" fill="#1f3d1e" opacity="0.7" />
+  <circle cx="800" cy="527" r="5" fill="#ffd56b" />
+
+  <!-- Film Grain Overlay -->
+  <rect width="900" height="600" fill="url(#grain_mc024)" />
+
+  <!-- Vintage Ornate Postcard Border -->
+  <rect x="25" y="25" width="850" height="550" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.55" rx="6" />
+  <rect x="34" y="34" width="832" height="532" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="6 3" opacity="0.35" rx="4" />
+
+  <!-- Corner Filigrees -->
+  <g stroke="#d4af37" stroke-width="1.8" fill="none" opacity="0.75">
+    <path d="M42,65 L42,42 L65,42 M48,48 L58,48 M48,48 L48,58" />
+    <path d="M858,65 L858,42 L835,42 M852,48 L842,48 M852,48 L852,58" />
+    <path d="M42,535 L42,558 L65,558 M48,552 L58,552 M48,552 L48,542" />
+    <path d="M858,535 L858,558 L835,558 M852,552 L842,552 M852,552 L852,542" />
+  </g>
+
+  <!-- Vintage Eternal Bengal Postage Stamp (Top Right) -->
+  <g transform="translate(740, 48)">
+    <rect x="0" y="0" width="84" height="102" fill="#24100a" stroke="#d4af37" stroke-width="1.5" rx="2" opacity="0.9" />
+    <rect x="6" y="6" width="72" height="90" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.6" />
+    <text x="42" y="24" text-anchor="middle" font-family="'Cinzel', serif" font-size="8" fill="#d4af37" letter-spacing="1">BANGLA</text>
+    <circle cx="42" cy="52" r="16" fill="none" stroke="#d4af37" stroke-width="1.2" opacity="0.8" />
+    <!-- Boat icon in stamp -->
+    <path d="M34,54 Q42,60 50,54 Z" fill="#d4af37" />
+    <text x="42" y="82" text-anchor="middle" font-family="'Special Elite', monospace" font-size="10" font-weight="bold" fill="#f8edd6">1954</text>
+    <text x="42" y="93" text-anchor="middle" font-family="'Special Elite', monospace" font-size="7" fill="#c2a77a">CHIRONTOR</text>
+    <!-- Cancellation waves -->
+    <path d="M-25,30 Q-10,20 5,30 T35,30 T65,30 T95,30" fill="none" stroke="#120603" stroke-width="1.8" opacity="0.75" />
+    <path d="M-25,50 Q-10,40 5,50 T35,50 T65,50 T95,50" fill="none" stroke="#120603" stroke-width="1.8" opacity="0.75" />
+  </g>
+</svg>

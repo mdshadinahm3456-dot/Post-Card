@@ -135,7 +135,11 @@ export const SearchBar: React.FC<SearchBarProps> = ({
                       >
                         <img
                           src={c.image}
-                          alt={c.title}
+                          alt={c.alt || `${c.title} - Vintage Postcard`}
+                          width={40}
+                          height={32}
+                          loading="lazy"
+                          decoding="async"
                           className="w-10 h-8 rounded object-cover border border-[#423226]"
                         />
                         <div className="flex-1 min-w-0">
@@ -200,7 +204,11 @@ export const SearchBar: React.FC<SearchBarProps> = ({
                       >
                         <img
                           src={g.image}
-                          alt={g.title}
+                          alt={g.alt || `${g.title} - Vintage Gallery Artwork`}
+                          width={40}
+                          height={32}
+                          loading="lazy"
+                          decoding="async"
                           className="w-10 h-8 rounded object-cover border border-[#423226]"
                         />
                         <div className="flex-1 min-w-0">

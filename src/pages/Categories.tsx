@@ -9,11 +9,13 @@ import { ArrowRight, Layers, Sparkles } from 'lucide-react';
 interface CategoriesProps {
   onSelectCard: (card: PostcardTemplate) => void;
   onSelectCategoryFilter: (categoryName: string) => void;
+  onNavigate?: (page: string) => void;
 }
 
 export const Categories: React.FC<CategoriesProps> = ({
   onSelectCard,
-  onSelectCategoryFilter
+  onSelectCategoryFilter,
+  onNavigate
 }) => {
   const [activeGroup, setActiveGroup] = useState<CategoryGroup | 'all'>('all');
 
@@ -33,10 +35,10 @@ export const Categories: React.FC<CategoriesProps> = ({
           <span>OCCASIONS & CATEGORIES</span>
         </div>
         <h1 className="font-bengali-serif text-3xl sm:text-4xl font-bold text-[#f7f0df]">
-          সকল উপলক্ষ ও ক্যাটাগরি
+          Card Categories
         </h1>
         <p className="font-bengali-body text-sm sm:text-base text-[#b8a791] leading-relaxed">
-          প্রেম, পরিবার, বন্ধুত্ব, উৎসব কিংবা ঋতু—প্রতিটি বিশেষ মুহূর্তের জন্য রয়েছে ভিন্টেজ কার্ড সংগ্রহ।
+          প্রেম, রোমান্টিক, বৃষ্টি, বিরহ, মিস করা, প্রেমপত্র, জন্মদিন, Anniversary এবং আরও অনেক Vintage Card category খুঁজে নিন।
         </p>
       </div>
 
@@ -100,7 +102,24 @@ export const Categories: React.FC<CategoriesProps> = ({
                   </p>
                 </div>
 
-                <div className="flex items-center gap-2 self-start sm:self-auto">
+                <div className="flex items-center gap-3 self-start sm:self-auto">
+                  <a
+                    href="/postcards"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (onNavigate) {
+                        onNavigate('postcards');
+                      } else {
+                        onSelectCategoryFilter(cat.id);
+                      }
+                    }}
+                    className="text-xs font-bengali-body text-[#d4af37] hover:text-[#ffd166] flex items-center gap-1 cursor-pointer transition-colors"
+                    title={`${cat.name} পোস্টকার্ড সংগ্রহ দেখুন`}
+                  >
+                    <span>{cat.name} কার্ড দেখুন</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </a>
+
                   <button
                     type="button"
                     onClick={() => onSelectCategoryFilter(cat.id)}

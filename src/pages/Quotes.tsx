@@ -4,7 +4,7 @@ import { Quote } from '../types';
 import { FavoriteButton } from '../components/FavoriteButton';
 import { quoteMatchesCategory } from '../data/categories';
 import { bengaliIncludes, toBengaliNumber } from '../utils/bengaliUtils';
-import { Search, Copy, Check, Sparkles, BookOpen } from 'lucide-react';
+import { Search, Copy, Check, Sparkles, BookOpen, ArrowRight } from 'lucide-react';
 
 interface QuotesProps {
   onUseQuote: (quote: Quote) => void;
@@ -47,11 +47,24 @@ export const Quotes: React.FC<QuotesProps> = ({ onUseQuote }) => {
           <span>BENGALI QUOTES & MESSAGES</span>
         </div>
         <h1 className="font-bengali-serif text-3xl sm:text-4xl font-bold text-[#f7f0df]">
-          উক্তি ও বার্তা সংগ্রহ
+          বাংলা প্রেমের উক্তি
         </h1>
         <p className="font-bengali-body text-sm sm:text-base text-[#b8a791] leading-relaxed">
-          প্রেম, বিরহ, বন্ধুত্ব, জন্মদিন, পরিবার ও ঋতু—প্রতিটি আবেগ ও উপলক্ষের জন্য হৃদয়ছোঁয়া বাংলা উক্তি ও বার্তা।
+          প্রিয় মানুষকে পাঠানোর জন্য সুন্দর বাংলা প্রেমের উক্তি, রোমান্টিক মেসেজ ও আবেগের কথা খুঁজে নিন এবং পছন্দের Card-এ ব্যবহার করুন।
         </p>
+        <div className="pt-1">
+          <a
+            href="/generator"
+            onClick={(e) => {
+              e.preventDefault();
+              onUseQuote(quotes[0]);
+            }}
+            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bengali-body text-[#ffd166] hover:text-[#f8edd6] transition-colors cursor-pointer group"
+          >
+            <span>পছন্দের উক্তি দিয়ে কার্ড তৈরি করতে সরাসরি জেনারেটরে যান</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+          </a>
+        </div>
       </div>
 
       {/* Filter and Search */}

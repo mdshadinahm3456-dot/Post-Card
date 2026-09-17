@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <!-- Warm Garden Sunlight Sky Gradient -->
+    <linearGradient id="gardenSky_mc018" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18241b" />
+      <stop offset="40%" stop-color="#2a3b2b" />
+      <stop offset="75%" stop-color="#4a5737" />
+      <stop offset="100%" stop-color="#69693b" />
+    </linearGradient>
+
+    <!-- Warm Golden Light Filtering through Branches -->
+    <radialGradient id="canopyGlow_mc018" cx="40%" cy="25%" r="60%">
+      <stop offset="0%" stop-color="#fff8db" stop-opacity="0.85" />
+      <stop offset="30%" stop-color="#ffd56b" stop-opacity="0.45" />
+      <stop offset="70%" stop-color="#8a9947" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#2a3b2b" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Lawn & Gravel Path Gradient -->
+    <linearGradient id="lawnGrad_mc018" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3d4a2a" />
+      <stop offset="40%" stop-color="#28331b" />
+      <stop offset="100%" stop-color="#141a0d" />
+    </linearGradient>
+
+    <pattern id="grain_mc018" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="0.7" fill="#d4af37" opacity="0.08" />
+      <circle cx="16" cy="18" r="0.8" fill="#ffffff" opacity="0.04" />
+      <circle cx="23" cy="11" r="0.6" fill="#000000" opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <!-- Garden Atmosphere -->
+  <rect width="900" height="380" fill="url(#gardenSky_mc018)" />
+
+  <!-- Sunbeams Filtering Through Floral Canopy -->
+  <circle cx="360" cy="140" r="280" fill="url(#canopyGlow_mc018)" />
+
+  <!-- Distant Garden Trees & Stone Urns / Hedges Silhouette -->
+  <g fill="#162117" opacity="0.75">
+    <ellipse cx="140" cy="310" rx="90" ry="35" />
+    <ellipse cx="260" cy="305" rx="75" ry="30" />
+    <ellipse cx="680" cy="300" rx="110" ry="38" />
+    <ellipse cx="820" cy="315" rx="95" ry="32" />
+  </g>
+
+  <!-- Garden Lawn & Stone Path Ground -->
+  <polygon points="0,320 900,320 900,600 0,600" fill="url(#lawnGrad_mc018)" />
+  <line x1="0" y1="320" x2="900" y2="320" stroke="#7a8c4f" stroke-width="1.5" opacity="0.6" />
+
+  <!-- Meandering Stone Flagstone Garden Pathway -->
+  <path d="M260,320 Q320,410 400,470 T560,600 L420,600 Q300,510 240,430 T220,320 Z" fill="#695c47" opacity="0.45" />
+
+  <!-- Grand Blossoming Flowering Tree (Krishnachura / Gulmohar / Flowering Cherry) -->
+  <!-- Main Gnarled Tree Trunk (Left to Center Canopy) -->
+  <g fill="#1a120b" stroke="#120c07">
+    <path d="M80,350 Q110,230 140,160 Q170,110 240,90 Q180,120 160,180 Q130,260 120,350 Z" />
+    <!-- Major Branches Stretching Overhead -->
+    <path d="M140,160 Q220,130 350,115 Q480,105 600,130" stroke="#1a120b" stroke-width="12" fill="none" stroke-linecap="round" />
+    <path d="M240,125 Q320,80 440,70 Q560,65 720,100" stroke="#1a120b" stroke-width="9" fill="none" stroke-linecap="round" />
+    <path d="M350,115 Q410,150 480,165" stroke="#1a120b" stroke-width="6" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- Masses of Flowering Petals & Blossoms Along the Branches -->
+  <g fill="#ba2b3b">
+    <!-- Big Canopy Clusters -->
+    <ellipse cx="220" cy="110" rx="65" ry="32" />
+    <ellipse cx="320" cy="85" rx="75" ry="36" />
+    <ellipse cx="440" cy="70" rx="85" ry="40" />
+    <ellipse cx="560" cy="80" rx="80" ry="38" />
+    <ellipse cx="680" cy="100" rx="70" ry="34" />
+    <ellipse cx="380" cy="125" rx="55" ry="28" fill="#d63c4e" />
+    <ellipse cx="490" cy="110" rx="60" ry="30" fill="#d63c4e" />
+  </g>
+  <!-- Bright Coral / Pink Flower Highlights -->
+  <g fill="#f26374">
+    <circle cx="210" cy="100" r="14" />
+    <circle cx="310" cy="80" r="16" />
+    <circle cx="430" cy="65" r="18" />
+    <circle cx="550" cy="75" r="17" />
+    <circle cx="670" cy="95" r="15" />
+    <circle cx="370" cy="115" r="14" />
+    <circle cx="480" cy="105" r="15" />
+  </g>
+
+  <!-- Falling / Drifting Flower Petals in the Air -->
+  <g fill="#f26374" stroke="#ba2b3b" stroke-width="0.5">
+    <ellipse cx="260" cy="180" rx="5" ry="3" transform="rotate(25, 260, 180)" />
+    <ellipse cx="340" cy="210" rx="6" ry="3.5" transform="rotate(-35, 340, 210)" />
+    <ellipse cx="420" cy="190" rx="5.5" ry="3" transform="rotate(45, 420, 190)" />
+    <ellipse cx="490" cy="240" rx="6" ry="3.5" transform="rotate(15, 490, 240)" />
+    <ellipse cx="570" cy="200" rx="5" ry="3" transform="rotate(-20, 570, 200)" />
+    <ellipse cx="640" cy="230" rx="6" ry="3.5" transform="rotate(30, 640, 230)" />
+    <ellipse cx="380" cy="270" rx="5" ry="3" transform="rotate(-15, 380, 270)" />
+    <ellipse cx="450" cy="290" rx="6" ry="3.5" transform="rotate(50, 450, 290)" />
+  </g>
+
+  <!-- Hero Subject: Antique Ornate Wrought-Iron Park Bench (Centered Under Tree) -->
+  <g transform="translate(350, 260)">
+    <!-- Bench Ground Shadow with Fallen Petals -->
+    <ellipse cx="100" cy="145" rx="130" ry="24" fill="#0c1109" opacity="0.65" />
+    <!-- Fallen Petals under Bench -->
+    <g fill="#d63c4e" opacity="0.8">
+      <ellipse cx="60" cy="144" rx="4" ry="2" />
+      <ellipse cx="90" cy="147" rx="5" ry="2.5" />
+      <ellipse cx="120" cy="143" rx="4.5" ry="2" />
+      <ellipse cx="150" cy="146" rx="4" ry="2" />
+    </g>
+
+    <!-- Wrought Iron Bench Legs & Ornate Scrollwork -->
+    <!-- Left Cast Iron Leg -->
+    <path d="M25,85 C15,105 10,135 15,145 C20,135 30,120 35,90" fill="none" stroke="#162117" stroke-width="4.5" />
+    <path d="M15,120 C5,130 5,145 15,145" fill="none" stroke="#162117" stroke-width="3.5" />
+    <!-- Right Cast Iron Leg -->
+    <path d="M175,85 C165,105 160,135 165,145 C170,135 180,120 185,90" fill="none" stroke="#162117" stroke-width="4.5" />
+    <path d="M165,120 C155,130 155,145 165,145" fill="none" stroke="#162117" stroke-width="3.5" />
+
+    <!-- Slatted Wooden Bench Seat Planks -->
+    <polygon points="10,85 190,85 185,95 5,95" fill="#422e1e" stroke="#21170f" stroke-width="1.2" />
+    <polygon points="12,98 188,98 183,108 7,108" fill="#422e1e" stroke="#21170f" stroke-width="1.2" />
+
+    <!-- Ornate Wrought Iron Backrest with Decorative Heart / Vine Scrolls -->
+    <polygon points="15,40 185,40 185,85 15,85" fill="none" stroke="#162117" stroke-width="3" />
+    <!-- Backrest Slats / Iron Ribs -->
+    <line x1="20" y1="42" x2="180" y2="42" stroke="#d4af37" stroke-width="2" opacity="0.6" />
+    <!-- Iron Heart Filigrees inside Backrest -->
+    <g stroke="#162117" stroke-width="2" fill="none">
+      <path d="M60,65 C50,48 70,48 70,65 C70,75 60,82 60,82 C60,82 50,75 50,65 Z" />
+      <path d="M100,65 C90,48 110,48 110,65 C110,75 100,82 100,82 C100,82 90,75 90,65 Z" />
+      <path d="M140,65 C130,48 150,48 150,65 C150,75 140,82 140,82 C140,82 130,75 130,65 Z" />
+    </g>
+
+    <!-- Ornate Curved Armrests -->
+    <path d="M10,85 C-5,65 5,55 18,58" fill="none" stroke="#162117" stroke-width="3.5" stroke-linecap="round" />
+    <path d="M190,85 C205,65 195,55 182,58" fill="none" stroke="#162117" stroke-width="3.5" stroke-linecap="round" />
+
+    <!-- A Single Fallen Flower Resting Gently on the Wooden Bench Seat -->
+    <circle cx="120" cy="89" r="6" fill="#f26374" />
+    <circle cx="120" cy="89" r="2" fill="#ffd56b" />
+  </g>
+
+  <!-- Film Grain Overlay -->
+  <rect width="900" height="600" fill="url(#grain_mc018)" />
+
+  <!-- Vintage Ornate Postcard Border -->
+  <rect x="25" y="25" width="850" height="550" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.55" rx="6" />
+  <rect x="34" y="34" width="832" height="532" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="6 3" opacity="0.35" rx="4" />
+
+  <!-- Corner Filigrees -->
+  <g stroke="#d4af37" stroke-width="1.8" fill="none" opacity="0.75">
+    <path d="M42,65 L42,42 L65,42 M48,48 L58,48 M48,48 L48,58" />
+    <path d="M858,65 L858,42 L835,42 M852,48 L842,48 M852,48 L852,58" />
+    <path d="M42,535 L42,558 L65,558 M48,552 L58,552 M48,552 L48,542" />
+    <path d="M858,535 L858,558 L835,558 M852,552 L842,552 M852,552 L852,542" />
+  </g>
+
+  <!-- Vintage Botanical Garden Postage Stamp (Top Right) -->
+  <g transform="translate(740, 48)">
+    <rect x="0" y="0" width="84" height="102" fill="#1b261d" stroke="#d4af37" stroke-width="1.5" rx="2" opacity="0.9" />
+    <rect x="6" y="6" width="72" height="90" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.6" />
+    <text x="42" y="24" text-anchor="middle" font-family="'Cinzel', serif" font-size="8" fill="#d4af37" letter-spacing="1">BOTANICAL</text>
+    <circle cx="42" cy="52" r="16" fill="none" stroke="#d4af37" stroke-width="1.2" opacity="0.8" />
+    <!-- Flower icon inside stamp -->
+    <circle cx="42" cy="52" r="5" fill="#f26374" />
+    <text x="42" y="82" text-anchor="middle" font-family="'Special Elite', monospace" font-size="10" font-weight="bold" fill="#f8edd6">SPRING</text>
+    <text x="42" y="93" text-anchor="middle" font-family="'Special Elite', monospace" font-size="7" fill="#c2a77a">BLOOMING</text>
+    <!-- Cancellation waves -->
+    <path d="M-25,30 Q-10,20 5,30 T35,30 T65,30 T95,30" fill="none" stroke="#0e1710" stroke-width="1.8" opacity="0.75" />
+    <path d="M-25,50 Q-10,40 5,50 T35,50 T65,50 T95,50" fill="none" stroke="#0e1710" stroke-width="1.8" opacity="0.75" />
+  </g>
+</svg>

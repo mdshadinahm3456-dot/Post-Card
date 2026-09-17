@@ -28,7 +28,7 @@ export const CardGrid: React.FC<CardGridProps> = ({
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
-      {cards.map((card) => {
+      {cards.map((card, index) => {
         const isSelected = selectedCardId === card.id;
 
         return (
@@ -46,8 +46,11 @@ export const CardGrid: React.FC<CardGridProps> = ({
             <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#1f1712]">
               <img
                 src={card.image}
-                alt={card.title}
-                loading="lazy"
+                alt={card.alt || `${card.title} - Vintage Love Postcard`}
+                width={card.width || 900}
+                height={card.height || 600}
+                loading={index < 2 ? 'eager' : 'lazy'}
+                decoding="async"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#16110e] via-transparent to-black/30 pointer-events-none" />

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <!-- Warm Sunlit Morning Room Gradient -->
+    <linearGradient id="morningRoom_mc017" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c1d14" />
+      <stop offset="45%" stop-color="#22150d" />
+      <stop offset="85%" stop-color="#180e08" />
+      <stop offset="100%" stop-color="#0f0704" />
+    </linearGradient>
+
+    <!-- Diagonal Sunbeam Streaming from Window -->
+    <linearGradient id="sunBeam_mc017" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0cc" stop-opacity="0.4" />
+      <stop offset="60%" stop-color="#ffd56b" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#22150d" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Warm Coffee Surface Gradient -->
+    <radialGradient id="coffeeFoam_mc017" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c99b74" />
+      <stop offset="65%" stop-color="#734727" />
+      <stop offset="100%" stop-color="#3d210f" />
+    </radialGradient>
+
+    <pattern id="grain_mc017" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="0.7" fill="#d4af37" opacity="0.08" />
+      <circle cx="16" cy="18" r="0.8" fill="#ffffff" opacity="0.04" />
+      <circle cx="23" cy="11" r="0.6" fill="#000000" opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <!-- Table Canvas -->
+  <rect width="900" height="600" fill="url(#morningRoom_mc017)" />
+
+  <!-- Wooden Tabletop Grain & Planks -->
+  <g stroke="#140b07" stroke-width="2" opacity="0.7">
+    <line x1="0" y1="130" x2="900" y2="130" />
+    <line x1="0" y1="280" x2="900" y2="280" stroke="#361f14" stroke-width="1.8" />
+    <line x1="0" y1="430" x2="900" y2="430" />
+    <!-- Fine striations -->
+    <path d="M0,125 Q400,120 900,128" fill="none" stroke="#4a2c1d" stroke-width="0.7" opacity="0.4" />
+    <path d="M0,275 Q300,270 900,278" fill="none" stroke="#4a2c1d" stroke-width="0.7" opacity="0.4" />
+    <path d="M0,425 Q500,420 900,428" fill="none" stroke="#4a2c1d" stroke-width="0.7" opacity="0.4" />
+  </g>
+
+  <!-- Diagonal Morning Sunbeams from Upper-Left Window -->
+  <polygon points="0,0 260,0 720,600 280,600" fill="url(#sunBeam_mc017)" />
+  <!-- Window Louver Shutter Shadows Slicing the Light -->
+  <g fill="#140b07" opacity="0.25">
+    <polygon points="40,0 120,0 440,600 360,600" />
+    <polygon points="180,0 260,0 580,600 500,600" />
+  </g>
+
+  <!-- Still Life Composition: Coffee with Heart Latte Art, Love Letter, Flower & Spoon -->
+  <g transform="translate(180, 100)">
+    <!-- Folded Vintage Love Letter (Left / Background) -->
+    <g transform="translate(40, 60) rotate(-10)">
+      <!-- Letter Shadow -->
+      <polygon points="12,12 252,12 252,182 12,182" fill="#080402" opacity="0.55" />
+      <!-- Letter Paper Body -->
+      <polygon points="0,0 240,0 240,170 0,170" fill="#f7eee2" stroke="#bda88a" stroke-width="1.2" rx="3" />
+      <!-- Cursive Handwritten Lines -->
+      <g stroke="#523924" stroke-width="0.9" stroke-linecap="round" opacity="0.6">
+        <line x1="25" y1="30" x2="215" y2="30" />
+        <line x1="25" y1="52" x2="215" y2="52" />
+        <line x1="25" y1="74" x2="185" y2="74" />
+        <line x1="25" y1="96" x2="210" y2="96" />
+        <line x1="25" y1="118" x2="160" y2="118" />
+      </g>
+      <!-- Wax Seal Stamp Impression in Corner -->
+      <circle cx="200" cy="135" r="15" fill="#8c1b26" stroke="#5e0f17" stroke-width="1.2" />
+      <path d="M197,133 C197,130 203,130 203,133 C203,137 200,139 200,139 C200,139 197,137 197,133 Z" fill="#ffd166" opacity="0.85" />
+    </g>
+
+    <!-- Porcelain Coffee Cup on Saucer with Heart Latte Art (Center Right) -->
+    <g transform="translate(240, 110)">
+      <!-- Saucer Shadow -->
+      <ellipse cx="90" cy="135" rx="105" ry="36" fill="#0a0503" opacity="0.6" />
+      <!-- Saucer Porcelain Body -->
+      <ellipse cx="90" cy="120" rx="100" ry="32" fill="#fcf6ec" stroke="#bda88a" stroke-width="1.5" />
+      <!-- Gold Rim on Saucer -->
+      <ellipse cx="90" cy="120" rx="94" ry="29" fill="none" stroke="#d4af37" stroke-width="1" />
+      <ellipse cx="90" cy="116" rx="72" ry="20" fill="#ebdcc4" />
+
+      <!-- Porcelain Cup Body -->
+      <path d="M35,65 C35,115 145,115 145,65 Z" fill="#fcf6ec" stroke="#bda88a" stroke-width="1.5" />
+      <!-- Gold Rim on Cup -->
+      <ellipse cx="90" cy="65" rx="55" ry="18" fill="#fcf6ec" stroke="#d4af37" stroke-width="1.5" />
+
+      <!-- Rich Coffee Surface -->
+      <ellipse cx="90" cy="65" rx="50" ry="16" fill="url(#coffeeFoam_mc017)" />
+
+      <!-- Heart Latte Art in Foam -->
+      <g transform="translate(90, 64) scale(1, 0.42)">
+        <path d="M0,8 C-16,-12 -28,-36 0,-56 C28,-36 16,-12 0,8 Z" fill="#fdfbf7" opacity="0.9" />
+        <path d="M0,4 C-10,-10 -18,-26 0,-40 C18,-26 10,-10 0,4 Z" fill="#fff9ed" />
+      </g>
+
+      <!-- Cup Porcelain Handle -->
+      <path d="M142,70 C168,70 168,95 142,95" fill="none" stroke="#fcf6ec" stroke-width="6" />
+      <path d="M142,70 C168,70 168,95 142,95" fill="none" stroke="#bda88a" stroke-width="1" />
+
+      <!-- Gentle Morning Coffee Steam Wisps -->
+      <g stroke="#ffffff" stroke-width="1" fill="none" opacity="0.5" stroke-linecap="round">
+        <path d="M78,45 Q70,25 82,5 T74,-20" />
+        <path d="M96,42 Q106,20 94,-2 T102,-25" />
+      </g>
+    </g>
+
+    <!-- Vintage Brass Teaspoon Propped on Saucer Edge -->
+    <g transform="translate(380, 210) rotate(32)">
+      <ellipse cx="8" cy="8" rx="10" ry="6" fill="#c99732" stroke="#7a5a18" stroke-width="1" />
+      <line x1="18" y1="8" x2="80" y2="8" stroke="#c99732" stroke-width="3.5" stroke-linecap="round" />
+      <line x1="18" y1="8" x2="80" y2="8" stroke="#ffd56b" stroke-width="1" />
+    </g>
+
+    <!-- Dried Pressed Wildflower Resting on Letter (Foreground Left) -->
+    <g transform="translate(100, 200) rotate(22)">
+      <!-- Slender Stem -->
+      <path d="M15,40 Q25,15 45,0" fill="none" stroke="#475736" stroke-width="2" stroke-linecap="round" />
+      <!-- Blossom Petals (Soft Lavender / Dried Rose Pink) -->
+      <circle cx="45" cy="0" r="8" fill="#a86072" opacity="0.8" />
+      <circle cx="48" cy="-8" r="6" fill="#bf7a8c" opacity="0.8" />
+      <circle cx="53" cy="2" r="6" fill="#bf7a8c" opacity="0.8" />
+      <circle cx="45" cy="0" r="3" fill="#ffd56b" />
+    </g>
+  </g>
+
+  <!-- Film Grain Overlay -->
+  <rect width="900" height="600" fill="url(#grain_mc017)" />
+
+  <!-- Minimal Gold / Double Frame Vintage Border -->
+  <rect x="25" y="25" width="850" height="550" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.55" rx="6" />
+  <rect x="33" y="33" width="834" height="534" fill="none" stroke="#d4af37" stroke-width="0.8" opacity="0.35" rx="4" />
+
+  <!-- Corner Filigrees -->
+  <g stroke="#d4af37" stroke-width="1.8" fill="none" opacity="0.75">
+    <path d="M42,65 L42,42 L65,42 M48,48 L58,48 M48,48 L48,58" />
+    <path d="M858,65 L858,42 L835,42 M852,48 L842,48 M852,48 L852,58" />
+    <path d="M42,535 L42,558 L65,558 M48,552 L58,552 M48,552 L48,542" />
+    <path d="M858,535 L858,558 L835,558 M852,552 L842,552 M852,552 L852,542" />
+  </g>
+
+  <!-- Vintage Morning Coffee Postage Stamp (Top Right) -->
+  <g transform="translate(740, 48)">
+    <rect x="0" y="0" width="84" height="102" fill="#20140d" stroke="#d4af37" stroke-width="1.5" rx="2" opacity="0.9" />
+    <rect x="6" y="6" width="72" height="90" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.6" />
+    <text x="42" y="24" text-anchor="middle" font-family="'Cinzel', serif" font-size="8" fill="#d4af37" letter-spacing="1">MORNING</text>
+    <circle cx="42" cy="52" r="16" fill="none" stroke="#d4af37" stroke-width="1.2" opacity="0.8" />
+    <!-- Heart in cup icon inside stamp -->
+    <path d="M38,50 C38,56 46,56 46,50 Z" fill="#d4af37" opacity="0.8" />
+    <text x="42" y="82" text-anchor="middle" font-family="'Special Elite', monospace" font-size="10" font-weight="bold" fill="#f8edd6">1954</text>
+    <text x="42" y="93" text-anchor="middle" font-family="'Special Elite', monospace" font-size="7" fill="#c2a77a">COFFEE &amp; YOU</text>
+    <!-- Cancellation waves -->
+    <path d="M-25,30 Q-10,20 5,30 T35,30 T65,30 T95,30" fill="none" stroke="#120905" stroke-width="1.8" opacity="0.75" />
+    <path d="M-25,50 Q-10,40 5,50 T35,50 T65,50 T95,50" fill="none" stroke="#120905" stroke-width="1.8" opacity="0.75" />
+  </g>
+</svg>

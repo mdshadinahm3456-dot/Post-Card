@@ -54,6 +54,10 @@ export interface PostcardTemplate {
   collection?: 'popular' | 'new' | 'romantic' | 'rainy' | 'vintage_letter';
   mood?: string;
   stampText?: string;
+  description?: string;
+  alt?: string;
+  width?: number;
+  height?: number;
 }
 
 export interface Quote {
@@ -74,6 +78,10 @@ export interface GalleryItem {
   quoteEnglish?: string;
   quote?: string;
   author?: string;
+  description?: string;
+  alt?: string;
+  width?: number;
+  height?: number;
 }
 
 export interface Category {

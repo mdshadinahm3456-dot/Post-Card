@@ -125,7 +125,11 @@ export const ShareCardModal: React.FC<ShareCardModalProps> = ({
           <div className="relative w-20 h-16 sm:w-24 sm:h-18 flex-shrink-0 rounded-xl overflow-hidden border border-[#d4af37]/40 bg-[#120e0b]">
             <img
               src={card.image}
-              alt={card.title}
+              alt={card.alt || `${card.title} - Vintage Love Postcard`}
+              width={96}
+              height={72}
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />

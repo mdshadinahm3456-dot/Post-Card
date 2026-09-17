@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <!-- Café Interior Ambient Gradient -->
+    <linearGradient id="cafeGrad_mc005" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c140f" />
+      <stop offset="50%" stop-color="#17100b" />
+      <stop offset="100%" stop-color="#0f0a07" />
+    </linearGradient>
+
+    <!-- Rainy Street Outside Window Gradient -->
+    <linearGradient id="outsideGrad_mc005" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141c24" />
+      <stop offset="60%" stop-color="#1b2530" />
+      <stop offset="100%" stop-color="#10151c" />
+    </linearGradient>
+
+    <!-- Hanging Lamp Glow -->
+    <radialGradient id="lampGlow_mc005" cx="50%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#ffe49e" stop-opacity="0.85" />
+      <stop offset="35%" stop-color="#f5b842" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#d4af37" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#17100b" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Tabletop Wood Gradient -->
+    <linearGradient id="tableGrad_mc005" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#342217" />
+      <stop offset="30%" stop-color="#281a11" />
+      <stop offset="100%" stop-color="#180e08" />
+    </linearGradient>
+
+    <pattern id="grain_mc005" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="0.7" fill="#d4af37" opacity="0.08" />
+      <circle cx="18" cy="18" r="0.8" fill="#ffffff" opacity="0.04" />
+      <circle cx="22" cy="10" r="0.6" fill="#000000" opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <!-- Base Interior -->
+  <rect width="900" height="600" fill="url(#cafeGrad_mc005)" />
+
+  <!-- Large Vintage Paned Café Window (Left / Center) -->
+  <g transform="translate(100, 60)">
+    <!-- Window Frame Shadow -->
+    <rect x="0" y="0" width="420" height="300" fill="#0c0806" rx="4" />
+    <!-- Rainy Street Outside -->
+    <rect x="10" y="10" width="400" height="280" fill="url(#outsideGrad_mc005)" rx="2" />
+
+    <!-- Outside Street Lamp & Rain Bokeh -->
+    <circle cx="280" cy="120" r="28" fill="#ffd166" opacity="0.25" />
+    <circle cx="280" cy="120" r="12" fill="#fff5d6" opacity="0.6" />
+    <!-- Distant Building Silhouettes Through Rain -->
+    <rect x="40" y="140" width="80" height="150" fill="#0e141a" opacity="0.7" />
+    <rect x="140" y="110" width="70" height="180" fill="#0c1117" opacity="0.7" />
+    <polygon points="140,110 175,70 210,110" fill="#0c1117" opacity="0.7" />
+    <rect x="230" y="160" width="90" height="130" fill="#0f151c" opacity="0.7" />
+
+    <!-- Rain Streaks on Glass -->
+    <g stroke="#9bb6c7" stroke-width="0.75" opacity="0.35" stroke-linecap="round">
+      <line x1="30" y1="20" x2="25" y2="70" />
+      <line x1="80" y1="50" x2="75" y2="120" />
+      <line x1="130" y1="30" x2="125" y2="85" />
+      <line x1="170" y1="60" x2="165" y2="130" />
+      <line x1="220" y1="40" x2="215" y2="95" />
+      <line x1="270" y1="80" x2="265" y2="150" />
+      <line x1="330" y1="30" x2="325" y2="90" />
+      <line x1="370" y1="70" x2="365" y2="140" />
+    </g>
+
+    <!-- Window Wooden Mullions / Grids -->
+    <line x1="140" y1="10" x2="140" y2="290" stroke="#1d140e" stroke-width="8" />
+    <line x1="270" y1="10" x2="270" y2="290" stroke="#1d140e" stroke-width="8" />
+    <line x1="10" y1="150" x2="410" y2="150" stroke="#1d140e" stroke-width="8" />
+    <rect x="6" y="6" width="408" height="288" fill="none" stroke="#2b1c13" stroke-width="6" rx="2" />
+  </g>
+
+  <!-- Hanging Brass Lamp from Top Ceiling -->
+  <g transform="translate(620, 0)">
+    <!-- Electric Cord -->
+    <line x1="0" y1="0" x2="0" y2="90" stroke="#16110d" stroke-width="2.5" />
+    <!-- Cone Radial Glow Spilling Downward -->
+    <ellipse cx="0" cy="180" rx="260" ry="180" fill="url(#lampGlow_mc005)" />
+    <!-- Brass Pendant Lamp Shade -->
+    <polygon points="-45,120 45,120 25,90 -25,90" fill="#c99732" stroke="#87621c" stroke-width="1.5" />
+    <line x1="-45" y1="120" x2="45" y2="120" stroke="#ffd56b" stroke-width="2" />
+    <!-- Glowing Bulb -->
+    <ellipse cx="0" cy="124" rx="14" ry="9" fill="#ffffff" />
+  </g>
+
+  <!-- Café Round Tabletop with Perspective (Bottom Center) -->
+  <g transform="translate(200, 310)">
+    <!-- Cast Shadow Under Table -->
+    <ellipse cx="250" cy="190" rx="360" ry="85" fill="#080504" opacity="0.6" />
+    <!-- Wooden Tabletop Surface -->
+    <ellipse cx="250" cy="140" rx="350" ry="95" fill="url(#tableGrad_mc005)" stroke="#4a3222" stroke-width="2" />
+    <ellipse cx="250" cy="142" rx="340" ry="88" fill="none" stroke="#5a3d2a" stroke-width="0.8" opacity="0.4" />
+
+    <!-- Two Vintage Ceramic Coffee Cups & Saucers -->
+    <!-- Cup 1 (Left - Warm Cream Ceramic) -->
+    <g transform="translate(140, 75)">
+      <!-- Saucer Shadow & Body -->
+      <ellipse cx="40" cy="55" rx="36" ry="12" fill="#0d0806" opacity="0.4" />
+      <ellipse cx="40" cy="50" rx="34" ry="10" fill="#eadecc" stroke="#b09e86" stroke-width="1" />
+      <ellipse cx="40" cy="49" rx="26" ry="6" fill="#c7b59b" />
+      <!-- Cup Shadow & Body -->
+      <ellipse cx="40" cy="40" rx="20" ry="6" fill="#0d0806" opacity="0.3" />
+      <path d="M22,25 C22,46 58,46 58,25 Z" fill="#f5ede1" stroke="#b09e86" stroke-width="1" />
+      <!-- Dark Coffee Surface & Froth -->
+      <ellipse cx="40" cy="25" rx="18" ry="6" fill="#2d1a10" />
+      <ellipse cx="40" cy="25" rx="13" ry="4" fill="#543320" />
+      <ellipse cx="40" cy="25" rx="5" ry="2" fill="#916242" />
+      <!-- Cup Handle -->
+      <path d="M56,27 C68,27 68,40 56,40" fill="none" stroke="#eadecc" stroke-width="2.5" />
+      <!-- Rising Steam Wisps -->
+      <g stroke="#ffffff" stroke-width="0.9" fill="none" opacity="0.45" stroke-linecap="round">
+        <path d="M35,18 Q30,5 38,-8 T32,-22" />
+        <path d="M45,16 Q52,3 44,-10 T50,-24" />
+      </g>
+    </g>
+
+    <!-- Cup 2 (Right - Warm Burgundy/Terracotta Ceramic) -->
+    <g transform="translate(260, 85)">
+      <!-- Saucer Shadow & Body -->
+      <ellipse cx="40" cy="55" rx="36" ry="12" fill="#0d0806" opacity="0.4" />
+      <ellipse cx="40" cy="50" rx="34" ry="10" fill="#38211b" stroke="#633d32" stroke-width="1" />
+      <ellipse cx="40" cy="49" rx="26" ry="6" fill="#291813" />
+      <!-- Cup Body -->
+      <path d="M22,25 C22,46 58,46 58,25 Z" fill="#522b22" stroke="#703f33" stroke-width="1" />
+      <line x1="22" y1="24" x2="58" y2="24" stroke="#d4af37" stroke-width="1" opacity="0.6" />
+      <!-- Coffee Surface -->
+      <ellipse cx="40" cy="25" rx="18" ry="6" fill="#24140c" />
+      <ellipse cx="40" cy="25" rx="12" ry="4" fill="#4d2c1b" />
+      <!-- Cup Handle -->
+      <path d="M56,27 C68,27 68,40 56,40" fill="none" stroke="#522b22" stroke-width="2.5" />
+      <!-- Rising Steam Wisps -->
+      <g stroke="#ffffff" stroke-width="0.9" fill="none" opacity="0.45" stroke-linecap="round">
+        <path d="M36,18 Q42,5 34,-8 T40,-22" />
+        <path d="M44,16 Q38,3 46,-10 T40,-24" />
+      </g>
+    </g>
+
+    <!-- Small Brass Teaspoon & Scattered Coffee Beans -->
+    <g transform="translate(210, 140) rotate(25)">
+      <ellipse cx="8" cy="8" rx="8" ry="5" fill="#cfa144" stroke="#876520" stroke-width="0.8" />
+      <line x1="16" y1="8" x2="55" y2="8" stroke="#cfa144" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+    <g fill="#241309" stroke="#140a04" stroke-width="0.5">
+      <ellipse cx="370" cy="140" rx="4" ry="2.5" transform="rotate(15, 370, 140)" />
+      <ellipse cx="380" cy="145" rx="4" ry="2.5" transform="rotate(-30, 380, 145)" />
+      <ellipse cx="365" cy="150" rx="3.5" ry="2" transform="rotate(45, 365, 150)" />
+    </g>
+  </g>
+
+  <!-- Film Grain Overlay -->
+  <rect width="900" height="600" fill="url(#grain_mc005)" />
+
+  <!-- Classic Postcard Border -->
+  <rect x="25" y="25" width="850" height="550" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.5" rx="6" />
+  <rect x="34" y="34" width="832" height="532" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="6 3" opacity="0.35" rx="4" />
+
+  <!-- Corner Filigrees -->
+  <g stroke="#d4af37" stroke-width="1.8" fill="none" opacity="0.75">
+    <path d="M42,65 L42,42 L65,42 M48,48 L58,48 M48,48 L48,58" />
+    <path d="M858,65 L858,42 L835,42 M852,48 L842,48 M852,48 L852,58" />
+    <path d="M42,535 L42,558 L65,558 M48,552 L58,552 M48,552 L48,542" />
+    <path d="M858,535 L858,558 L835,558 M852,552 L842,552 M852,552 L852,542" />
+  </g>
+
+  <!-- Vintage Café Postage Stamp (Top Right) -->
+  <g transform="translate(740, 48)">
+    <rect x="0" y="0" width="84" height="102" fill="#20150e" stroke="#d4af37" stroke-width="1.5" rx="2" opacity="0.9" />
+    <rect x="6" y="6" width="72" height="90" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.6" />
+    <text x="42" y="24" text-anchor="middle" font-family="'Cinzel', serif" font-size="8" fill="#d4af37" letter-spacing="1">OLD CAFÉ</text>
+    <circle cx="42" cy="52" r="16" fill="none" stroke="#d4af37" stroke-width="1.2" opacity="0.8" />
+    <!-- Coffee cup icon in stamp -->
+    <path d="M34,48 C34,56 50,56 50,48 Z" fill="#d4af37" opacity="0.8" />
+    <text x="42" y="82" text-anchor="middle" font-family="'Special Elite', monospace" font-size="10" font-weight="bold" fill="#f8edd6">1968</text>
+    <text x="42" y="93" text-anchor="middle" font-family="'Special Elite', monospace" font-size="7" fill="#c2a77a">COFFEE HOUSE</text>
+    <!-- Cancellation waves -->
+    <path d="M-25,30 Q-10,20 5,30 T35,30 T65,30 T95,30" fill="none" stroke="#120b07" stroke-width="1.8" opacity="0.75" />
+    <path d="M-25,50 Q-10,40 5,50 T35,50 T65,50 T95,50" fill="none" stroke="#120b07" stroke-width="1.8" opacity="0.75" />
+  </g>
+</svg>

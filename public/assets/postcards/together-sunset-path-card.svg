@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <!-- Warm Golden Hour Landscape Gradient -->
+    <linearGradient id="skyGrad_mc010" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2b140e" />
+      <stop offset="35%" stop-color="#542517" />
+      <stop offset="65%" stop-color="#8c3e1e" />
+      <stop offset="85%" stop-color="#cf732b" />
+      <stop offset="100%" stop-color="#ebb054" />
+    </linearGradient>
+
+    <!-- Warm Low Sun Glow -->
+    <radialGradient id="sunGlow_mc010" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8e7" stop-opacity="1" />
+      <stop offset="25%" stop-color="#ffd56b" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#f57c2a" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#542517" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Rolling Countryside Hills Gradient -->
+    <linearGradient id="groundGrad_mc010" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cf732b" />
+      <stop offset="25%" stop-color="#7a341a" />
+      <stop offset="60%" stop-color="#3d180d" />
+      <stop offset="100%" stop-color="#140804" />
+    </linearGradient>
+
+    <pattern id="grain_mc010" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="0.7" fill="#ffe099" opacity="0.08" />
+      <circle cx="16" cy="18" r="0.8" fill="#ffffff" opacity="0.04" />
+      <circle cx="23" cy="11" r="0.6" fill="#000000" opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <!-- Sky Canvas -->
+  <rect width="900" height="380" fill="url(#skyGrad_mc010)" />
+
+  <!-- Big Low Sun on the Horizon -->
+  <g transform="translate(340, 310)">
+    <circle cx="0" cy="0" r="140" fill="url(#sunGlow_mc007)" />
+    <circle cx="0" cy="0" r="46" fill="#fff9eb" stroke="#ffd56b" stroke-width="2" />
+  </g>
+
+  <!-- Distant Birds Flying in Formation -->
+  <g stroke="#260f0c" stroke-width="1.6" fill="none" opacity="0.75">
+    <path d="M420,130 Q425,124 430,130 Q435,124 440,130" />
+    <path d="M445,115 Q449,110 453,115 Q457,110 461,115" />
+    <path d="M470,135 Q474,130 478,135 Q482,130 486,135" />
+    <path d="M495,125 Q498,121 501,125 Q504,121 507,125" />
+  </g>
+
+  <!-- Distant Horizon Hill Silhouette & Banyan Tree Silhouette -->
+  <path d="M0,350 Q240,335 480,345 T900,340 L900,380 L0,380 Z" fill="#240e08" />
+
+  <!-- Grand Old Banyan Tree Silhouette (Left Background) -->
+  <g fill="#140704" stroke="#140704">
+    <!-- Massive Trunk -->
+    <path d="M120,360 Q130,280 145,240 Q160,280 170,360 Z" />
+    <!-- Aerial Roots Hanging Down -->
+    <line x1="105" y1="260" x2="100" y2="355" stroke-width="2" />
+    <line x1="125" y1="250" x2="120" y2="355" stroke-width="2" />
+    <line x1="165" y1="250" x2="170" y2="355" stroke-width="2" />
+    <line x1="185" y1="260" x2="190" y2="355" stroke-width="2" />
+    <!-- Lush Tree Canopy Crown -->
+    <ellipse cx="145" cy="220" rx="90" ry="45" />
+    <ellipse cx="110" cy="235" rx="55" ry="35" />
+    <ellipse cx="180" cy="235" rx="60" ry="35" />
+  </g>
+
+  <!-- Warm Countryside Earth & Meandering Pathway -->
+  <polygon points="0,355 900,355 900,600 0,600" fill="url(#groundGrad_mc010)" />
+  <line x1="0" y1="355" x2="900" y2="355" stroke="#f59e0b" stroke-width="1.5" opacity="0.6" />
+
+  <!-- Meandering Dirt Path Leading Away -->
+  <path d="M340,355 Q380,410 440,460 T560,600 L440,600 Q360,510 320,440 T310,355 Z" fill="#cf732b" opacity="0.45" />
+
+  <!-- The Two Lovers Walking Hand in Hand (Centered on Path) -->
+  <g transform="translate(410, 310)">
+    <!-- Dramatic Long Shadows Stretching Towards Viewer Across Pathway -->
+    <ellipse cx="40" cy="180" rx="45" ry="90" fill="#080302" opacity="0.55" transform="rotate(15, 40, 180)" />
+
+    <!-- Person 1 (Man - Left, Walking) -->
+    <circle cx="28" cy="40" r="9" fill="#140704" />
+    <!-- Torso & Kurta / Shirt Silhouette -->
+    <path d="M18,48 C18,42 38,42 38,48 L40,105 L30,105 L28,75 L24,105 L16,105 Z" fill="#140704" />
+
+    <!-- Person 2 (Woman - Right, Leaning Gently While Walking) -->
+    <circle cx="48" cy="44" r="8.5" fill="#140704" />
+    <!-- Torso & Flowing Saree Silhouette -->
+    <path d="M40,51 C40,46 54,46 54,51 L58,104 L50,104 L46,75 L42,104 L36,104 Z" fill="#140704" />
+    <!-- Flowing Saree Pallu Caught in Breeze -->
+    <path d="M42,54 Q56,70 66,85 Q58,88 44,65 Z" fill="#1f0b06" />
+
+    <!-- Joined Hands Silhouette Clasping in the Middle -->
+    <line x1="30" y1="65" x2="42" y2="65" stroke="#140704" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Foreground Wild Grasses / Reeds Silhouettes (Left & Right Edges) -->
+  <g stroke="#140704" stroke-width="2.5" stroke-linecap="round">
+    <path d="M30,600 Q40,530 35,480" />
+    <path d="M50,600 Q65,540 80,500" />
+    <path d="M80,600 Q85,550 95,515" />
+    <path d="M840,600 Q830,540 820,490" />
+    <path d="M870,600 Q860,530 855,475" />
+  </g>
+
+  <!-- Film Grain Overlay -->
+  <rect width="900" height="600" fill="url(#grain_mc010)" />
+
+  <!-- Minimal Gold / Double Frame Vintage Border -->
+  <rect x="25" y="25" width="850" height="550" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.55" rx="6" />
+  <rect x="33" y="33" width="834" height="534" fill="none" stroke="#d4af37" stroke-width="0.8" opacity="0.35" rx="4" />
+
+  <!-- Corner Filigrees -->
+  <g stroke="#d4af37" stroke-width="1.8" fill="none" opacity="0.75">
+    <path d="M42,65 L42,42 L65,42 M48,48 L58,48 M48,48 L48,58" />
+    <path d="M858,65 L858,42 L835,42 M852,48 L842,48 M852,48 L852,58" />
+    <path d="M42,535 L42,558 L65,558 M48,552 L58,552 M48,552 L48,542" />
+    <path d="M858,535 L858,558 L835,558 M852,552 L842,552 M852,552 L852,542" />
+  </g>
+
+  <!-- Vintage Soulmates Stamp (Top Right) -->
+  <g transform="translate(740, 48)">
+    <rect x="0" y="0" width="84" height="102" fill="#241009" stroke="#d4af37" stroke-width="1.5" rx="2" opacity="0.9" />
+    <rect x="6" y="6" width="72" height="90" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.6" />
+    <text x="42" y="24" text-anchor="middle" font-family="'Cinzel', serif" font-size="8" fill="#d4af37" letter-spacing="1">TOGETHER</text>
+    <circle cx="42" cy="52" r="16" fill="none" stroke="#d4af37" stroke-width="1.2" opacity="0.8" />
+    <!-- Two small linked rings inside stamp -->
+    <circle cx="38" cy="52" r="6" fill="none" stroke="#d4af37" stroke-width="1.2" />
+    <circle cx="46" cy="52" r="6" fill="none" stroke="#d4af37" stroke-width="1.2" />
+    <text x="42" y="82" text-anchor="middle" font-family="'Special Elite', monospace" font-size="10" font-weight="bold" fill="#f8edd6">1954</text>
+    <text x="42" y="93" text-anchor="middle" font-family="'Special Elite', monospace" font-size="7" fill="#c2a77a">SOULMATES</text>
+    <!-- Cancellation waves -->
+    <path d="M-25,30 Q-10,20 5,30 T35,30 T65,30 T95,30" fill="none" stroke="#120604" stroke-width="1.8" opacity="0.75" />
+    <path d="M-25,50 Q-10,40 5,50 T35,50 T65,50 T95,50" fill="none" stroke="#120604" stroke-width="1.8" opacity="0.75" />
+  </g>
+</svg>

@@ -24,15 +24,13 @@ export const Hero: React.FC<HeroProps> = ({ onStartCreate, onExploreGallery }) =
 
           {/* Headline */}
           <h1 className="font-bengali-serif text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-bold text-[#f7f0df] leading-[1.25] tracking-tight">
-            “পুরনো দিনের অনুভূতি, <br className="hidden sm:inline" />
-            <span className="text-[#ffd166] drop-shadow-sm">আজকের ভালোবাসার জন্য।</span>”
+            পুরনো দিনের অনুভূতি, <br className="hidden sm:inline" />
+            <span className="text-[#ffd166] drop-shadow-sm">আজকের ভালোবাসার জন্য।</span>
           </h1>
 
           {/* Subheadline */}
           <p className="font-bengali-body text-base sm:text-lg text-[#b8a791] max-w-xl mx-auto lg:mx-0 leading-relaxed">
-            আপনার প্রিয় মানুষটির জন্য তৈরি করুন একটি সুন্দর Vintage Card। পছন্দের ক্লাসিক
-            পোস্টকার্ড নির্বাচন করুন, হৃদয়ের গভীর থেকে লেখা প্রেমের উক্তি জুড়ুন এবং এক ক্লিকেই HD
-            ইমেজ ডাউনলোড করুন।
+            অনলাইনে তৈরি করুন আপনার মনের মতো <span className="text-[#f4eee0]">Vintage Card</span>। পছন্দের ক্লাসিক পোস্টকার্ড ও গভীর অনুভূতির <span className="text-[#f4eee0]">প্রেমের উক্তি</span> নির্বাচন করুন অথবা যোগ করুন <span className="text-[#f4eee0]">নিজের লেখা</span>। এক ক্লিকেই তৈরি করুন প্রিয়জনের জন্য বিশেষ <span className="text-[#f4eee0]">Bengali romantic cards</span> এবং করুন ঝকঝকে <span className="text-[#ffd166]">HD Download</span>।
           </p>
 
           {/* CTAs */}
@@ -92,8 +90,13 @@ export const Hero: React.FC<HeroProps> = ({ onStartCreate, onExploreGallery }) =
               {/* Artwork preview inside */}
               <div className="relative aspect-[16/10] rounded-lg overflow-hidden border border-[#3d2f25] mb-4 bg-[#100d0a]">
                 <img
-                  src="/assets/postcards/mc001.svg"
-                  alt="Rainy Love Vintage Card"
+                  src="/assets/postcards/rainy-dhaka-vintage-card.svg"
+                  alt="বৃষ্টির দিনে Vintage Love Postcard – Rainy Dhaka"
+                  width={900}
+                  height={600}
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
                   className="w-full h-full object-cover opacity-85"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />

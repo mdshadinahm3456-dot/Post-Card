@@ -20,10 +20,10 @@ export const Contact: React.FC = () => {
           <span>GET IN TOUCH</span>
         </div>
         <h1 className="font-bengali-serif text-3xl sm:text-4xl font-bold">
-          যোগাযোগ (Contact Us)
+          Contact Magic Card
         </h1>
         <p className="font-bengali-body text-sm text-[#b8a791]">
-          আপনার কোনো মতামত, নতুন পোস্টকার্ডের আইডিয়া বা পরামর্শ থাকলে আমাদের জানাতে পারেন।
+          Magic Card সম্পর্কে যোগাযোগের তথ্য এবং সহায়তা এখানে দেখুন। আপনার কোনো মতামত, নতুন পোস্টকার্ডের আইডিয়া বা পরামর্শ থাকলে আমাদের জানাতে পারেন।
         </p>
       </div>
 

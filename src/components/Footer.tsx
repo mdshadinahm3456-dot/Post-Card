@@ -34,67 +34,88 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           </h4>
           <ul className="space-y-2 text-sm font-bengali-body">
             <li>
-              <button
-                type="button"
-                onClick={() => onNavigate('home')}
+              <a
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('home');
+                }}
                 className="hover:text-[#f7f0df] transition-colors cursor-pointer"
               >
-                হোম (Home)
-              </button>
+                হোম পেজ (Home)
+              </a>
             </li>
             <li>
-              <button
-                type="button"
-                onClick={() => onNavigate('postcards')}
+              <a
+                href="/postcards"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('postcards');
+                }}
                 className="hover:text-[#f7f0df] transition-colors cursor-pointer"
               >
-                পোস্টকার্ড লাইব্রেরি (Postcards)
-              </button>
+                ভিন্টেজ পোস্টকার্ড সংগ্রহ (Postcards)
+              </a>
             </li>
             <li>
-              <button
-                type="button"
-                onClick={() => onNavigate('quotes')}
+              <a
+                href="/quotes"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('quotes');
+                }}
                 className="hover:text-[#f7f0df] transition-colors cursor-pointer"
               >
-                প্রেমের উক্তি (Quotes)
-              </button>
+                রোমান্টিক প্রেমের উক্তি (Quotes)
+              </a>
             </li>
             <li>
-              <button
-                type="button"
-                onClick={() => onNavigate('gallery')}
+              <a
+                href="/vintage-gallery"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('gallery');
+                }}
                 className="hover:text-[#f7f0df] transition-colors cursor-pointer"
               >
-                ভিন্টেজ গ্যালারি (Gallery)
-              </button>
+                ভিন্টেজ আর্ট গ্যালারি (Vintage Gallery)
+              </a>
             </li>
             <li>
-              <button
-                type="button"
-                onClick={() => onNavigate('categories')}
+              <a
+                href="/categories"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('categories');
+                }}
                 className="hover:text-[#f7f0df] transition-colors cursor-pointer"
               >
-                ক্যাটাগরি সমূহ (Categories)
-              </button>
+                কার্ডের ক্যাটাগরি সমূহ (Categories)
+              </a>
             </li>
             <li>
-              <button
-                type="button"
-                onClick={() => onNavigate('my-creations')}
+              <a
+                href="/my-creations"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('my-creations');
+                }}
                 className="text-[#ffd166] hover:text-white transition-colors cursor-pointer flex items-center gap-1"
               >
                 <span>💾 আমার তৈরি কার্ড</span>
-              </button>
+              </a>
             </li>
             <li>
-              <button
-                type="button"
-                onClick={() => onNavigate('favorites')}
+              <a
+                href="/favorites"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('favorites');
+                }}
                 className="hover:text-[#f7f0df] transition-colors cursor-pointer"
               >
-                আমার পছন্দ (Favorites)
-              </button>
+                পছন্দের কার্ড ও উক্তি (Favorites)
+              </a>
             </li>
           </ul>
         </div>
@@ -106,40 +127,52 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           </h4>
           <ul className="space-y-2 text-sm font-bengali-body">
             <li>
-              <button
-                type="button"
-                onClick={() => onNavigate('privacy')}
+              <a
+                href="/privacy"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('privacy');
+                }}
                 className="hover:text-[#f7f0df] transition-colors cursor-pointer"
               >
                 গোপনীয়তা নীতি (Privacy Policy)
-              </button>
+              </a>
             </li>
             <li>
-              <button
-                type="button"
-                onClick={() => onNavigate('terms')}
+              <a
+                href="/terms"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('terms');
+                }}
                 className="hover:text-[#f7f0df] transition-colors cursor-pointer"
               >
-                ব্যবহারের শর্তাবলী (Terms)
-              </button>
+                ব্যবহারের শর্তাবলী (Terms of Service)
+              </a>
             </li>
             <li>
-              <button
-                type="button"
-                onClick={() => onNavigate('contact')}
+              <a
+                href="/contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('contact');
+                }}
                 className="hover:text-[#f7f0df] transition-colors cursor-pointer"
               >
-                যোগাযোগ (Contact)
-              </button>
+                যোগাযোগ ও সহায়তা (Contact Us)
+              </a>
             </li>
             <li>
-              <button
-                type="button"
-                onClick={() => onNavigate('generator')}
+              <a
+                href="/generator"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('generator');
+                }}
                 className="text-[#d4af37] hover:text-[#ffd166] transition-colors cursor-pointer font-semibold"
               >
-                ✨ কার্ড জেনারেটর
-              </button>
+                ✨ নতুন কার্ড তৈরি করুন
+              </a>
             </li>
           </ul>
         </div>

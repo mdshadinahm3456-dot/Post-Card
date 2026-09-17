@@ -11,7 +11,7 @@ export const Terms: React.FC = () => {
           <span>TERMS OF SERVICE</span>
         </div>
         <h1 className="font-bengali-serif text-3xl sm:text-4xl font-bold">
-          ব্যবহারের শর্তাবলী (Terms of Service)
+          Terms & Conditions | Magic Card
         </h1>
         <p className="font-bengali-body text-xs text-[#a89882]">
           কার্যকর তারিখ: {new Date().toLocaleDateString('bn-BD')}

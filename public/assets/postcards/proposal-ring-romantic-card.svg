@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <!-- Twilight Romance Background Gradient -->
+    <linearGradient id="twilightGrad_mc013" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b121e" />
+      <stop offset="40%" stop-color="#241526" />
+      <stop offset="75%" stop-color="#2d1720" />
+      <stop offset="100%" stop-color="#140b10" />
+    </linearGradient>
+
+    <!-- Ring Sparkle & Ambient Glow -->
+    <radialGradient id="ringGlow_mc013" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff9eb" stop-opacity="1" />
+      <stop offset="25%" stop-color="#ffd56b" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#e89c38" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#241526" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Velvet Ring Box Gradient -->
+    <linearGradient id="boxGrad_mc013" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5c1018" />
+      <stop offset="50%" stop-color="#3b080d" />
+      <stop offset="100%" stop-color="#210306" />
+    </linearGradient>
+
+    <pattern id="grain_mc013" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="0.7" fill="#d4af37" opacity="0.08" />
+      <circle cx="16" cy="18" r="0.8" fill="#ffffff" opacity="0.04" />
+      <circle cx="23" cy="11" r="0.6" fill="#000000" opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <!-- Twilight Canvas -->
+  <rect width="900" height="600" fill="url(#twilightGrad_mc013)" />
+
+  <!-- Soft Bokeh Spheres in Background -->
+  <g fill="#ffd56b" opacity="0.18">
+    <circle cx="140" cy="120" r="45" />
+    <circle cx="260" cy="80" r="28" />
+    <circle cx="380" cy="160" r="55" />
+    <circle cx="580" cy="110" r="38" />
+    <circle cx="700" cy="170" r="60" />
+    <circle cx="820" cy="100" r="32" />
+    <circle cx="640" cy="240" r="48" />
+  </g>
+
+  <!-- Central Glow for Proposal Subject -->
+  <circle cx="450" cy="280" r="260" fill="url(#ringGlow_mc013)" opacity="0.6" />
+
+  <!-- Composition: Velvet Ring Box, Golden Ring, Red Rose & Lovers' Hands Silhouette -->
+  <g transform="translate(200, 110)">
+    <!-- Silhouetted Lovers' Hands Meeting Above Box (Tender Gesture) -->
+    <g transform="translate(130, 20)" opacity="0.5">
+      <!-- Left Hand (Offering / Holding) -->
+      <path d="M50,80 Q90,65 140,75 Q160,82 170,95 Q145,105 100,105 Z" fill="#0d060a" />
+      <!-- Right Hand (Receiving / Clasping) -->
+      <path d="M290,80 Q250,65 200,75 Q180,82 170,95 Q195,105 240,105 Z" fill="#0d060a" />
+    </g>
+
+    <!-- Open Antique Velvet Ring Box (Center) -->
+    <g transform="translate(190, 120)">
+      <!-- Box Cast Shadow -->
+      <ellipse cx="60" cy="155" rx="75" ry="24" fill="#080306" opacity="0.6" />
+
+      <!-- Lower Box Half (Open Base) -->
+      <polygon points="10,105 110,105 120,150 0,150" fill="url(#boxGrad_mc013)" stroke="#7a141e" stroke-width="1.5" />
+      <ellipse cx="60" cy="105" rx="50" ry="18" fill="#1c0305" stroke="#7a141e" stroke-width="1.5" />
+
+      <!-- Black Velvet Ring Pillow Inside -->
+      <ellipse cx="60" cy="105" rx="42" ry="14" fill="#0a0203" />
+      <line x1="35" y1="105" x2="85" y2="105" stroke="#24070a" stroke-width="4" stroke-linecap="round" />
+
+      <!-- Upper Box Half (Lid Opened Backwards) -->
+      <polygon points="10,105 110,105 125,45 -5,45" fill="url(#boxGrad_mc013)" stroke="#7a141e" stroke-width="1.5" />
+      <polygon points="5,52 115,52 105,100 15,100" fill="#2d050a" />
+      <!-- White Silk Ruched Lining inside Lid -->
+      <polygon points="15,58 105,58 95,94 25,94" fill="#f5ede1" stroke="#d4af37" stroke-width="0.8" opacity="0.8" />
+      <line x1="25" y1="76" x2="95" y2="76" stroke="#d5c3a5" stroke-width="0.8" />
+
+      <!-- Sparkling Diamond Solitaire Engagement Ring Standing in Velvet Slit -->
+      <g transform="translate(60, 95)">
+        <!-- Gold Ring Band -->
+        <ellipse cx="0" cy="0" rx="16" ry="18" fill="none" stroke="#ffd166" stroke-width="3.5" />
+        <ellipse cx="0" cy="0" rx="16" ry="18" fill="none" stroke="#fff5db" stroke-width="1" opacity="0.7" />
+        <!-- Six-Prong Crown Setting -->
+        <polygon points="-5,-18 5,-18 3,-14 -3,-14" fill="#ffd166" />
+        <!-- Sparkling Diamond Gem -->
+        <polygon points="-7,-22 7,-22 10,-18 0,-12 -10,-18" fill="#ffffff" stroke="#c4e3f7" stroke-width="0.8" />
+        <polygon points="-4,-20 4,-20 0,-14" fill="#e8f4fd" />
+        <!-- Star Sparkle Flares -->
+        <line x1="0" y1="-30" x2="0" y2="-10" stroke="#ffffff" stroke-width="1.5" opacity="0.9" />
+        <line x1="-10" y1="-20" x2="10" y2="-20" stroke="#ffffff" stroke-width="1.5" opacity="0.9" />
+        <line x1="-6" y1="-26" x2="6" y2="-14" stroke="#ffd166" stroke-width="0.8" />
+        <line x1="6" y1="-26" x2="-6" y2="-14" stroke="#ffd166" stroke-width="0.8" />
+      </g>
+    </g>
+
+    <!-- Long-Stemmed Blooming Red Rose Beside the Box -->
+    <g transform="translate(70, 160) rotate(-15)">
+      <!-- Stem Shadow -->
+      <path d="M45,75 Q85,135 145,185" fill="none" stroke="#080306" stroke-width="4.5" opacity="0.45" />
+      <!-- Rose Stem -->
+      <path d="M42,72 Q82,132 142,182" fill="none" stroke="#2a3d1e" stroke-width="3.5" stroke-linecap="round" />
+      <!-- Rose Leaves -->
+      <path d="M72,110 Q98,100 102,118 Q85,122 72,110 Z" fill="#203016" />
+      <path d="M105,145 Q85,138 82,156 Q98,155 105,145 Z" fill="#203016" />
+      <!-- Blossom Petals -->
+      <g transform="translate(20, 30)">
+        <ellipse cx="28" cy="38" rx="22" ry="18" fill="#570d14" />
+        <path d="M10,34 C10,16 46,16 46,34 C46,50 10,50 10,34 Z" fill="#7a141d" />
+        <path d="M16,30 C18,18 38,18 40,30 C38,42 18,42 16,30 Z" fill="#9e1e2b" />
+        <path d="M22,26 C24,20 32,20 34,26 C32,32 24,32 22,26 Z" fill="#c72e3d" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Film Grain Overlay -->
+  <rect width="900" height="600" fill="url(#grain_mc013)" />
+
+  <!-- Minimal Gold / Double Frame Vintage Border -->
+  <rect x="25" y="25" width="850" height="550" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.55" rx="6" />
+  <rect x="33" y="33" width="834" height="534" fill="none" stroke="#d4af37" stroke-width="0.8" opacity="0.35" rx="4" />
+
+  <!-- Corner Filigrees -->
+  <g stroke="#d4af37" stroke-width="1.8" fill="none" opacity="0.75">
+    <path d="M42,65 L42,42 L65,42 M48,48 L58,48 M48,48 L48,58" />
+    <path d="M858,65 L858,42 L835,42 M852,48 L842,48 M852,48 L852,58" />
+    <path d="M42,535 L42,558 L65,558 M48,552 L58,552 M48,552 L48,542" />
+    <path d="M858,535 L858,558 L835,558 M852,552 L842,552 M852,552 L852,542" />
+  </g>
+
+  <!-- Vintage Proposal Stamp (Top Right) -->
+  <g transform="translate(740, 48)">
+    <rect x="0" y="0" width="84" height="102" fill="#1e1017" stroke="#d4af37" stroke-width="1.5" rx="2" opacity="0.9" />
+    <rect x="6" y="6" width="72" height="90" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.6" />
+    <text x="42" y="24" text-anchor="middle" font-family="'Cinzel', serif" font-size="8" fill="#d4af37" letter-spacing="1">PROMISE</text>
+    <circle cx="42" cy="52" r="16" fill="none" stroke="#d4af37" stroke-width="1.2" opacity="0.8" />
+    <!-- Diamond icon inside stamp -->
+    <polygon points="42,44 48,50 42,58 36,50" fill="#ffd166" />
+    <text x="42" y="82" text-anchor="middle" font-family="'Special Elite', monospace" font-size="10" font-weight="bold" fill="#f8edd6">FOREVER</text>
+    <text x="42" y="93" text-anchor="middle" font-family="'Special Elite', monospace" font-size="7" fill="#c2a77a">WEDDING BELLS</text>
+    <!-- Cancellation waves -->
+    <path d="M-25,30 Q-10,20 5,30 T35,30 T65,30 T95,30" fill="none" stroke="#12060d" stroke-width="1.8" opacity="0.75" />
+    <path d="M-25,50 Q-10,40 5,50 T35,50 T65,50 T95,50" fill="none" stroke="#12060d" stroke-width="1.8" opacity="0.75" />
+  </g>
+</svg>

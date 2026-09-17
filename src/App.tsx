@@ -18,6 +18,7 @@ import { postcards } from './data/postcards';
 import { quotes } from './data/quotes';
 import { cardMatchesCategory } from './data/categories';
 import { parseShareParams } from './utils/shareCard';
+import { applyPageSeo } from './utils/seo';
 
 export default function App() {
   const [activePage, setActivePage] = useState<string>('home');
@@ -33,32 +34,62 @@ export default function App() {
     string | undefined
   >(undefined);
 
-  // Parse URL search params on mount for direct page or shared card loading
+  // Synchronize SEO tags and JSON-LD schema dynamically when page changes
   useEffect(() => {
-    try {
-      const params = new URLSearchParams(window.location.search);
-      const pageParam = params.get('page');
-      const shareData = parseShareParams();
+    applyPageSeo(activePage);
+  }, [activePage]);
 
-      if (shareData && shareData.cardId) {
-        const matched = postcards.find((c) => c.id === shareData.cardId);
-        if (matched) {
-          setSelectedCardForGenerator(matched);
-          if (shareData.quoteId) {
-            const matchedQuote = quotes.find((q) => q.id === shareData.quoteId);
-            if (matchedQuote) setSelectedQuoteForGenerator(matchedQuote);
+  // Parse URL on mount and handle browser back/forward buttons
+  useEffect(() => {
+    const handleUrlChange = () => {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const pageParam = params.get('page');
+        const shareData = parseShareParams();
+
+        if (shareData && shareData.cardId) {
+          const matched = postcards.find((c) => c.id === shareData.cardId);
+          if (matched) {
+            setSelectedCardForGenerator(matched);
+            if (shareData.quoteId) {
+              const matchedQuote = quotes.find((q) => q.id === shareData.quoteId);
+              if (matchedQuote) setSelectedQuoteForGenerator(matchedQuote);
+            }
+            if (shareData.customization) {
+              setSelectedCustomizationForGenerator(shareData.customization);
+            }
+            setActivePage('generator');
+            return;
           }
-          if (shareData.customization) {
-            setSelectedCustomizationForGenerator(shareData.customization);
-          }
-          setActivePage('generator');
-          return;
         }
-      }
 
-      if (
-        pageParam &&
-        [
+        // Support both query param (?page=postcards) and clean pathname (/postcards, /vintage-gallery)
+        const pathname = window.location.pathname.replace(/^\/+|\/+$/g, '');
+        let targetPage = 'home';
+
+        if (pageParam) {
+          targetPage = pageParam === 'vintage-gallery' ? 'gallery' : pageParam;
+        } else if (pathname) {
+          if (pathname === 'vintage-gallery' || pathname === 'gallery') {
+            targetPage = 'gallery';
+          } else if (
+            [
+              'postcards',
+              'generator',
+              'quotes',
+              'categories',
+              'favorites',
+              'my-creations',
+              'privacy',
+              'terms',
+              'contact'
+            ].includes(pathname)
+          ) {
+            targetPage = pathname;
+          }
+        }
+
+        const validPages = [
           'home',
           'postcards',
           'generator',
@@ -70,22 +101,42 @@ export default function App() {
           'privacy',
           'terms',
           'contact'
-        ].includes(pageParam)
-      ) {
-        setActivePage(pageParam);
+        ];
+
+        if (validPages.includes(targetPage)) {
+          setActivePage(targetPage);
+        } else {
+          setActivePage('home');
+        }
+      } catch (err) {
+        console.warn('Error reading URL parameters:', err);
       }
-    } catch (err) {
-      console.warn('Error reading URL parameters:', err);
-    }
+    };
+
+    handleUrlChange();
+    window.addEventListener('popstate', handleUrlChange);
+    return () => window.removeEventListener('popstate', handleUrlChange);
   }, []);
 
-  // Scroll to top when switching pages
+  // Navigate and update browser URL without hard reloads
   const handleNavigate = (page: string) => {
     if (page === 'generator') {
       setSelectedCustomizationForGenerator(undefined);
       setSelectedCreationIdForGenerator(undefined);
     }
     setActivePage(page);
+
+    try {
+      const routeSlug = page === 'gallery' ? 'vintage-gallery' : page;
+      const targetUrl = page === 'home' ? '/' : `/${routeSlug}`;
+      const currentUrl = window.location.pathname + window.location.search;
+      if (currentUrl !== targetUrl) {
+        window.history.pushState({ page }, '', targetUrl);
+      }
+    } catch (err) {
+      // Ignored if restricted in iframe
+    }
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -210,6 +261,7 @@ export default function App() {
             onSelectCategoryFilter={(catName) => {
               handleSelectOccasionToCreate(catName);
             }}
+            onNavigate={handleNavigate}
           />
         )}
 

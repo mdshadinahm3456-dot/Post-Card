@@ -11,7 +11,7 @@ export const Privacy: React.FC = () => {
           <span>LEGAL & PRIVACY</span>
         </div>
         <h1 className="font-bengali-serif text-3xl sm:text-4xl font-bold">
-          গোপনীয়তা নীতি (Privacy Policy)
+          Privacy Policy | Magic Card
         </h1>
         <p className="font-bengali-body text-xs text-[#a89882]">
           সর্বশেষ হালনাগাদ: {new Date().toLocaleDateString('bn-BD')}

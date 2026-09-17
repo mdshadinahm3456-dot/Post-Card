@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <!-- Room Interior Ambient Gradient -->
+    <linearGradient id="roomGrad_mc011" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141113" />
+      <stop offset="50%" stop-color="#1b1417" />
+      <stop offset="100%" stop-color="#0d0a0b" />
+    </linearGradient>
+
+    <!-- Rainy Sky Outside Open Window -->
+    <linearGradient id="rainSky_mc011" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d141e" />
+      <stop offset="50%" stop-color="#162230" />
+      <stop offset="100%" stop-color="#0b1117" />
+    </linearGradient>
+
+    <!-- Warm Candle Flame Glow -->
+    <radialGradient id="candleGlow_mc011" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff0cc" stop-opacity="0.95" />
+      <stop offset="30%" stop-color="#f59e0b" stop-opacity="0.5" />
+      <stop offset="70%" stop-color="#d4af37" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#1b1417" stop-opacity="0" />
+    </radialGradient>
+
+    <pattern id="grain_mc011" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="0.7" fill="#d4af37" opacity="0.08" />
+      <circle cx="16" cy="18" r="0.8" fill="#ffffff" opacity="0.04" />
+      <circle cx="23" cy="11" r="0.6" fill="#000000" opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <!-- Interior Canvas -->
+  <rect width="900" height="600" fill="url(#roomGrad_mc011)" />
+
+  <!-- Wooden Floor Planks -->
+  <g stroke="#080607" stroke-width="1.8" opacity="0.65">
+    <line x1="0" y1="360" x2="900" y2="360" stroke="#36222b" stroke-width="2" />
+    <line x1="0" y1="430" x2="900" y2="430" />
+    <line x1="0" y1="510" x2="900" y2="510" />
+  </g>
+
+  <!-- Large Open Vintage Window (Left / Center) -->
+  <g transform="translate(100, 50)">
+    <!-- Outside Night Sky with Rain -->
+    <rect x="0" y="0" width="380" height="310" fill="url(#rainSky_mc011)" rx="3" />
+
+    <!-- Distant Street Fog / Soft Glow Outside -->
+    <circle cx="240" cy="160" r="30" fill="#ffd166" opacity="0.15" />
+
+    <!-- Distant Foliage Silhouette in Rain -->
+    <path d="M0,240 Q120,210 240,230 T380,220 L380,310 L0,310 Z" fill="#070c12" />
+
+    <!-- Diagonal Rain Streaks Outside Window -->
+    <g stroke="#7b9cb2" stroke-width="0.8" opacity="0.4" stroke-linecap="round">
+      <line x1="50" y1="20" x2="25" y2="80" />
+      <line x1="120" y1="10" x2="95" y2="75" />
+      <line x1="180" y1="40" x2="155" y2="105" />
+      <line x1="240" y1="20" x2="215" y2="90" />
+      <line x1="310" y1="35" x2="285" y2="105" />
+      <line x1="70" y1="120" x2="45" y2="190" />
+      <line x1="140" y1="110" x2="115" y2="180" />
+      <line x1="200" y1="130" x2="175" y2="200" />
+      <line x1="270" y1="115" x2="245" y2="185" />
+      <line x1="330" y1="130" x2="305" y2="200" />
+    </g>
+
+    <!-- Heavy Wooden Window Frame & Sill -->
+    <rect x="-12" y="-12" width="404" height="334" fill="none" stroke="#261b1e" stroke-width="14" rx="2" />
+    <!-- Window Sill with Rain Splashes -->
+    <rect x="-24" y="305" width="428" height="20" fill="#36262b" stroke="#1c1215" stroke-width="2" rx="2" />
+    <!-- Open Window Panes Pushed Outward -->
+    <polygon points="0,0 -40,40 -40,300 0,310" fill="#1b1215" stroke="#36262b" stroke-width="2" />
+    <polygon points="380,0 420,40 420,300 380,310" fill="#1b1215" stroke="#36262b" stroke-width="2" />
+  </g>
+
+  <!-- Warm Candle on Small Table (Right Foreground) -->
+  <g transform="translate(560, 240)">
+    <!-- Small Round Wooden Side Table -->
+    <ellipse cx="60" cy="180" rx="95" ry="24" fill="#090608" opacity="0.6" />
+    <ellipse cx="60" cy="140" rx="90" ry="26" fill="#2d1c23" stroke="#4a2e39" stroke-width="2" />
+    <!-- Table Pedestal / Legs -->
+    <line x1="60" y1="140" x2="60" y2="250" stroke="#24151b" stroke-width="12" />
+    <line x1="60" y1="240" x2="20" y2="280" stroke="#24151b" stroke-width="6" stroke-linecap="round" />
+    <line x1="60" y1="240" x2="100" y2="280" stroke="#24151b" stroke-width="6" stroke-linecap="round" />
+
+    <!-- Candle Ambient Glow Halo -->
+    <circle cx="35" cy="55" r="140" fill="url(#candleGlow_mc011)" />
+
+    <!-- Brass Candleholder & Candle -->
+    <ellipse cx="35" cy="115" rx="18" ry="6" fill="#b08632" stroke="#634915" stroke-width="1.2" />
+    <rect x="32" y="85" width="6" height="30" fill="#ebdcc0" stroke="#948067" stroke-width="0.8" />
+    <!-- Candle Flame & Wick -->
+    <line x1="35" y1="85" x2="35" y2="78" stroke="#1a120b" stroke-width="1.2" />
+    <ellipse cx="35" cy="74" rx="4" ry="7" fill="#ff9f1c" />
+    <ellipse cx="35" cy="75" rx="2" ry="4" fill="#ffffff" />
+
+    <!-- Unfolded Letter Resting on Table -->
+    <polygon points="55,120 115,110 135,135 75,145" fill="#f2e8d3" stroke="#b09e86" stroke-width="1" />
+    <!-- Cursive Lines on Letter -->
+    <g stroke="#423329" stroke-width="0.8" opacity="0.65">
+      <line x1="68" y1="124" x2="108" y2="117" />
+      <line x1="72" y1="130" x2="115" y2="123" />
+      <line x1="78" y1="136" x2="120" y2="129" />
+    </g>
+
+    <!-- Slender Glass Bud Vase with Single Drooping Crimson Rose / Poppy -->
+    <g transform="translate(100, 60)">
+      <!-- Glass Vase -->
+      <polygon points="12,40 18,40 20,70 10,70" fill="#597080" opacity="0.4" stroke="#8fa9ba" stroke-width="0.8" />
+      <!-- Water Level -->
+      <polygon points="11,55 19,55 20,68 10,68" fill="#8fa9ba" opacity="0.5" />
+      <!-- Slender Stem Drooping Gently -->
+      <path d="M15,50 Q10,15 -10,8" fill="none" stroke="#2d4024" stroke-width="2" stroke-linecap="round" />
+      <!-- Drooping Velvet Crimson Petals -->
+      <circle cx="-14" cy="10" r="7" fill="#8c1b26" />
+      <circle cx="-16" cy="12" r="5" fill="#ab2432" />
+      <circle cx="-15" cy="11" r="2.5" fill="#570d14" />
+      <!-- Dropped Petal on Table -->
+      <ellipse cx="-5" cy="72" rx="4" ry="2" fill="#8c1b26" transform="rotate(15, -5, 72)" />
+    </g>
+  </g>
+
+  <!-- Solitary Empty Wooden Armchair Facing Window (Center Left) -->
+  <g transform="translate(240, 240)">
+    <!-- Floor Cast Shadow -->
+    <ellipse cx="65" cy="205" rx="90" ry="24" fill="#080507" opacity="0.65" />
+
+    <!-- Chair Backrest & Slats (Turned Toward Window) -->
+    <rect x="25" y="40" width="10" height="135" fill="#2d1c23" stroke="#4a2e39" stroke-width="1.5" />
+    <rect x="85" y="40" width="10" height="135" fill="#2d1c23" stroke="#4a2e39" stroke-width="1.5" />
+    <!-- Backrest Top Rail & Curved Splats -->
+    <rect x="20" y="32" width="80" height="16" rx="3" fill="#3b242e" stroke="#1c1015" stroke-width="1.2" />
+    <line x1="45" y1="48" x2="45" y2="135" stroke="#36222b" stroke-width="4" />
+    <line x1="60" y1="48" x2="60" y2="135" stroke="#36222b" stroke-width="4" />
+    <line x1="75" y1="48" x2="75" y2="135" stroke="#36222b" stroke-width="4" />
+
+    <!-- Cushioned Seat -->
+    <polygon points="15,135 105,135 95,155 25,155" fill="#4a1824" stroke="#692233" stroke-width="1.5" />
+
+    <!-- Chair Legs -->
+    <line x1="28" y1="155" x2="22" y2="215" stroke="#24151b" stroke-width="6" stroke-linecap="round" />
+    <line x1="92" y1="155" x2="98" y2="215" stroke="#24151b" stroke-width="6" stroke-linecap="round" />
+    <line x1="38" y1="148" x2="35" y2="200" stroke="#170c12" stroke-width="5" stroke-linecap="round" />
+    <line x1="82" y1="148" x2="85" y2="200" stroke="#170c12" stroke-width="5" stroke-linecap="round" />
+
+    <!-- Stretcher Bars -->
+    <line x1="25" y1="190" x2="95" y2="190" stroke="#24151b" stroke-width="3" />
+  </g>
+
+  <!-- Film Grain Overlay -->
+  <rect width="900" height="600" fill="url(#grain_mc011)" />
+
+  <!-- Classic Postcard Border -->
+  <rect x="25" y="25" width="850" height="550" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.5" rx="6" />
+  <rect x="34" y="34" width="832" height="532" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="6 3" opacity="0.35" rx="4" />
+
+  <!-- Corner Filigrees -->
+  <g stroke="#d4af37" stroke-width="1.8" fill="none" opacity="0.75">
+    <path d="M42,65 L42,42 L65,42 M48,48 L58,48 M48,48 L48,58" />
+    <path d="M858,65 L858,42 L835,42 M852,48 L842,48 M852,48 L852,58" />
+    <path d="M42,535 L42,558 L65,558 M48,552 L58,552 M48,552 L48,542" />
+    <path d="M858,535 L858,558 L835,558 M852,552 L842,552 M852,552 L852,542" />
+  </g>
+
+  <!-- Vintage Missing You Postage Stamp (Top Right) -->
+  <g transform="translate(740, 48)">
+    <rect x="0" y="0" width="84" height="102" fill="#1b1216" stroke="#d4af37" stroke-width="1.5" rx="2" opacity="0.9" />
+    <rect x="6" y="6" width="72" height="90" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.6" />
+    <text x="42" y="24" text-anchor="middle" font-family="'Cinzel', serif" font-size="8" fill="#d4af37" letter-spacing="1">LONGING</text>
+    <circle cx="42" cy="52" r="16" fill="none" stroke="#d4af37" stroke-width="1.2" opacity="0.8" />
+    <!-- Candle icon in stamp -->
+    <line x1="42" y1="46" x2="42" y2="58" stroke="#d4af37" stroke-width="2" />
+    <circle cx="42" cy="43" r="2.5" fill="#ffd166" />
+    <text x="42" y="82" text-anchor="middle" font-family="'Special Elite', monospace" font-size="10" font-weight="bold" fill="#f8edd6">1954</text>
+    <text x="42" y="93" text-anchor="middle" font-family="'Special Elite', monospace" font-size="7" fill="#c2a77a">POSTE RESTANTE</text>
+    <!-- Cancellation waves -->
+    <path d="M-25,30 Q-10,20 5,30 T35,30 T65,30 T95,30" fill="none" stroke="#0e080b" stroke-width="1.8" opacity="0.75" />
+    <path d="M-25,50 Q-10,40 5,50 T35,50 T65,50 T95,50" fill="none" stroke="#0e080b" stroke-width="1.8" opacity="0.75" />
+  </g>
+</svg>

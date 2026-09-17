@@ -6,7 +6,7 @@ import { SearchBar } from '../components/SearchBar';
 import { cardMatchesCategory } from '../data/categories';
 import { bengaliIncludes, toBengaliNumber } from '../utils/bengaliUtils';
 import { PostcardTemplate } from '../types';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, ArrowRight } from 'lucide-react';
 
 interface PostcardsProps {
   onSelectCard: (card: PostcardTemplate) => void;
@@ -42,12 +42,24 @@ export const Postcards: React.FC<PostcardsProps> = ({ onSelectCard, onNavigate }
           <span>VINTAGE TEMPLATE ARCHIVE</span>
         </div>
         <h1 className="font-bengali-serif text-3xl sm:text-4xl font-bold text-[#f7f0df]">
-          কার্ডসমূহ
+          Vintage Postcard Templates
         </h1>
         <p className="font-bengali-body text-sm sm:text-base text-[#b8a791] leading-relaxed">
-          আপনার মনের অনুভূতির সাথে মানানসই ক্লাসিক পোস্টকার্ড টেমপ্লেট নির্বাচন করুন।
-          প্রতিটি কার্ডের সাথে রয়েছে নিজস্ব ভিন্টেজ ফ্রেম, ব্যাকগ্রাউন্ড ও নান্দনিক ফন্ট।
+          সুন্দর Vintage Postcard Template বেছে নিন এবং আপনার পছন্দের লেখা দিয়ে নিজের Magic Card তৈরি করুন। আমাদের এই সমৃদ্ধ সংগ্রহে রয়েছে ক্লাসিক প্রেমের কার্ড, বৃষ্টিভেজা রোমান্টিক কার্ড ও নস্টালজিক Bengali vintage card।
         </p>
+        <div className="pt-1">
+          <a
+            href="/generator"
+            onClick={(e) => {
+              e.preventDefault();
+              onNavigate('generator');
+            }}
+            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bengali-body text-[#ffd166] hover:text-[#f8edd6] transition-colors cursor-pointer group"
+          >
+            <span>পছন্দের কার্ড কাস্টমাইজ করতে সরাসরি জেনারেটরে যান</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+          </a>
+        </div>
       </div>
 
       {/* Search and Category Filter */}

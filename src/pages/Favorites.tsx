@@ -252,7 +252,11 @@ export const Favorites: React.FC<FavoritesProps> = ({
                     <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                       <img
                         src={item.image}
-                        alt={item.title}
+                        alt={item.alt || `${item.title} – ভিন্টেজ প্রেমের পোস্টকার্ড আর্ট`}
+                        width={item.width || 800}
+                        height={item.height || 600}
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover"
                       />
                       <div className="absolute top-2 right-2">

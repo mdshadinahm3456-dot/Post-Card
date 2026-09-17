@@ -3,130 +3,194 @@ import { GalleryItem } from '../types';
 export const gallery: GalleryItem[] = [
   {
     id: 'g001',
-    image: '/assets/gallery/g001.svg',
+    image: '/assets/gallery/vintage-love-stories-artwork.svg',
     category: 'Vintage Love',
     title: 'Some Stories Never End',
     quoteEnglish: 'Some stories never end, they just stay silently in our heart.',
-    quoteBengali: 'কিছু গল্পের কখনো সমাপ্তি ঘটে না, হৃদয়ের গভীরে চিরকাল থেকে যায়।'
+    quoteBengali: 'কিছু গল্পের কখনো সমাপ্তি ঘটে না, হৃদয়ের গভীরে চিরকাল থেকে যায়।',
+    description: 'কিছু গল্পের কখনো সমাপ্তি ঘটে না - ভিন্টেজ প্রেমের ফ্রেম করা রেডিমেড আর্টওয়ার্ক।',
+    alt: 'কিছু গল্পের কখনো সমাপ্তি ঘটে না – Vintage Love Art Frame',
+    width: 800,
+    height: 600
   },
   {
     id: 'g002',
-    image: '/assets/gallery/g002.svg',
+    image: '/assets/gallery/forever-begins-memory-artwork.svg',
     category: 'Vintage Love',
     title: 'Forever Begins With A Memory',
     quoteEnglish: 'Forever begins with a memory.',
-    quoteBengali: 'অনন্তকালের শুরু হয় একটি সুন্দর স্মৃতি দিয়ে।'
+    quoteBengali: 'অনন্তকালের শুরু হয় একটি সুন্দর স্মৃতি দিয়ে।',
+    description: 'অনন্তকালের শুরু একটি সুন্দর স্মৃতি দিয়ে - রোমান্টিক ভিন্টেজ আর্ট ফ্রেম।',
+    alt: 'অনন্তকালের শুরু একটি সুন্দর স্মৃতি দিয়ে – Romantic Vintage Art Frame',
+    width: 800,
+    height: 600
   },
   {
     id: 'g003',
-    image: '/assets/gallery/g003.svg',
+    image: '/assets/gallery/bengali-classic-tumi-chhile-artwork.svg',
     category: 'Bengali Classic',
     title: 'তুমি ছিলে, তাই গল্পটা সুন্দর ছিল',
     quoteBengali: 'তুমি ছিলে, তাই গল্পটা এতো বেশি সুন্দর ছিল।',
-    quoteEnglish: 'You were there, that made the story magical.'
+    quoteEnglish: 'You were there, that made the story magical.',
+    description: 'তুমি ছিলে, তাই গল্পটা এতো বেশি সুন্দর ছিল - ক্লাসিক বাংলা প্রেমের উক্তি আর্ট।',
+    alt: 'তুমি ছিলে তাই গল্পটা সুন্দর ছিল – Bengali Vintage Quote Artwork',
+    width: 800,
+    height: 600
   },
   {
     id: 'g004',
-    image: '/assets/gallery/g004.svg',
+    image: '/assets/gallery/memories-never-age-artwork.svg',
     category: 'Bengali Classic',
     title: 'কিছু স্মৃতি কখনো পুরনো হয় না',
     quoteBengali: 'কিছু স্মৃতি কখনো পুরনো হয় না, দিন যত যায় ততই জীবন্ত হয়।',
-    quoteEnglish: 'Some memories never age.'
+    quoteEnglish: 'Some memories never age.',
+    description: 'কিছু স্মৃতি কখনো পুরনো হয় না, দিন যত যায় ততই জীবন্ত হয় - ভিন্টেজ উক্তি কার্ড।',
+    alt: 'কিছু স্মৃতি কখনো পুরনো হয় না – Vintage Quote Postcard Artwork',
+    width: 800,
+    height: 600
   },
   {
     id: 'g005',
-    image: '/assets/gallery/g005.svg',
+    image: '/assets/gallery/monsoon-rain-romance-artwork.svg',
     category: 'Rain Romance',
     title: 'আষাঢ়ের প্রথম বৃষ্টি',
     quoteBengali: 'বৃষ্টির প্রতিটি ফোঁটায় তোমার সাথে না-হাঁটা পথগুলোর গল্প।',
-    quoteEnglish: 'The monsoon whispers the paths we never walked together.'
+    quoteEnglish: 'The monsoon whispers the paths we never walked together.',
+    description: 'বৃষ্টির প্রতিটি ফোঁটায় তোমার সাথে না-হাঁটা পথগুলোর গল্প - মনসুন রোমান্স আর্ট।',
+    alt: 'আষাঢ়ের প্রথম বৃষ্টি ও না-হাঁটা পথের গল্প – Rainy Love Vintage Art',
+    width: 800,
+    height: 600
   },
   {
     id: 'g006',
-    image: '/assets/gallery/g006.svg',
+    image: '/assets/gallery/old-letter-archive-artwork.svg',
     category: 'Old Letter Archive',
     title: 'ডাকবাক্সের হলুদ খাম',
     quoteBengali: 'আমার সব না-বলা অভিমান এক নিঃশ্বাসে তোমার ঠিকানায় পাঠিয়ে দিলাম।',
-    quoteEnglish: 'All my unspoken longing sent to your quiet address.'
+    quoteEnglish: 'All my unspoken longing sent to your quiet address.',
+    description: 'আমার সব না-বলা অভিমান এক নিঃশ্বাসে তোমার ঠিকানায় পাঠিয়ে দিলাম - ভিন্টেজ প্রেমপত্র আর্ট।',
+    alt: 'ডাকবাক্সের হলুদ খাম ও না-বলা অভিমান – Vintage Love Letter Artwork',
+    width: 800,
+    height: 600
   },
   {
     id: 'g007',
-    image: '/assets/gallery/g007.svg',
+    image: '/assets/gallery/midnight-thoughts-stars-artwork.svg',
     category: 'Midnight Thoughts',
     title: 'নিশুতি রাতের তারা',
     quoteBengali: 'রাত বাড়লে ঘুম আসে না, কেবল তোমার ছায়ারা এসে কড়া নাড়ে।',
-    quoteEnglish: 'When the night deepens, only your silhouettes knock.'
+    quoteEnglish: 'When the night deepens, only your silhouettes knock.',
+    description: 'রাত বাড়লে ঘুম আসে না, কেবল তোমার ছায়ারা এসে কড়া নাড়ে - রাতের অনুভূতি আর্ট।',
+    alt: 'নিশুতি রাতের অনুভূতি ও তারা – Midnight Romantic Vintage Artwork',
+    width: 800,
+    height: 600
   },
   {
     id: 'g008',
-    image: '/assets/gallery/g008.svg',
+    image: '/assets/gallery/autumn-river-nostalgia-artwork.svg',
     category: 'Vintage Love',
     title: 'Written in the Stars',
     quoteEnglish: 'We are two souls tangled across vintage skies.',
-    quoteBengali: 'আমরা সেই দুই নক্ষত্র, যারা মহাকালের আকাশে প্রেমের আলো ছড়ায়।'
+    quoteBengali: 'আমরা সেই দুই নক্ষত্র, যারা মহাকালের আকাশে প্রেমের আলো ছড়ায়।',
+    description: 'আমরা সেই দুই নক্ষত্র, যারা মহাকালের আকাশে প্রেমের আলো ছড়ায় - ভিন্টেজ স্টার আর্ট।',
+    alt: 'মহাকালের আকাশে প্রেমের আলো – Written in the Stars Vintage Art',
+    width: 800,
+    height: 600
   },
   {
     id: 'g009',
-    image: '/assets/gallery/g009.svg',
+    image: '/assets/gallery/winter-foggy-tea-stall-artwork.svg',
     category: 'Heartbreak & Echoes',
     title: 'হারিয়ে যাওয়া বসন্ত',
     quoteBengali: 'ভালোবাসা শেষ হয়ে যায়, কিন্তু অভ্যেসগুলো থেকে যায় জীবনভর।',
-    quoteEnglish: 'Love fades away, yet habits linger for a lifetime.'
+    quoteEnglish: 'Love fades away, yet habits linger for a lifetime.',
+    description: 'ভালোবাসা শেষ হয়ে যায়, কিন্তু অভ্যেসগুলো থেকে যায় জীবনভর - বিরহ ও স্মৃতির আর্ট।',
+    alt: 'হারিয়ে যাওয়া বসন্ত ও বিরহের স্মৃতি – Heartbreak Echoes Vintage Art',
+    width: 800,
+    height: 600
   },
   {
     id: 'g010',
-    image: '/assets/gallery/g010.svg',
+    image: '/assets/gallery/antique-pocket-watch-artwork.svg',
     category: 'Old Letter Archive',
     title: 'Seal of Devotion',
     quoteEnglish: 'Sealed with devotion, signed with tears of joy.',
-    quoteBengali: 'ভালোবাসার লাল মোম দিয়ে সীলমোহর করা চিরন্তন পত্র।'
+    quoteBengali: 'ভালোবাসার লাল মোম দিয়ে সীলমোহর করা চিরন্তন পত্র।',
+    description: 'ভালোবাসার লাল মোম দিয়ে সীলমোহর করা চিরন্তন পত্র - ওল্ড লেটার আর্কাইভ আর্ট।',
+    alt: 'ভালোবাসার লাল মোম দিয়ে সীলমোহর – Seal of Devotion Vintage Art',
+    width: 800,
+    height: 600
   },
   {
     id: 'g011',
-    image: '/assets/gallery/g011.svg',
+    image: '/assets/gallery/vintage-train-journey-artwork.svg',
     category: 'Bengali Classic',
     title: 'রবীন্দ্রনাথের সুর',
     quoteBengali: 'আমার পরান যাহা চায়, তুমি তাই—তুমি তাই গো।',
-    quoteEnglish: 'Whatever my soul yearns for, you are that.'
+    quoteEnglish: 'Whatever my soul yearns for, you are that.',
+    description: 'আমার পরান যাহা চায়, তুমি তাই—তুমি তাই গো - রবীন্দ্রসংগীতের ক্লাসিক আর্ট ফ্রেম।',
+    alt: 'আমার পরান যাহা চায় তুমি তাই – রবীন্দ্রনাথের গানের Vintage Art',
+    width: 800,
+    height: 600
   },
   {
     id: 'g012',
-    image: '/assets/gallery/g012.svg',
+    image: '/assets/gallery/zamindar-terrace-courtyard-artwork.svg',
     category: 'Rain Romance',
     title: 'ভেজা ছাতা ও তুমি',
     quoteBengali: 'এক ফোঁটা জলের স্পর্শেও যেন তোমার কোমল ছোঁয়া পাই।',
-    quoteEnglish: 'Even in a single raindrop, I feel your gentle touch.'
+    quoteEnglish: 'Even in a single raindrop, I feel your gentle touch.',
+    description: 'এক ফোঁটা জলের স্পর্শেও যেন তোমার কোমল ছোঁয়া পাই - রেইন রোমান্স আর্টওয়ার্ক।',
+    alt: 'ভেজা ছাতা ও বৃষ্টির অনুভূতির Vintage Art Frame',
+    width: 800,
+    height: 600
   },
   {
     id: 'g013',
-    image: '/assets/gallery/g013.svg',
+    image: '/assets/gallery/gramophone-serenade-artwork.svg',
     category: 'Midnight Thoughts',
     title: 'জোছনায় ভেজা প্রেম',
     quoteBengali: 'চাঁদের আলোতে লেখা হোক আমাদের অসমাপ্ত ভালোবাসার উপাখ্যান।',
-    quoteEnglish: 'Let our unwritten romance be inscribed under the moonlight.'
+    quoteEnglish: 'Let our unwritten romance be inscribed under the moonlight.',
+    description: 'চাঁদের আলোতে লেখা হোক আমাদের অসমাপ্ত ভালোবাসার উপাখ্যান - মধ্যরাতের রোমান্স।',
+    alt: 'জোছনায় ভেজা প্রেম ও অসমাপ্ত ভালোবাসার Vintage Art',
+    width: 800,
+    height: 600
   },
   {
     id: 'g014',
-    image: '/assets/gallery/g014.svg',
+    image: '/assets/gallery/lantern-monsoon-window-artwork.svg',
     category: 'Vintage Love',
     title: 'Echoes of 1948',
     quoteEnglish: 'Time passes, love lingers forever.',
-    quoteBengali: 'সময় বয়ে যায়, ভালোবাসা থেকে যায় অনন্তকাল।'
+    quoteBengali: 'সময় বয়ে যায়, ভালোবাসা থেকে যায় অনন্তকাল।',
+    description: 'সময় বয়ে যায়, ভালোবাসা থেকে যায় অনন্তকাল - ভিন্টেজ প্রেম আর্ট ফ্রেম।',
+    alt: 'সময় বয়ে যায় ভালোবাসা থেকে যায় – Echoes of 1948 Vintage Art',
+    width: 800,
+    height: 600
   },
   {
     id: 'g015',
-    image: '/assets/gallery/g015.svg',
+    image: '/assets/gallery/sunset-river-boatman-artwork.svg',
     category: 'Bengali Classic',
     title: 'কাজী নজরুলের বিরহ',
     quoteBengali: 'তুমি সুন্দর, তাই চেয়ে থাকি প্রিয়—সে কি মোর অপরাধ?',
-    quoteEnglish: 'You are graceful, so I gaze upon you—is that my crime?'
+    quoteEnglish: 'You are graceful, so I gaze upon you—is that my crime?',
+    description: 'তুমি সুন্দর, তাই চেয়ে থাকি প্রিয়—সে কি মোর অপরাধ? - কাজী নজরুলের প্রেমের আর্ট।',
+    alt: 'তুমি সুন্দর তাই চেয়ে থাকি প্রিয় – কাজী নজরুলের বিরহের Vintage Art',
+    width: 800,
+    height: 600
   },
   {
     id: 'g016',
-    image: '/assets/gallery/g016.svg',
+    image: '/assets/gallery/eternal-love-seal-artwork.svg',
     category: 'Old Letter Archive',
     title: 'চিরকুট ও শিউলি ফুল',
     quoteBengali: 'ভোরের শিশিরে ভেজা শিউলি ফুলের মতো নির্মল তোমার ভালোবাসা।',
-    quoteEnglish: 'Pure as morning jasmine kissed by autumn dew.'
+    quoteEnglish: 'Pure as morning jasmine kissed by autumn dew.',
+    description: 'ভোরের শিশিরে ভেজা শিউলি ফুলের মতো নির্মল তোমার ভালোবাসা - পুরনো চিঠির আর্কাইভ আর্ট।',
+    alt: 'চিরকুট ও শিউলি ফুলের স্নিগ্ধ প্রেমের Vintage Art',
+    width: 800,
+    height: 600
   }
 ];

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <!-- Rich Mahogany Wood Tabletop Gradient -->
+    <linearGradient id="deskGrad_mc002" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c1a12" />
+      <stop offset="40%" stop-color="#22130c" />
+      <stop offset="80%" stop-color="#180c07" />
+      <stop offset="100%" stop-color="#0f0704" />
+    </linearGradient>
+
+    <!-- Warm Desk Lamp Radial Glow -->
+    <radialGradient id="lampLight_mc002" cx="32%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#fff2d1" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#f5caa0" stop-opacity="0.45" />
+      <stop offset="70%" stop-color="#d4af37" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#180c07" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Aged Parchment Paper Gradient -->
+    <linearGradient id="paperGrad_mc002" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5ecd7" />
+      <stop offset="50%" stop-color="#ece0c5" />
+      <stop offset="100%" stop-color="#dfcfb0" />
+    </linearGradient>
+
+    <!-- Envelope Interior / Flap -->
+    <linearGradient id="envGrad_mc002" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ebdcc0" />
+      <stop offset="100%" stop-color="#cebba0" />
+    </linearGradient>
+
+    <pattern id="grain_mc002" width="25" height="25" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="0.7" fill="#d4af37" opacity="0.08" />
+      <circle cx="15" cy="20" r="0.8" fill="#ffffff" opacity="0.05" />
+      <circle cx="22" cy="10" r="0.6" fill="#000000" opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <!-- Wooden Desk Background -->
+  <rect width="900" height="600" fill="url(#deskGrad_mc002)" />
+
+  <!-- Wood Plank Joints / Grain Lines -->
+  <g stroke="#140a05" stroke-width="2" opacity="0.65">
+    <line x1="0" y1="140" x2="900" y2="140" />
+    <line x1="0" y1="290" x2="900" y2="290" />
+    <line x1="0" y1="440" x2="900" y2="440" />
+    <!-- Fine Wood Grain Striations -->
+    <path d="M0,135 Q300,130 600,138 T900,134" fill="none" stroke="#3a2217" stroke-width="0.7" opacity="0.3" />
+    <path d="M0,285 Q200,280 500,288 T900,284" fill="none" stroke="#3a2217" stroke-width="0.7" opacity="0.3" />
+    <path d="M0,435 Q400,430 700,438 T900,434" fill="none" stroke="#3a2217" stroke-width="0.7" opacity="0.3" />
+  </g>
+
+  <!-- Ambient Light Spilling From Upper Left -->
+  <ellipse cx="280" cy="220" rx="360" ry="260" fill="url(#lampLight_mc002)" />
+
+  <!-- Composition: Vintage Stationery Desk Scene -->
+  <g transform="translate(140, 110)">
+    <!-- Vintage Airmail Envelope Underneath -->
+    <g transform="rotate(-7, 240, 150)">
+      <!-- Envelope Shadow -->
+      <polygon points="125,75 365,75 365,245 125,245" fill="#0b0604" opacity="0.6" />
+      <!-- Envelope Body -->
+      <polygon points="120,70 360,70 360,240 120,240" fill="url(#envGrad_mc002)" stroke="#bba88e" stroke-width="1" />
+      <!-- Air Mail Red/Blue Border Hash Marks -->
+      <g stroke-width="4" opacity="0.7">
+        <line x1="125" y1="73" x2="135" y2="73" stroke="#9e2a2b" />
+        <line x1="140" y1="73" x2="150" y2="73" stroke="#2b4c6f" />
+        <line x1="155" y1="73" x2="165" y2="73" stroke="#9e2a2b" />
+        <line x1="170" y1="73" x2="180" y2="73" stroke="#2b4c6f" />
+        <line x1="330" y1="237" x2="340" y2="237" stroke="#9e2a2b" />
+        <line x1="345" y1="237" x2="355" y2="237" stroke="#2b4c6f" />
+      </g>
+      <!-- Envelope Flap Creases -->
+      <line x1="120" y1="70" x2="240" y2="160" stroke="#b09e84" stroke-width="1.2" />
+      <line x1="360" y1="70" x2="240" y2="160" stroke="#b09e84" stroke-width="1.2" />
+      <!-- Wax Seal Stamp Impression -->
+      <circle cx="240" cy="160" r="16" fill="#8c1c24" stroke="#681218" stroke-width="1.5" />
+      <circle cx="240" cy="160" r="12" fill="none" stroke="#ff8b94" stroke-width="0.8" opacity="0.6" />
+      <path d="M236,158 C236,154 244,154 244,158 C244,163 240,166 240,166 C240,166 236,163 236,158 Z" fill="#ffd166" opacity="0.85" />
+    </g>
+
+    <!-- Main Open Handwritten Letter (Aged Parchment) -->
+    <g transform="rotate(4, 300, 180)">
+      <!-- Letter Cast Shadow -->
+      <polygon points="188,48 488,48 488,318 188,318" fill="#080403" opacity="0.55" />
+      <!-- Parchment Paper Body -->
+      <polygon points="180,40 480,40 480,310 180,310" fill="url(#paperGrad_mc002)" stroke="#b8a68b" stroke-width="1.2" rx="3" />
+
+      <!-- Aged Paper Deckled Edge Details -->
+      <line x1="185" y1="45" x2="475" y2="45" stroke="#d5c3a5" stroke-width="0.5" />
+      <line x1="185" y1="305" x2="475" y2="305" stroke="#a6947a" stroke-width="0.5" />
+
+      <!-- Handwritten Cursive Letter Lines (Simulated Poetic Script) -->
+      <g stroke="#3a2e26" stroke-width="1.2" stroke-linecap="round" opacity="0.65">
+        <path d="M210,75 Q225,72 250,75 T290,73 T330,75 T380,73" />
+        <path d="M210,105 Q240,103 280,106 T340,104 T400,106 T450,104" />
+        <path d="M210,135 Q230,133 270,136 T320,134 T370,136 T420,134 T440,136" />
+        <path d="M210,165 Q250,163 300,166 T360,164 T410,166 T445,164" />
+        <path d="M210,195 Q240,193 290,196 T350,194 T390,196 T430,194" />
+        <path d="M210,225 Q230,223 270,226 T310,224 T350,226" />
+        <!-- Sign-off cursive -->
+        <path d="M360,265 Q390,260 420,268 T445,263" stroke="#5a2318" stroke-width="1.4" />
+      </g>
+    </g>
+
+    <!-- Dried Crimson Rose With Stem & Leaves -->
+    <g transform="translate(190, 160) rotate(-22)">
+      <!-- Stem Shadow -->
+      <path d="M52,62 Q72,122 92,182" fill="none" stroke="#0b0604" stroke-width="3.5" opacity="0.45" />
+      <!-- Rose Stem -->
+      <path d="M50,60 Q70,120 90,180" fill="none" stroke="#334224" stroke-width="3" stroke-linecap="round" />
+      <!-- Thorns & Leaves -->
+      <path d="M68,110 Q85,100 88,115 Q75,118 68,110 Z" fill="#2d3820" opacity="0.8" />
+      <path d="M78,145 Q60,140 58,155 Q72,154 78,145 Z" fill="#2d3820" opacity="0.8" />
+      <!-- Thorns -->
+      <polygon points="63,95 65,97 59,98" fill="#4d3525" />
+      <!-- Velvet Rose Petals -->
+      <g transform="translate(20, 20)">
+        <ellipse cx="28" cy="38" rx="20" ry="17" fill="#6d121b" />
+        <path d="M12,34 C12,18 44,18 44,34 C44,48 12,48 12,34 Z" fill="#8c1b26" />
+        <path d="M18,30 C20,20 36,20 38,30 C36,40 20,40 18,30 Z" fill="#a82532" />
+        <path d="M24,28 C26,23 32,23 34,28 C32,33 26,33 24,28 Z" fill="#c43342" />
+      </g>
+    </g>
+
+    <!-- Antique Classic Fountain Pen with Gold Nib -->
+    <g transform="translate(380, 200) rotate(38)">
+      <!-- Pen Shadow -->
+      <rect x="5" y="8" width="13" height="155" rx="5" fill="#080403" opacity="0.4" />
+      <!-- Pen Body (Black Ebonite / Lacquer) -->
+      <rect x="0" y="0" width="12" height="150" rx="5" fill="#151210" stroke="#4a3c30" stroke-width="1" />
+      <!-- Gold Trim Bands -->
+      <rect x="0" y="25" width="12" height="3" fill="#ffd166" />
+      <rect x="0" y="85" width="12" height="2" fill="#ffd166" />
+      <rect x="0" y="115" width="12" height="4" fill="#ffd166" />
+      <!-- Grip Section -->
+      <rect x="2" y="119" width="8" height="22" fill="#231d18" />
+      <!-- Gold Nib -->
+      <polygon points="2,141 10,141 6,162" fill="#ffd166" stroke="#b8933b" stroke-width="0.8" />
+      <line x1="6" y1="141" x2="6" y2="158" stroke="#151210" stroke-width="0.8" />
+      <circle cx="6" cy="151" r="1" fill="#151210" />
+    </g>
+
+    <!-- Vintage Glass Inkwell on the upper right -->
+    <g transform="translate(480, 20)">
+      <polygon points="10,25 38,25 42,55 6,55" fill="#121820" stroke="#3d4957" stroke-width="1.5" opacity="0.85" />
+      <rect x="16" y="15" width="16" height="10" fill="#32241b" stroke="#634f40" stroke-width="1" rx="2" />
+      <ellipse cx="24" cy="55" rx="22" ry="6" fill="#0a0f14" opacity="0.6" />
+      <!-- Dark Ink Level -->
+      <polygon points="9,35 39,35 41,53 7,53" fill="#080c10" opacity="0.9" />
+    </g>
+  </g>
+
+  <!-- Film Grain Overlay -->
+  <rect width="900" height="600" fill="url(#grain_mc002)" />
+
+  <!-- Outer Classic Postcard Border -->
+  <rect x="25" y="25" width="850" height="550" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.5" rx="6" />
+  <rect x="34" y="34" width="832" height="532" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="6 3" opacity="0.35" rx="4" />
+
+  <!-- Corner Filigrees -->
+  <g stroke="#d4af37" stroke-width="1.8" fill="none" opacity="0.75">
+    <path d="M42,65 L42,42 L65,42 M48,48 L58,48 M48,48 L48,58" />
+    <path d="M858,65 L858,42 L835,42 M852,48 L842,48 M852,48 L852,58" />
+    <path d="M42,535 L42,558 L65,558 M48,552 L58,552 M48,552 L48,542" />
+    <path d="M858,535 L858,558 L835,558 M852,552 L842,552 M852,552 L852,542" />
+  </g>
+
+  <!-- Vintage Postage Stamp (Top Right) -->
+  <g transform="translate(740, 48)">
+    <rect x="0" y="0" width="84" height="102" fill="#201511" stroke="#d4af37" stroke-width="1.5" rx="2" opacity="0.9" />
+    <rect x="6" y="6" width="72" height="90" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.6" />
+    <text x="42" y="24" text-anchor="middle" font-family="'Cinzel', serif" font-size="8" fill="#d4af37" letter-spacing="1">AIR MAIL</text>
+    <circle cx="42" cy="52" r="16" fill="none" stroke="#d4af37" stroke-width="1.2" opacity="0.8" />
+    <path d="M34,54 L42,46 L50,54 L42,50 Z" fill="#d4af37" opacity="0.8" />
+    <text x="42" y="82" text-anchor="middle" font-family="'Special Elite', monospace" font-size="10" font-weight="bold" fill="#f8edd6">R-12</text>
+    <text x="42" y="93" text-anchor="middle" font-family="'Special Elite', monospace" font-size="7" fill="#c2a77a">LOVE LETTER</text>
+    <!-- Cancellation Lines -->
+    <path d="M-25,30 Q-10,20 5,30 T35,30 T65,30 T95,30" fill="none" stroke="#180e0a" stroke-width="1.8" opacity="0.7" />
+    <path d="M-25,50 Q-10,40 5,50 T35,50 T65,50 T95,50" fill="none" stroke="#180e0a" stroke-width="1.8" opacity="0.7" />
+  </g>
+</svg>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <!-- Rich Mahogany Vanity Tabletop Gradient -->
+    <linearGradient id="tableGrad_mc022" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#241315" />
+      <stop offset="45%" stop-color="#1c0e10" />
+      <stop offset="85%" stop-color="#14090b" />
+      <stop offset="100%" stop-color="#0a0405" />
+    </linearGradient>
+
+    <!-- Warm Soft Spotlight on the Open Locket -->
+    <radialGradient id="locketSpot_mc022" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8db" stop-opacity="0.85" />
+      <stop offset="35%" stop-color="#ffd56b" stop-opacity="0.35" />
+      <stop offset="70%" stop-color="#7a2b34" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#1c0e10" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Antique Gold Gradient for Locket Casework -->
+    <linearGradient id="goldLocket_mc022" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe699" />
+      <stop offset="35%" stop-color="#d4af37" />
+      <stop offset="70%" stop-color="#a68424" />
+      <stop offset="100%" stop-color="#695113" />
+    </linearGradient>
+
+    <!-- Sepia Miniature Portrait Tint -->
+    <radialGradient id="portraitSepia_mc022" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5ecdd" />
+      <stop offset="60%" stop-color="#decaba" />
+      <stop offset="100%" stop-color="#99806b" />
+    </radialGradient>
+
+    <pattern id="grain_mc022" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="0.7" fill="#d4af37" opacity="0.08" />
+      <circle cx="16" cy="18" r="0.8" fill="#ffffff" opacity="0.04" />
+      <circle cx="23" cy="11" r="0.6" fill="#000000" opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <!-- Tabletop Canvas -->
+  <rect width="900" height="600" fill="url(#tableGrad_mc022)" />
+
+  <!-- Soft Warm Light Spotlight Centered on Locket -->
+  <circle cx="450" cy="280" r="280" fill="url(#locketSpot_mc022)" />
+
+  <!-- Handcrafted Vintage Crochet Lace Doily / Runner on Tabletop -->
+  <g transform="translate(450, 280)" opacity="0.25">
+    <ellipse cx="0" cy="0" rx="340" ry="190" fill="none" stroke="#faecd4" stroke-width="1.5" stroke-dasharray="12 6" />
+    <ellipse cx="0" cy="0" rx="300" ry="165" fill="none" stroke="#faecd4" stroke-width="1" stroke-dasharray="8 4" />
+    <ellipse cx="0" cy="0" rx="260" ry="140" fill="none" stroke="#faecd4" stroke-width="1.2" stroke-dasharray="16 8" />
+    <!-- Radial Lace Spokes -->
+    <line x1="-300" y1="0" x2="300" y2="0" stroke="#faecd4" stroke-width="0.8" />
+    <line x1="0" y1="-165" x2="0" y2="165" stroke="#faecd4" stroke-width="0.8" />
+    <line x1="-220" y1="-120" x2="220" y2="120" stroke="#faecd4" stroke-width="0.8" />
+    <line x1="-220" y1="120" x2="220" y2="-120" stroke="#faecd4" stroke-width="0.8" />
+  </g>
+
+  <!-- Hero Subject: Antique Open Heart-Shaped Golden Locket & Pearls -->
+  <g transform="translate(450, 260)">
+    <!-- Locket Ground Shadow -->
+    <ellipse cx="0" cy="85" rx="140" ry="35" fill="#080304" opacity="0.6" />
+
+    <!-- Delicate Gold Chain Coiled Gracefully on Lace -->
+    <path d="M-180,-140 Q-120,-80 -40,-40" fill="none" stroke="#ffd56b" stroke-width="1.8" stroke-dasharray="3 2" opacity="0.85" />
+    <path d="M180,-140 Q120,-80 40,-40" fill="none" stroke="#ffd56b" stroke-width="1.8" stroke-dasharray="3 2" opacity="0.85" />
+
+    <!-- Open Locket Hinge in Center -->
+    <rect x="-4" y="-30" width="8" height="60" fill="#695113" stroke="#ffd56b" stroke-width="0.8" rx="2" />
+    <circle cx="0" cy="-20" r="2.5" fill="#ffd56b" />
+    <circle cx="0" cy="20" r="2.5" fill="#ffd56b" />
+
+    <!-- Left Heart Half of Open Locket (Containing Sepia Portrait of Beloved) -->
+    <g transform="translate(-70, 0)">
+      <!-- Outer Gold Casing -->
+      <path d="M70,-20 C70,-70 10,-70 -20,-20 C-50,20 -10,60 70,80 C60,40 60,0 70,-20 Z" fill="url(#goldLocket_mc022)" stroke="#57420f" stroke-width="2.5" />
+      <path d="M60,-15 C60,-55 15,-55 -10,-15 C-35,15 -5,48 60,65 Z" fill="#2b1e11" stroke="#d4af37" stroke-width="1" />
+      <!-- Sepia Photo Inset -->
+      <path d="M56,-12 C56,-48 20,-48 0,-12 C-20,12 5,40 56,56 Z" fill="url(#portraitSepia_mc022)" />
+
+      <!-- Miniature Sepia Portrait Silhouette: The Waiting Beloved -->
+      <g transform="translate(18, -2)" opacity="0.8">
+        <circle cx="10" cy="-6" r="10" fill="#422e1d" />
+        <path d="M-2,6 C-2,0 22,0 22,6 L26,45 L-6,45 Z" fill="#422e1d" />
+        <ellipse cx="10" cy="-14" rx="11" ry="5" fill="#291b0f" />
+      </g>
+    </g>
+
+    <!-- Right Heart Half of Open Locket (Containing Pressed Flower & Secret Date) -->
+    <g transform="translate(70, 0)">
+      <!-- Outer Gold Casing -->
+      <path d="M-70,-20 C-70,-70 -10,-70 20,-20 C50,20 10,60 -70,80 C-60,40 -60,0 -70,-20 Z" fill="url(#goldLocket_mc022)" stroke="#57420f" stroke-width="2.5" />
+      <path d="M-60,-15 C-60,-55 -15,-55 10,-15 C35,15 5,48 -60,65 Z" fill="#2b1e11" stroke="#d4af37" stroke-width="1" />
+      <!-- Velvet Inset Pad inside Right Half -->
+      <path d="M-56,-12 C-56,-48 -20,-48 0,-12 C20,12 -5,40 -56,56 Z" fill="#4a1820" />
+
+      <!-- Pressed Tiny Forget-Me-Not Blue/Violet Blossom -->
+      <g transform="translate(-20, 10)">
+        <path d="M-5,15 Q0,0 5,-10" fill="none" stroke="#3d4d29" stroke-width="1.2" stroke-linecap="round" />
+        <circle cx="5" cy="-10" r="5" fill="#6c8cb8" />
+        <circle cx="8" cy="-14" r="4" fill="#8baad4" />
+        <circle cx="5" cy="-10" r="1.5" fill="#ffd56b" />
+      </g>
+      <!-- Engraved Date inside Locket -->
+      <text x="-25" y="42" text-anchor="middle" font-family="'Cinzel', serif" font-size="8" fill="#ffd56b" letter-spacing="1">1954</text>
+    </g>
+
+    <!-- Strand of Lustrous White Natural Pearls Draped Gracefully Across Bottom -->
+    <g fill="#f7f2ea" stroke="#d5c8b2" stroke-width="0.8">
+      <circle cx="-160" cy="50" r="7.5" />
+      <circle cx="-142" cy="62" r="7.5" />
+      <circle cx="-124" cy="72" r="8" />
+      <circle cx="-104" cy="80" r="8" />
+      <circle cx="-82" cy="86" r="8.5" />
+      <circle cx="-60" cy="90" r="8.5" />
+      <circle cx="-38" cy="92" r="8.5" />
+      <circle cx="-16" cy="93" r="8.5" />
+      <circle cx="6" cy="93" r="8.5" />
+      <circle cx="28" cy="92" r="8.5" />
+      <circle cx="50" cy="90" r="8.5" />
+      <circle cx="72" cy="86" r="8.5" />
+      <circle cx="94" cy="80" r="8" />
+      <circle cx="114" cy="72" r="8" />
+      <circle cx="132" cy="62" r="7.5" />
+      <circle cx="150" cy="50" r="7.5" />
+    </g>
+    <!-- Pearl Sheen Highlights -->
+    <g fill="#ffffff" opacity="0.8">
+      <circle cx="-162" cy="48" r="2" />
+      <circle cx="-126" cy="70" r="2" />
+      <circle cx="-62" cy="88" r="2.2" />
+      <circle cx="4" cy="91" r="2.2" />
+      <circle cx="70" cy="84" r="2.2" />
+      <circle cx="130" cy="60" r="2" />
+    </g>
+  </g>
+
+  <!-- Film Grain Overlay -->
+  <rect width="900" height="600" fill="url(#grain_mc022)" />
+
+  <!-- Double Frame Vintage Border -->
+  <rect x="25" y="25" width="850" height="550" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.55" rx="6" />
+  <rect x="33" y="33" width="834" height="534" fill="none" stroke="#d4af37" stroke-width="0.8" opacity="0.35" rx="4" />
+
+  <!-- Corner Filigrees -->
+  <g stroke="#d4af37" stroke-width="1.8" fill="none" opacity="0.75">
+    <path d="M42,65 L42,42 L65,42 M48,48 L58,48 M48,48 L48,58" />
+    <path d="M858,65 L858,42 L835,42 M852,48 L842,48 M852,48 L852,58" />
+    <path d="M42,535 L42,558 L65,558 M48,552 L58,552 M48,552 L48,542" />
+    <path d="M858,535 L858,558 L835,558 M852,552 L842,552 M852,552 L852,542" />
+  </g>
+
+  <!-- Vintage Locket Postage Stamp (Top Right) -->
+  <g transform="translate(740, 48)">
+    <rect x="0" y="0" width="84" height="102" fill="#201114" stroke="#d4af37" stroke-width="1.5" rx="2" opacity="0.9" />
+    <rect x="6" y="6" width="72" height="90" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.6" />
+    <text x="42" y="24" text-anchor="middle" font-family="'Cinzel', serif" font-size="8" fill="#d4af37" letter-spacing="1">DEVOTION</text>
+    <circle cx="42" cy="52" r="16" fill="none" stroke="#d4af37" stroke-width="1.2" opacity="0.8" />
+    <!-- Heart locket icon inside stamp -->
+    <path d="M42,60 C42,60 34,54 34,48 C34,44 38,42 42,46 C46,42 50,44 50,48 C50,54 42,60 42,60 Z" fill="#ffd56b" />
+    <text x="42" y="82" text-anchor="middle" font-family="'Special Elite', monospace" font-size="10" font-weight="bold" fill="#f8edd6">WAITING</text>
+    <text x="42" y="93" text-anchor="middle" font-family="'Special Elite', monospace" font-size="7" fill="#c2a77a">MEMORIES</text>
+    <!-- Cancellation waves -->
+    <path d="M-25,30 Q-10,20 5,30 T35,30 T65,30 T95,30" fill="none" stroke="#0e0709" stroke-width="1.8" opacity="0.75" />
+    <path d="M-25,50 Q-10,40 5,50 T35,50 T65,50 T95,50" fill="none" stroke="#0e0709" stroke-width="1.8" opacity="0.75" />
+  </g>
+</svg>

@@ -86,10 +86,14 @@ export const CardPreview = forwardRef<HTMLDivElement, CardPreviewProps>(
             {!imageError ? (
               <img
                 src={card.image}
-                alt={card.title}
+                alt={card.alt || `${card.title} - Vintage Love Postcard`}
+                width={card.width || 900}
+                height={card.height || 600}
                 onError={() => setImageError(true)}
                 className="w-full h-full object-cover object-center opacity-85"
                 crossOrigin="anonymous"
+                loading="eager"
+                decoding="async"
               />
             ) : (
               <div className="w-full h-full bg-gradient-to-br from-[#241a14] via-[#16100c] to-[#0d0907] flex items-center justify-center p-6 text-center">

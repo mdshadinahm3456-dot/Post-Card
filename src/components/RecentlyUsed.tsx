@@ -92,7 +92,11 @@ export const RecentlyUsed: React.FC<RecentlyUsedProps> = ({
               <div className="relative w-full h-20 sm:h-22 rounded-lg overflow-hidden border border-[#2d221a] mb-1.5">
                 <img
                   src={imageSrc}
-                  alt={title}
+                  alt={cardObj?.alt || `${title} - Vintage Postcard`}
+                  width={cardObj?.width || 300}
+                  height={cardObj?.height || 200}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />

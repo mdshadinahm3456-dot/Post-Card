@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="stampBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b232c" />
+      <stop offset="100%" stop-color="#541217" />
+    </linearGradient>
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd166" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#aa8522" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Postage Stamp Perforations / Background -->
+  <rect x="4" y="4" width="56" height="56" rx="12" fill="#140f0c" stroke="url(#goldBorder)" stroke-width="1.5" />
+  
+  <!-- Inner Stamp Body -->
+  <rect x="8" y="8" width="48" height="48" rx="8" fill="url(#stampBg)" stroke="url(#goldBorder)" stroke-width="1" stroke-dasharray="3 2" />
+
+  <!-- Corner Filigrees -->
+  <path d="M 12 16 L 16 12" stroke="#d4af37" stroke-width="1" stroke-linecap="round" />
+  <path d="M 52 16 L 48 12" stroke="#d4af37" stroke-width="1" stroke-linecap="round" />
+  <path d="M 12 48 L 16 52" stroke="#d4af37" stroke-width="1" stroke-linecap="round" />
+  <path d="M 52 48 L 48 52" stroke="#d4af37" stroke-width="1" stroke-linecap="round" />
+
+  <!-- Heart Envelope / Love Letter Icon -->
+  <g transform="translate(14, 15) scale(0.72)">
+    <!-- Envelope Body -->
+    <rect x="2" y="8" width="46" height="32" rx="4" fill="#f4eee0" stroke="#d4af37" stroke-width="1.5" />
+    <!-- Envelope Flap -->
+    <path d="M 3 9 L 25 26 L 47 9" fill="none" stroke="#aa8522" stroke-width="1.5" stroke-linejoin="round" />
+    <!-- Red Heart Seal -->
+    <path d="M 25 29 C 25 29, 18 22, 18 17 C 18 13.5 21 11.5 23.5 13.5 C 24.5 14.3 25 15.5 25 15.5 C 25 15.5 25.5 14.3 26.5 13.5 C 29 11.5 32 13.5 32 17 C 32 22, 25 29, 25 29 Z" fill="#91252d" stroke="#ffd166" stroke-width="0.8" />
+  </g>
+</svg>
