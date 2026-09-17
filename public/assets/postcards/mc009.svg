@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <!-- Evening Veranda Sky Gradient -->
+    <linearGradient id="skyGrad_mc009" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#121822" />
+      <stop offset="50%" stop-color="#1c2430" />
+      <stop offset="85%" stop-color="#2c2725" />
+      <stop offset="100%" stop-color="#1e1814" />
+    </linearGradient>
+
+    <!-- Brass Lantern Glow -->
+    <radialGradient id="lanternGlow_mc009" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffdf80" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#f59e0b" stop-opacity="0.45" />
+      <stop offset="70%" stop-color="#d4af37" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#1e1814" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Veranda Wood Planks Gradient -->
+    <linearGradient id="floorGrad_mc009" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a1b14" />
+      <stop offset="50%" stop-color="#21140e" />
+      <stop offset="100%" stop-color="#130a06" />
+    </linearGradient>
+
+    <pattern id="grain_mc009" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="0.7" fill="#d4af37" opacity="0.08" />
+      <circle cx="16" cy="18" r="0.8" fill="#ffffff" opacity="0.04" />
+      <circle cx="23" cy="11" r="0.6" fill="#000000" opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <!-- Evening Twilight Sky Outside -->
+  <rect width="900" height="420" fill="url(#skyGrad_mc009)" />
+
+  <!-- Evening Stars & Distant Garden Silhouette -->
+  <g fill="#ffffff" opacity="0.65">
+    <circle cx="120" cy="80" r="1.2" />
+    <circle cx="280" cy="60" r="1" />
+    <circle cx="440" cy="95" r="1.5" />
+    <circle cx="620" cy="70" r="1.2" />
+    <circle cx="750" cy="85" r="1.4" />
+  </g>
+  <!-- Distant Foliage Beyond Veranda -->
+  <path d="M0,280 Q250,250 500,270 T900,260 L900,320 L0,320 Z" fill="#0c131a" opacity="0.85" />
+
+  <!-- Veranda Wooden Floor -->
+  <polygon points="0,310 900,310 900,600 0,600" fill="url(#floorGrad_mc009)" />
+  <!-- Veranda Planks Lines -->
+  <g stroke="#0f0704" stroke-width="1.8" opacity="0.7">
+    <line x1="0" y1="310" x2="900" y2="310" stroke="#42291d" stroke-width="2" />
+    <line x1="0" y1="380" x2="900" y2="380" />
+    <line x1="0" y1="460" x2="900" y2="460" />
+    <line x1="0" y1="545" x2="900" y2="545" />
+    <!-- Floor Planks Perspective Joins -->
+    <line x1="180" y1="310" x2="110" y2="600" opacity="0.5" />
+    <line x1="420" y1="310" x2="380" y2="600" opacity="0.5" />
+    <line x1="680" y1="310" x2="720" y2="600" opacity="0.5" />
+  </g>
+
+  <!-- Classical Veranda Archway & Pillars (Foreground / Framing) -->
+  <g fill="#211510" stroke="#382319" stroke-width="2">
+    <!-- Ceiling Cornice -->
+    <rect x="0" y="0" width="900" height="48" />
+    <!-- Pillar 1 (Left) -->
+    <rect x="50" y="48" width="55" height="262" />
+    <rect x="42" y="40" width="71" height="15" fill="#301e16" />
+    <rect x="42" y="295" width="71" height="15" fill="#301e16" />
+    <!-- Pillar 2 (Right) -->
+    <rect x="795" y="48" width="55" height="262" />
+    <rect x="787" y="40" width="71" height="15" fill="#301e16" />
+    <rect x="787" y="295" width="71" height="15" fill="#301e16" />
+  </g>
+
+  <!-- Ornate Veranda Wooden Railing / Balustrade (Between Pillars) -->
+  <g transform="translate(105, 230)">
+    <!-- Top & Bottom Rails -->
+    <rect x="0" y="0" width="690" height="14" fill="#362217" stroke="#1c100a" stroke-width="1.2" />
+    <rect x="0" y="70" width="690" height="14" fill="#362217" stroke="#1c100a" stroke-width="1.2" />
+    <!-- Turned Wooden Baluster Spindles -->
+    <g fill="#291810" stroke="#180e08" stroke-width="1">
+      <path d="M40,14 C36,30 36,54 40,70 L48,70 C52,54 52,30 48,14 Z" />
+      <path d="M100,14 C96,30 96,54 100,70 L108,70 C112,54 112,30 108,14 Z" />
+      <path d="M160,14 C156,30 156,54 160,70 L168,70 C172,54 172,30 168,14 Z" />
+      <path d="M220,14 C216,30 216,54 220,70 L228,70 C232,54 232,30 228,14 Z" />
+      <path d="M280,14 C276,30 276,54 280,70 L288,70 C292,54 292,30 288,14 Z" />
+      <path d="M340,14 C336,30 336,54 340,70 L348,70 C352,54 352,30 348,14 Z" />
+      <path d="M400,14 C396,30 396,54 400,70 L408,70 C412,54 412,30 408,14 Z" />
+      <path d="M460,14 C456,30 456,54 460,70 L468,70 C472,54 472,30 468,14 Z" />
+      <path d="M520,14 C516,30 516,54 520,70 L528,70 C532,54 532,30 528,14 Z" />
+      <path d="M580,14 C576,30 576,54 580,70 L588,70 C592,54 592,30 588,14 Z" />
+      <path d="M640,14 C636,30 636,54 640,70 L648,70 C652,54 652,30 648,14 Z" />
+    </g>
+  </g>
+
+  <!-- Hanging Brass Hurricane Lantern (Upper Left) -->
+  <g transform="translate(240, 48)">
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#160e09" stroke-width="2.5" />
+    <!-- Lantern Halo Glow Spilling Downward -->
+    <circle cx="0" cy="85" r="130" fill="url(#lanternGlow_mc009)" />
+    <!-- Brass Frame & Cap -->
+    <path d="M-18,45 L18,45 L12,38 L-12,38 Z" fill="#b08632" stroke="#634915" stroke-width="1.2" />
+    <!-- Glass Chimney with Flame -->
+    <ellipse cx="0" cy="70" rx="14" ry="22" fill="#fff3cc" stroke="#d4af37" stroke-width="1.2" opacity="0.9" />
+    <ellipse cx="0" cy="74" rx="4" ry="9" fill="#ff7800" />
+    <ellipse cx="0" cy="74" rx="2" ry="6" fill="#ffffff" />
+    <!-- Brass Base & Wire Guards -->
+    <polygon points="-16,92 16,92 20,102 -20,102" fill="#b08632" stroke="#634915" stroke-width="1.2" />
+    <path d="M-14,45 C-22,70 -22,80 -14,92" fill="none" stroke="#634915" stroke-width="1.5" />
+    <path d="M14,45 C22,70 22,80 14,92" fill="none" stroke="#634915" stroke-width="1.5" />
+  </g>
+
+  <!-- Antique Planter's Rocking Armchair (Main Subject - Center Right) -->
+  <g transform="translate(380, 210)">
+    <!-- Chair Floor Cast Shadow -->
+    <ellipse cx="110" cy="225" rx="130" ry="28" fill="#080403" opacity="0.65" />
+
+    <!-- Curved Wooden Rockers (Bottom) -->
+    <path d="M10,215 Q110,240 225,200" fill="none" stroke="#2b1a12" stroke-width="7" stroke-linecap="round" />
+    <path d="M25,205 Q115,230 215,190" fill="none" stroke="#21140e" stroke-width="6" stroke-linecap="round" />
+
+    <!-- Chair Legs & Frame -->
+    <line x1="45" y1="150" x2="35" y2="218" stroke="#362217" stroke-width="6" stroke-linecap="round" />
+    <line x1="165" y1="140" x2="185" y2="202" stroke="#362217" stroke-width="6" stroke-linecap="round" />
+    <line x1="85" y1="145" x2="75" y2="210" stroke="#24160e" stroke-width="5" stroke-linecap="round" />
+
+    <!-- Cane Seat Base -->
+    <polygon points="35,145 155,135 175,155 45,168" fill="#a88c5d" stroke="#362217" stroke-width="2" />
+    <!-- Cane Weave Crosshatch -->
+    <g stroke="#7a623a" stroke-width="0.7" opacity="0.6">
+      <line x1="45" y1="145" x2="65" y2="166" />
+      <line x1="70" y1="143" x2="90" y2="164" />
+      <line x1="95" y1="141" x2="115" y2="162" />
+      <line x1="120" y1="139" x2="140" y2="160" />
+    </g>
+
+    <!-- High Cane Backrest (Angled) -->
+    <polygon points="25,55 55,48 50,150 20,152" fill="#a88c5d" stroke="#362217" stroke-width="3" />
+    <!-- Backrest Slats / Weave -->
+    <line x1="30" y1="75" x2="48" y2="72" stroke="#6b532e" stroke-width="1.5" />
+    <line x1="28" y1="95" x2="46" y2="92" stroke="#6b532e" stroke-width="1.5" />
+    <line x1="26" y1="115" x2="44" y2="112" stroke="#6b532e" stroke-width="1.5" />
+
+    <!-- Broad Extended Planter's Wooden Armrest -->
+    <polygon points="25,95 180,80 185,95 30,110" fill="#3d261a" stroke="#21140e" stroke-width="2" />
+
+    <!-- Draped Kashmiri Embroidered Shawl Over Chair Back -->
+    <g transform="translate(25, 60)">
+      <path d="M0,0 Q30,-8 50,5 Q55,60 45,95 Q15,100 -5,80 Z" fill="#87222b" stroke="#5c1219" stroke-width="1.5" />
+      <!-- Gold Paisleys / Embroidery on Shawl -->
+      <path d="M12,20 Q22,12 25,25 Q20,35 12,20 Z" fill="#d4af37" opacity="0.75" />
+      <path d="M22,50 Q32,42 35,55 Q30,65 22,50 Z" fill="#d4af37" opacity="0.75" />
+      <!-- Fringe Tassels -->
+      <g stroke="#d4af37" stroke-width="1.2" stroke-linecap="round">
+        <line x1="-3" y1="80" x2="-5" y2="88" />
+        <line x1="5" y1="85" x2="4" y2="93" />
+        <line x1="15" y1="90" x2="14" y2="98" />
+        <line x1="25" y1="94" x2="24" y2="102" />
+        <line x1="35" y1="96" x2="35" y2="104" />
+        <line x1="43" y1="94" x2="44" y2="102" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Terracotta Clay Flowerpot with Lush Climbing Vines (Bottom Left) -->
+  <g transform="translate(110, 310)">
+    <!-- Pot Shadow -->
+    <ellipse cx="40" cy="115" rx="35" ry="10" fill="#080403" opacity="0.55" />
+    <!-- Terracotta Pot Body -->
+    <polygon points="12,50 68,50 58,110 22,110" fill="#8c472b" stroke="#522715" stroke-width="1.5" />
+    <rect x="8" y="42" width="64" height="12" rx="2" fill="#a35434" stroke="#522715" stroke-width="1.2" />
+    <!-- Climbing Vines & Madhabilata Leaves -->
+    <g fill="#2d3d22" stroke="#1b2614" stroke-width="1">
+      <path d="M40,40 Q15,-30 5,-90 Q30,-50 40,40" />
+      <circle cx="15" cy="-20" r="10" />
+      <circle cx="8" cy="-55" r="9" />
+      <circle cx="2" cy="-90" r="7" />
+      <!-- Blossoms -->
+      <circle cx="20" cy="-22" r="3.5" fill="#f5ede1" stroke="none" />
+      <circle cx="5" cy="-58" r="3.5" fill="#f5ede1" stroke="none" />
+    </g>
+  </g>
+
+  <!-- Film Grain Overlay -->
+  <rect width="900" height="600" fill="url(#grain_mc009)" />
+
+  <!-- Classic Postcard Border -->
+  <rect x="25" y="25" width="850" height="550" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.5" rx="6" />
+  <rect x="34" y="34" width="832" height="532" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="6 3" opacity="0.35" rx="4" />
+
+  <!-- Corner Filigrees -->
+  <g stroke="#d4af37" stroke-width="1.8" fill="none" opacity="0.75">
+    <path d="M42,65 L42,42 L65,42 M48,48 L58,48 M48,48 L48,58" />
+    <path d="M858,65 L858,42 L835,42 M852,48 L842,48 M852,48 L852,58" />
+    <path d="M42,535 L42,558 L65,558 M48,552 L58,552 M48,552 L48,542" />
+    <path d="M858,535 L858,558 L835,558 M852,552 L842,552 M852,552 L852,542" />
+  </g>
+
+  <!-- Vintage Veranda Stamp (Top Right) -->
+  <g transform="translate(740, 48)">
+    <rect x="0" y="0" width="84" height="102" fill="#20150f" stroke="#d4af37" stroke-width="1.5" rx="2" opacity="0.9" />
+    <rect x="6" y="6" width="72" height="90" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.6" />
+    <text x="42" y="24" text-anchor="middle" font-family="'Cinzel', serif" font-size="8" fill="#d4af37" letter-spacing="1">ARCHIVES</text>
+    <circle cx="42" cy="52" r="16" fill="none" stroke="#d4af37" stroke-width="1.2" opacity="0.8" />
+    <!-- Chair icon inside stamp -->
+    <path d="M38,44 L38,58 L46,58 L46,44" fill="none" stroke="#d4af37" stroke-width="1.2" />
+    <text x="42" y="82" text-anchor="middle" font-family="'Special Elite', monospace" font-size="10" font-weight="bold" fill="#f8edd6">1948</text>
+    <text x="42" y="93" text-anchor="middle" font-family="'Special Elite', monospace" font-size="7" fill="#c2a77a">VERANDA</text>
+    <!-- Cancellation waves -->
+    <path d="M-25,30 Q-10,20 5,30 T35,30 T65,30 T95,30" fill="none" stroke="#120906" stroke-width="1.8" opacity="0.75" />
+    <path d="M-25,50 Q-10,40 5,50 T35,50 T65,50 T95,50" fill="none" stroke="#120906" stroke-width="1.8" opacity="0.75" />
+  </g>
+</svg>

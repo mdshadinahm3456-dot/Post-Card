@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="galGrad_g016" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1612" />
+      <stop offset="100%" stop-color="#0c0a08" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#galGrad_g016)"/>
+  <rect x="30" y="30" width="740" height="540" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.4" rx="10"/>
+  <rect x="42" y="42" width="716" height="516" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="5 3" opacity="0.3" rx="8"/>
+  <path d="M50,70 L50,50 L70,50" stroke="#d4af37" stroke-width="2.5" fill="none"/>
+  <path d="M750,70 L750,50 L730,50" stroke="#d4af37" stroke-width="2.5" fill="none"/>
+  <path d="M50,530 L50,550 L70,550" stroke="#d4af37" stroke-width="2.5" fill="none"/>
+  <path d="M750,530 L750,550 L730,550" stroke="#d4af37" stroke-width="2.5" fill="none"/>
+
+  <g transform="translate(400, 160)">
+    <circle cx="0" cy="0" r="36" fill="#7a1f26" fill-opacity="0.3" stroke="#d4af37" stroke-width="1.5"/>
+    <text x="0" y="8" text-anchor="middle" font-size="24">💌</text>
+  </g>
+
+  <text x="400" y="260" text-anchor="middle" font-family="'Cormorant Garamond', 'Cinzel', Georgia, serif" font-size="28" font-style="italic" fill="#e9d8a6" letter-spacing="1">“Pure as dawn jasmine.”</text>
+  <line x1="260" y1="300" x2="540" y2="300" stroke="#d4af37" stroke-width="1" opacity="0.4"/>
+  <text x="400" y="360" text-anchor="middle" font-family="'Noto Serif Bengali', 'Tiro Bangla', serif" font-size="26" font-weight="600" fill="#f4eee0">“ভোরের শিউলি ফুলের মতো স্নিগ্ধ প্রেম।”</text>
+
+  <text x="400" y="490" text-anchor="middle" font-family="'Cinzel', serif" font-size="12" fill="#d4af37" letter-spacing="3" opacity="0.7">MAGIC CARD • VINTAGE QUOTE ARCHIVE</text>
+  <text x="400" y="515" text-anchor="middle" font-family="'Tiro Bangla', serif" font-size="11" fill="#a89882" opacity="0.6">যেখানে প্রতিটি কার্ড একটি গল্প বলে</text>
+</svg>

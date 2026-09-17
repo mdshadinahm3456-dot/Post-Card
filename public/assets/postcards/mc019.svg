@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <!-- Old Dhaka Rain Twilight Sky Gradient -->
+    <linearGradient id="rainSky_mc019" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141a24" />
+      <stop offset="40%" stop-color="#1e2836" />
+      <stop offset="75%" stop-color="#2d3b4e" />
+      <stop offset="100%" stop-color="#46586e" />
+    </linearGradient>
+
+    <!-- Warm Gas Street Lamp Amber Glow -->
+    <radialGradient id="lampGlow_mc019" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8db" stop-opacity="1" />
+      <stop offset="25%" stop-color="#ffd56b" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#e88c28" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#1e2836" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Old Heritage Terracotta Brick Wall Gradient -->
+    <linearGradient id="brickWall_mc019" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#47261d" />
+      <stop offset="50%" stop-color="#381c15" />
+      <stop offset="100%" stop-color="#210f0b" />
+    </linearGradient>
+
+    <pattern id="grain_mc019" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="0.7" fill="#d4af37" opacity="0.08" />
+      <circle cx="16" cy="18" r="0.8" fill="#ffffff" opacity="0.04" />
+      <circle cx="23" cy="11" r="0.6" fill="#000000" opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <!-- Rainy Sky Canvas -->
+  <rect width="900" height="600" fill="url(#rainSky_mc019)" />
+
+  <!-- Distant Old Dhaka Heritage Buildings & Domes Silhouetted in Rain -->
+  <g fill="#0e131a" opacity="0.65">
+    <polygon points="40,240 80,210 120,240 120,380 40,380" />
+    <rect x="180" y="260" width="140" height="120" />
+    <!-- Mosque Dome Silhouette -->
+    <path d="M220,260 C220,210 280,210 280,260 Z" />
+    <line x1="250" y1="200" x2="250" y2="210" stroke="#0e131a" stroke-width="2" />
+    <polygon points="560,250 680,250 680,380 560,380" />
+    <polygon points="720,220 780,180 840,220 840,380 720,380" />
+  </g>
+
+  <!-- Rain Falling Diagonally Across Scene -->
+  <g stroke="#8ba5ba" stroke-width="0.9" opacity="0.45" stroke-linecap="round">
+    <line x1="60" y1="40" x2="30" y2="120" />
+    <line x1="150" y1="20" x2="120" y2="100" />
+    <line x1="240" y1="50" x2="210" y2="130" />
+    <line x1="330" y1="30" x2="300" y2="110" />
+    <line x1="420" y1="60" x2="390" y2="140" />
+    <line x1="510" y1="25" x2="480" y2="105" />
+    <line x1="600" y1="45" x2="570" y2="125" />
+    <line x1="690" y1="35" x2="660" y2="115" />
+    <line x1="780" y1="55" x2="750" y2="135" />
+    <line x1="870" y1="20" x2="840" y2="100" />
+
+    <line x1="90" y1="180" x2="60" y2="260" />
+    <line x1="180" y1="160" x2="150" y2="240" />
+    <line x1="270" y1="190" x2="240" y2="270" />
+    <line x1="360" y1="170" x2="330" y2="250" />
+    <line x1="450" y1="200" x2="420" y2="280" />
+    <line x1="540" y1="165" x2="510" y2="245" />
+    <line x1="630" y1="185" x2="600" y2="265" />
+    <line x1="720" y1="175" x2="690" y2="255" />
+    <line x1="810" y1="195" x2="780" y2="275" />
+  </g>
+
+  <!-- Old Dhaka Heritage Balcony (Colonial / Zamindar Style in Foreground) -->
+  <!-- Heavy Terracotta Cornices & Wall -->
+  <rect x="0" y="380" width="900" height="220" fill="url(#brickWall_mc019)" />
+  <rect x="0" y="370" width="900" height="20" fill="#5c3227" stroke="#261009" stroke-width="2" />
+  <rect x="0" y="390" width="900" height="10" fill="#261009" />
+
+  <!-- Old Dhaka Heritage Ornate Wrought-Iron Balcony Railing -->
+  <g stroke="#170c08" stroke-width="3" fill="none">
+    <!-- Top Handrail Bar -->
+    <line x1="0" y1="290" x2="900" y2="290" stroke-width="6" stroke="#26120b" />
+    <line x1="0" y1="302" x2="900" y2="302" stroke-width="2.5" />
+    <line x1="0" y1="370" x2="900" y2="370" stroke-width="5" stroke="#26120b" />
+
+    <!-- Repeated Ornate Vintage Spindles with Loops & Heart Scrolls -->
+    <!-- Pattern of Spindles across Balcony -->
+    <g transform="translate(60, 0)">
+      <line x1="0" y1="302" x2="0" y2="370" stroke-width="3" />
+      <circle cx="0" cy="336" r="14" stroke-width="2" />
+      <path d="M0,322 C-8,330 -8,342 0,350 C8,342 8,330 0,322 Z" />
+    </g>
+    <g transform="translate(130, 0)">
+      <line x1="0" y1="302" x2="0" y2="370" stroke-width="3" />
+      <circle cx="0" cy="336" r="14" stroke-width="2" />
+      <path d="M0,322 C-8,330 -8,342 0,350 C8,342 8,330 0,322 Z" />
+    </g>
+    <g transform="translate(200, 0)">
+      <line x1="0" y1="302" x2="0" y2="370" stroke-width="3" />
+      <circle cx="0" cy="336" r="14" stroke-width="2" />
+      <path d="M0,322 C-8,330 -8,342 0,350 C8,342 8,330 0,322 Z" />
+    </g>
+    <g transform="translate(270, 0)">
+      <line x1="0" y1="302" x2="0" y2="370" stroke-width="3" />
+      <circle cx="0" cy="336" r="14" stroke-width="2" />
+      <path d="M0,322 C-8,330 -8,342 0,350 C8,342 8,330 0,322 Z" />
+    </g>
+    <g transform="translate(340, 0)">
+      <line x1="0" y1="302" x2="0" y2="370" stroke-width="3" />
+      <circle cx="0" cy="336" r="14" stroke-width="2" />
+      <path d="M0,322 C-8,330 -8,342 0,350 C8,342 8,330 0,322 Z" />
+    </g>
+    <g transform="translate(410, 0)">
+      <line x1="0" y1="302" x2="0" y2="370" stroke-width="3" />
+      <circle cx="0" cy="336" r="14" stroke-width="2" />
+      <path d="M0,322 C-8,330 -8,342 0,350 C8,342 8,330 0,322 Z" />
+    </g>
+    <g transform="translate(480, 0)">
+      <line x1="0" y1="302" x2="0" y2="370" stroke-width="3" />
+      <circle cx="0" cy="336" r="14" stroke-width="2" />
+      <path d="M0,322 C-8,330 -8,342 0,350 C8,342 8,330 0,322 Z" />
+    </g>
+    <g transform="translate(550, 0)">
+      <line x1="0" y1="302" x2="0" y2="370" stroke-width="3" />
+      <circle cx="0" cy="336" r="14" stroke-width="2" />
+      <path d="M0,322 C-8,330 -8,342 0,350 C8,342 8,330 0,322 Z" />
+    </g>
+    <g transform="translate(620, 0)">
+      <line x1="0" y1="302" x2="0" y2="370" stroke-width="3" />
+      <circle cx="0" cy="336" r="14" stroke-width="2" />
+      <path d="M0,322 C-8,330 -8,342 0,350 C8,342 8,330 0,322 Z" />
+    </g>
+    <g transform="translate(690, 0)">
+      <line x1="0" y1="302" x2="0" y2="370" stroke-width="3" />
+      <circle cx="0" cy="336" r="14" stroke-width="2" />
+      <path d="M0,322 C-8,330 -8,342 0,350 C8,342 8,330 0,322 Z" />
+    </g>
+    <g transform="translate(760, 0)">
+      <line x1="0" y1="302" x2="0" y2="370" stroke-width="3" />
+      <circle cx="0" cy="336" r="14" stroke-width="2" />
+      <path d="M0,322 C-8,330 -8,342 0,350 C8,342 8,330 0,322 Z" />
+    </g>
+    <g transform="translate(830, 0)">
+      <line x1="0" y1="302" x2="0" y2="370" stroke-width="3" />
+      <circle cx="0" cy="336" r="14" stroke-width="2" />
+      <path d="M0,322 C-8,330 -8,342 0,350 C8,342 8,330 0,322 Z" />
+    </g>
+  </g>
+
+  <!-- Hanging Amber Gas Street Lamp on Balcony Post (Left Foreground) -->
+  <g transform="translate(140, 160)">
+    <!-- Amber Glowing Halo in Night Rain -->
+    <circle cx="0" cy="80" r="160" fill="url(#lampGlow_mc019)" />
+
+    <!-- Ornate Wall Cast Iron Bracket -->
+    <path d="M-80,0 Q-30,-20 0,-10 L0,30" fill="none" stroke="#120906" stroke-width="5" />
+    <path d="M-70,30 Q-40,10 0,10" fill="none" stroke="#120906" stroke-width="3.5" />
+    <!-- Lamp Cap & Finial -->
+    <polygon points="-24,30 24,30 0,10" fill="#1f110b" stroke="#120906" stroke-width="1.2" />
+    <circle cx="0" cy="8" r="4" fill="#ffd56b" />
+
+    <!-- Glass Lantern Frame -->
+    <polygon points="-24,30 24,30 16,95 -16,95" fill="#ffd56b" opacity="0.3" stroke="#120906" stroke-width="2.5" />
+    <line x1="0" y1="30" x2="0" y2="95" stroke="#120906" stroke-width="1.8" />
+
+    <!-- Glowing Gas Flame Inside Lantern -->
+    <ellipse cx="0" cy="65" rx="7" ry="14" fill="#ffb703" />
+    <ellipse cx="0" cy="67" rx="3.5" ry="8" fill="#ffffff" />
+
+    <!-- Base Drop Finial -->
+    <polygon points="-16,95 16,95 0,120" fill="#1f110b" stroke="#120906" stroke-width="1.2" />
+  </g>
+
+  <!-- Film Grain Overlay -->
+  <rect width="900" height="600" fill="url(#grain_mc019)" />
+
+  <!-- Classic Postcard Border -->
+  <rect x="25" y="25" width="850" height="550" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.55" rx="6" />
+  <rect x="34" y="34" width="832" height="532" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="6 3" opacity="0.35" rx="4" />
+
+  <!-- Corner Filigrees -->
+  <g stroke="#d4af37" stroke-width="1.8" fill="none" opacity="0.75">
+    <path d="M42,65 L42,42 L65,42 M48,48 L58,48 M48,48 L48,58" />
+    <path d="M858,65 L858,42 L835,42 M852,48 L842,48 M852,48 L852,58" />
+    <path d="M42,535 L42,558 L65,558 M48,552 L58,552 M48,552 L48,542" />
+    <path d="M858,535 L858,558 L835,558 M852,552 L842,552 M852,552 L852,542" />
+  </g>
+
+  <!-- Vintage Old Dhaka Postage Stamp (Top Right) -->
+  <g transform="translate(740, 48)">
+    <rect x="0" y="0" width="84" height="102" fill="#1c2530" stroke="#d4af37" stroke-width="1.5" rx="2" opacity="0.9" />
+    <rect x="6" y="6" width="72" height="90" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.6" />
+    <text x="42" y="24" text-anchor="middle" font-family="'Cinzel', serif" font-size="8" fill="#d4af37" letter-spacing="1">PURAN DHAKA</text>
+    <circle cx="42" cy="52" r="16" fill="none" stroke="#d4af37" stroke-width="1.2" opacity="0.8" />
+    <!-- Street lamp icon inside stamp -->
+    <polygon points="42,42 46,46 44,56 40,56 38,46" fill="#ffd56b" />
+    <text x="42" y="82" text-anchor="middle" font-family="'Special Elite', monospace" font-size="10" font-weight="bold" fill="#f8edd6">1954</text>
+    <text x="42" y="93" text-anchor="middle" font-family="'Special Elite', monospace" font-size="7" fill="#c2a77a">MONSOON RAIN</text>
+    <!-- Cancellation waves -->
+    <path d="M-25,30 Q-10,20 5,30 T35,30 T65,30 T95,30" fill="none" stroke="#0e131a" stroke-width="1.8" opacity="0.75" />
+    <path d="M-25,50 Q-10,40 5,50 T35,50 T65,50 T95,50" fill="none" stroke="#0e131a" stroke-width="1.8" opacity="0.75" />
+  </g>
+</svg>

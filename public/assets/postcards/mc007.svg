@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <!-- Warm Golden Hour River Sunset Gradient -->
+    <linearGradient id="sunSky_mc007" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a1512" />
+      <stop offset="35%" stop-color="#592419" />
+      <stop offset="65%" stop-color="#993d1f" />
+      <stop offset="85%" stop-color="#d4732b" />
+      <stop offset="100%" stop-color="#e8a74d" />
+    </linearGradient>
+
+    <!-- Sun Disc Radial Glow -->
+    <radialGradient id="sunGlow_mc007" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff6db" stop-opacity="1" />
+      <stop offset="25%" stop-color="#ffd56b" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#f57c2a" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#993d1f" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- River Water Gradient -->
+    <linearGradient id="riverWater_mc007" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4732b" />
+      <stop offset="25%" stop-color="#8a341a" />
+      <stop offset="60%" stop-color="#4a1c12" />
+      <stop offset="100%" stop-color="#1e0c08" />
+    </linearGradient>
+
+    <pattern id="grain_mc007" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="0.7" fill="#ffe099" opacity="0.08" />
+      <circle cx="16" cy="18" r="0.8" fill="#ffffff" opacity="0.04" />
+      <circle cx="23" cy="10" r="0.6" fill="#000000" opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <!-- Glowing Sunset Sky -->
+  <rect width="900" height="340" fill="url(#sunSky_mc007)" />
+
+  <!-- Sun Disc Sinking into the Horizon -->
+  <g transform="translate(480, 220)">
+    <circle cx="0" cy="0" r="120" fill="url(#sunGlow_mc007)" />
+    <circle cx="0" cy="0" r="38" fill="#fff9eb" stroke="#ffd56b" stroke-width="2" />
+  </g>
+
+  <!-- Silhouetted Sunset Clouds -->
+  <g fill="#421a14" opacity="0.45">
+    <ellipse cx="140" cy="120" rx="110" ry="14" />
+    <ellipse cx="260" cy="160" rx="140" ry="16" />
+    <ellipse cx="720" cy="130" rx="160" ry="18" />
+    <ellipse cx="640" cy="190" rx="90" ry="12" />
+  </g>
+
+  <!-- Distant Flocks of Migratory Birds Silhouette -->
+  <g stroke="#260f0c" stroke-width="1.6" fill="none" opacity="0.8">
+    <path d="M220,110 Q225,104 230,110 Q235,104 240,110" />
+    <path d="M245,95 Q249,90 253,95 Q257,90 261,95" />
+    <path d="M270,115 Q274,110 278,115 Q282,110 286,115" />
+    <path d="M295,105 Q298,101 301,105 Q304,101 307,105" />
+  </g>
+
+  <!-- Distant Shoreline Palms & Trees Silhouettes -->
+  <g fill="#1a0b08">
+    <path d="M0,325 Q180,315 360,323 T720,318 T900,322 L900,340 L0,340 Z" />
+    <!-- Distant Palm Trees (Left) -->
+    <g transform="translate(60, 255)">
+      <path d="M20,68 Q24,30 28,0" stroke="#1a0b08" stroke-width="2.5" fill="none" />
+      <path d="M28,0 Q5,-10 -5,5" stroke="#1a0b08" stroke-width="1.8" fill="none" />
+      <path d="M28,0 Q18,-18 5,-22" stroke="#1a0b08" stroke-width="1.8" fill="none" />
+      <path d="M28,0 Q40,-15 50,-8" stroke="#1a0b08" stroke-width="1.8" fill="none" />
+      <path d="M28,0 Q45,-5 55,10" stroke="#1a0b08" stroke-width="1.8" fill="none" />
+    </g>
+    <g transform="translate(100, 270)">
+      <path d="M15,55 Q18,25 22,0" stroke="#1a0b08" stroke-width="2" fill="none" />
+      <path d="M22,0 Q5,-8 -2,5" stroke="#1a0b08" stroke-width="1.5" fill="none" />
+      <path d="M22,0 Q35,-12 42,-5" stroke="#1a0b08" stroke-width="1.5" fill="none" />
+    </g>
+    <!-- Distant Trees (Right) -->
+    <ellipse cx="780" cy="320" rx="65" ry="22" />
+    <ellipse cx="840" cy="318" rx="45" ry="18" />
+  </g>
+
+  <!-- River Surface -->
+  <polygon points="0,335 900,335 900,600 0,600" fill="url(#riverWater_mc007)" />
+  <line x1="0" y1="335" x2="900" y2="335" stroke="#ffb142" stroke-width="1.2" opacity="0.6" />
+
+  <!-- Shimmering Golden Water Reflection Stream -->
+  <g stroke="#ffe394" stroke-linecap="round" opacity="0.6">
+    <line x1="470" y1="340" x2="490" y2="340" stroke-width="1.2" />
+    <line x1="455" y1="348" x2="505" y2="348" stroke-width="1.8" />
+    <line x1="440" y1="360" x2="520" y2="360" stroke-width="2.2" />
+    <line x1="425" y1="375" x2="535" y2="375" stroke-width="2.6" />
+    <line x1="410" y1="395" x2="550" y2="395" stroke-width="3" />
+    <line x1="395" y1="420" x2="565" y2="420" stroke-width="3.2" />
+    <line x1="380" y1="450" x2="580" y2="450" stroke-width="3.5" />
+    <line x1="365" y1="485" x2="595" y2="485" stroke-width="3.8" />
+    <line x1="350" y1="525" x2="610" y2="525" stroke-width="4" opacity="0.4" />
+  </g>
+
+  <!-- Traditional Bengali Wooden Boat (Nouka / নাও) with Curved Thatched Canopy (Chhoi) -->
+  <g transform="translate(260, 365)">
+    <!-- Water Ripple Shadow under Boat -->
+    <ellipse cx="85" cy="52" rx="105" ry="14" fill="#120604" opacity="0.75" />
+
+    <!-- Sleek Curved Hull of Nouka -->
+    <path d="M-15,36 Q85,68 185,36 Q85,48 -15,36 Z" fill="#160a07" stroke="#421a10" stroke-width="1.5" />
+    <!-- Wooden Planks along Hull -->
+    <path d="M5,40 Q85,55 165,40" fill="none" stroke="#d4af37" stroke-width="0.8" opacity="0.5" />
+
+    <!-- Curved Bamboo Thatched Canopy (ছৈ) -->
+    <path d="M45,40 C45,10 125,10 125,40 Z" fill="#24120c" stroke="#472317" stroke-width="1.5" />
+    <!-- Bamboo Ribs / Striations -->
+    <g stroke="#592e1f" stroke-width="1" fill="none">
+      <path d="M60,40 C60,18 68,18 68,40" />
+      <path d="M85,40 C85,12 85,12 85,40" />
+      <path d="M102,40 C102,18 110,18 110,40" />
+    </g>
+
+    <!-- Boatman (মায়াবী নিঃসঙ্গ মাঝি) with Long Oar (বৈঠা) -->
+    <!-- Head & Torso Silhouette -->
+    <ellipse cx="148" cy="22" rx="6" ry="5.5" fill="#120604" />
+    <path d="M142,28 C142,24 154,24 154,28 L152,44 L140,44 Z" fill="#120604" />
+    <!-- Long Oar Entering Water -->
+    <line x1="140" y1="32" x2="168" y2="68" stroke="#120604" stroke-width="2.5" stroke-linecap="round" />
+    <ellipse cx="170" cy="70" rx="8" ry="3" fill="#120604" transform="rotate(35, 170, 70)" />
+
+    <!-- Trailing Water Ripples -->
+    <g stroke="#f5c252" stroke-width="1" fill="none" opacity="0.4">
+      <path d="M-30,42 Q-10,48 10,42" />
+      <path d="M180,42 Q200,48 220,42" />
+    </g>
+  </g>
+
+  <!-- Foreground Riverbank Grasses & Wild Lilies (Bottom Left) -->
+  <path d="M0,520 Q120,490 200,560 L0,600 Z" fill="#100503" />
+  <g stroke="#1a0906" stroke-width="2.5" stroke-linecap="round">
+    <path d="M20,530 Q30,480 25,450" />
+    <path d="M35,535 Q45,490 55,465" />
+    <path d="M55,545 Q60,500 70,475" />
+    <path d="M85,550 Q95,510 105,480" />
+  </g>
+
+  <!-- Film Grain Overlay -->
+  <rect width="900" height="600" fill="url(#grain_mc007)" />
+
+  <!-- Double Frame Vintage Border -->
+  <rect x="25" y="25" width="850" height="550" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.5" rx="6" />
+  <rect x="33" y="33" width="834" height="534" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.3" rx="4" />
+
+  <!-- Corner Filigrees -->
+  <g stroke="#d4af37" stroke-width="1.8" fill="none" opacity="0.75">
+    <path d="M42,65 L42,42 L65,42 M48,48 L58,48 M48,48 L48,58" />
+    <path d="M858,65 L858,42 L835,42 M852,48 L842,48 M852,48 L852,58" />
+    <path d="M42,535 L42,558 L65,558 M48,552 L58,552 M48,552 L48,542" />
+    <path d="M858,535 L858,558 L835,558 M852,552 L842,552 M852,552 L852,542" />
+  </g>
+
+  <!-- Vintage River Stamp (Top Right) -->
+  <g transform="translate(740, 48)">
+    <rect x="0" y="0" width="84" height="102" fill="#24100b" stroke="#d4af37" stroke-width="1.5" rx="2" opacity="0.9" />
+    <rect x="6" y="6" width="72" height="90" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.6" />
+    <text x="42" y="24" text-anchor="middle" font-family="'Cinzel', serif" font-size="8" fill="#d4af37" letter-spacing="1">RIVER MAIL</text>
+    <circle cx="42" cy="52" r="16" fill="none" stroke="#d4af37" stroke-width="1.2" opacity="0.8" />
+    <!-- Boat icon in stamp -->
+    <path d="M32,54 Q42,60 52,54 Z" fill="#d4af37" opacity="0.8" />
+    <text x="42" y="82" text-anchor="middle" font-family="'Special Elite', monospace" font-size="10" font-weight="bold" fill="#f8edd6">1954</text>
+    <text x="42" y="93" text-anchor="middle" font-family="'Special Elite', monospace" font-size="7" fill="#c2a77a">PADMA TIDES</text>
+    <!-- Cancellation waves -->
+    <path d="M-25,30 Q-10,20 5,30 T35,30 T65,30 T95,30" fill="none" stroke="#120604" stroke-width="1.8" opacity="0.75" />
+    <path d="M-25,50 Q-10,40 5,50 T35,50 T65,50 T95,50" fill="none" stroke="#120604" stroke-width="1.8" opacity="0.75" />
+  </g>
+</svg>

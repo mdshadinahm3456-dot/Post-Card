@@ -1,0 +1,6 @@
+{
+  "name": "Magic Card",
+  "description": "অনলাইনে তৈরি করুন সুন্দর Vintage Love Card। পছন্দের ডিজাইন ও প্রেমের উক্তি নির্বাচন করুন, নিজের লেখা যোগ করুন এবং HD Card Download করুন।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
