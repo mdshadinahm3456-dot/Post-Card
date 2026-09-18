@@ -2,7 +2,11 @@ import React from 'react';
 import { APP_CONFIG } from '../config/appConfig';
 import { FileText, CheckCircle2, ShieldAlert, Download, Share2, Sparkles } from 'lucide-react';
 
-export const Terms: React.FC = () => {
+interface TermsProps {
+  onNavigate?: (page: string) => void;
+}
+
+export const Terms: React.FC<TermsProps> = ({ onNavigate }) => {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-10 text-[#f4eee0]">
       {/* Page Header */}
@@ -91,7 +95,20 @@ export const Terms: React.FC = () => {
             ৬. যোগাযোগ
           </h2>
           <p>
-            শর্তাবলী বিষয়ে যেকোনো প্রশ্ন বা ব্যাখ্যার প্রয়োজনে আমাদের <a href="/contact" className="text-[#ffd166] underline">যোগাযোগ পৃষ্ঠার</a> ফর্ম ব্যবহার করে আমাদের সাথে যোগাযোগ করতে পারেন।
+            শর্তাবলী বিষয়ে যেকোনো প্রশ্ন বা ব্যাখ্যার প্রয়োজনে আমাদের{' '}
+            <a
+              href="/contact"
+              onClick={(e) => {
+                if (onNavigate) {
+                  e.preventDefault();
+                  onNavigate('contact');
+                }
+              }}
+              className="text-[#ffd166] underline hover:text-[#f8edd6] transition-colors cursor-pointer"
+            >
+              যোগাযোগ পৃষ্ঠার
+            </a>{' '}
+            ফর্ম ব্যবহার করে আমাদের সাথে যোগাযোগ করতে পারেন।
           </p>
         </section>
       </div>

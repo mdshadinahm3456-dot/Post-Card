@@ -2,7 +2,11 @@ import React from 'react';
 import { APP_CONFIG } from '../config/appConfig';
 import { ShieldCheck, Lock, Database, Eye, Globe, Bell, UserCheck } from 'lucide-react';
 
-export const Privacy: React.FC = () => {
+interface PrivacyProps {
+  onNavigate?: (page: string) => void;
+}
+
+export const Privacy: React.FC<PrivacyProps> = ({ onNavigate }) => {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-10 text-[#f4eee0]">
       {/* Page Header */}
@@ -115,7 +119,20 @@ export const Privacy: React.FC = () => {
             ৭. যোগাযোগ
           </h2>
           <p>
-            এই গোপনীয়তা নীতি সম্পর্কে আপনার কোনো জিজ্ঞাসা, মতামত বা সহায়তা প্রয়োজন হলে আমাদের অফিসিয়াল <a href="/contact" className="text-[#ffd166] underline">যোগাযোগ পৃষ্ঠার</a> মাধ্যমে আমাদের সাথে যোগাযোগ করতে পারেন।
+            এই গোপনীয়তা নীতি সম্পর্কে আপনার কোনো জিজ্ঞাসা, মতামত বা সহায়তা প্রয়োজন হলে আমাদের অফিসিয়াল{' '}
+            <a
+              href="/contact"
+              onClick={(e) => {
+                if (onNavigate) {
+                  e.preventDefault();
+                  onNavigate('contact');
+                }
+              }}
+              className="text-[#ffd166] underline hover:text-[#f8edd6] transition-colors cursor-pointer"
+            >
+              যোগাযোগ পৃষ্ঠার
+            </a>{' '}
+            মাধ্যমে আমাদের সাথে যোগাযোগ করতে পারেন।
           </p>
         </section>
       </div>

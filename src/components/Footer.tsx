@@ -176,6 +176,18 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </li>
             <li>
               <a
+                href="/#faq"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('faq');
+                }}
+                className="hover:text-[#f7f0df] transition-colors cursor-pointer"
+              >
+                সাধারণ জিজ্ঞাসা (FAQ)
+              </a>
+            </li>
+            <li>
+              <a
                 href="/generator"
                 onClick={(e) => {
                   e.preventDefault();
@@ -193,6 +205,51 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto pt-6 border-t border-[#1e1713] flex flex-col sm:flex-row items-center justify-between text-xs text-[#706253] gap-3">
         <p>© {new Date().getFullYear()} {APP_CONFIG.appName}. সর্বস্বত্ব সংরক্ষিত।</p>
+        <div className="flex items-center gap-3 font-bengali-body text-[11px] text-[#8e7b68]">
+          <a
+            href="/privacy"
+            onClick={(e) => {
+              e.preventDefault();
+              onNavigate('privacy');
+            }}
+            className="hover:text-[#ffd166] transition-colors cursor-pointer"
+          >
+            Privacy Policy
+          </a>
+          <span>•</span>
+          <a
+            href="/terms"
+            onClick={(e) => {
+              e.preventDefault();
+              onNavigate('terms');
+            }}
+            className="hover:text-[#ffd166] transition-colors cursor-pointer"
+          >
+            Terms
+          </a>
+          <span>•</span>
+          <a
+            href="/contact"
+            onClick={(e) => {
+              e.preventDefault();
+              onNavigate('contact');
+            }}
+            className="hover:text-[#ffd166] transition-colors cursor-pointer"
+          >
+            Contact
+          </a>
+          <span>•</span>
+          <a
+            href="/#faq"
+            onClick={(e) => {
+              e.preventDefault();
+              onNavigate('faq');
+            }}
+            className="hover:text-[#ffd166] transition-colors cursor-pointer"
+          >
+            FAQ
+          </a>
+        </div>
         <p className="flex items-center gap-1 font-bengali-body">
           ভালোবাসা ও নস্টালজিয়া নিয়ে তৈরি <Heart className="w-3.5 h-3.5 text-[#7a1f26] fill-[#7a1f26]" />
         </p>

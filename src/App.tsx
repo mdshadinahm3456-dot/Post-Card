@@ -73,6 +73,12 @@ export default function App() {
         } else if (pathname) {
           if (pathname === 'vintage-gallery' || pathname === 'gallery') {
             targetPage = 'gallery';
+          } else if (pathname === 'faq') {
+            targetPage = 'home';
+            setTimeout(() => {
+              const el = document.getElementById('faq');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+            }, 150);
           } else if (
             [
               'postcards',
@@ -89,6 +95,14 @@ export default function App() {
           ) {
             targetPage = pathname;
           }
+        }
+
+        if (window.location.hash === '#faq') {
+          targetPage = 'home';
+          setTimeout(() => {
+            const el = document.getElementById('faq');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+          }, 150);
         }
 
         const validPages = [
@@ -123,6 +137,20 @@ export default function App() {
 
   // Navigate and update browser URL without hard reloads
   const handleNavigate = (page: string) => {
+    if (page === 'faq') {
+      setActivePage('home');
+      try {
+        window.history.pushState({ page: 'home' }, '', '/#faq');
+      } catch (err) {}
+      setTimeout(() => {
+        const el = document.getElementById('faq');
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 150);
+      return;
+    }
+
     if (page === 'generator') {
       setSelectedCustomizationForGenerator(undefined);
       setSelectedCreationIdForGenerator(undefined);
@@ -285,8 +313,8 @@ export default function App() {
           />
         )}
 
-        {activePage === 'privacy' && <Privacy />}
-        {activePage === 'terms' && <Terms />}
+        {activePage === 'privacy' && <Privacy onNavigate={handleNavigate} />}
+        {activePage === 'terms' && <Terms onNavigate={handleNavigate} />}
         {activePage === 'contact' && <Contact />}
         {activePage === 'about' && <About onNavigate={handleNavigate} />}
       </main>

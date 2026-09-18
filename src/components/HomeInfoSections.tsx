@@ -216,7 +216,7 @@ export const HomeInfoSections: React.FC<HomeInfoSectionsProps> = ({
       </section>
 
       {/* SECTION 3: FAQ SECTION */}
-      <section className="bg-[#140f0c] border border-[#2e231c] rounded-3xl p-6 sm:p-10 space-y-8 shadow-xl">
+      <section id="faq" className="bg-[#140f0c] border border-[#2e231c] rounded-3xl p-6 sm:p-10 space-y-8 shadow-xl scroll-mt-24">
         <div className="text-center max-w-2xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#241a14] border border-[#d4af37]/30 text-xs text-[#d4af37] font-vintage-serif tracking-widest uppercase">
             <HelpCircle className="w-3.5 h-3.5 text-[#d4af37]" />
