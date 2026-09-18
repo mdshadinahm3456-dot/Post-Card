@@ -10,7 +10,8 @@ export const SITE_CONFIG = {
   ogImage: '/og-image.jpg',
   sponsorUrl:
     'https://www.profitableratecpmnetwork.com/mv1pwzc7au?key=c4fafaf93d652fd244383f859f1bd568',
-  downloadGateSeconds: 8
+  downloadGateSeconds: 8,
+  adsensePublisherId: 'ca-pub-2441817327998925'
 };
 
 export const APP_CONFIG = {
@@ -18,6 +19,7 @@ export const APP_CONFIG = {
   tagline: SITE_CONFIG.tagline,
   sponsorUrl: SITE_CONFIG.sponsorUrl,
   downloadGateSeconds: SITE_CONFIG.downloadGateSeconds,
+  adsensePublisherId: SITE_CONFIG.adsensePublisherId,
   siteUrl: SITE_CONFIG.siteUrl,
   language: SITE_CONFIG.language,
   country: SITE_CONFIG.country
