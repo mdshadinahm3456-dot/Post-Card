@@ -93,18 +93,18 @@ export const AdSenseAd: React.FC<AdSenseAdProps> = ({
 
   return (
     <div
-      className={`w-full my-6 flex flex-col items-center justify-center overflow-hidden transition-all ${className}`}
+      className={`w-full my-8 sm:my-10 flex flex-col items-center justify-center overflow-hidden clear-both ${className}`}
       aria-label="Advertisement Container"
     >
       {/* Required Policy-Compliant Label */}
-      <div className="w-full text-center pb-1.5 select-none pointer-events-none">
-        <span className="text-[10px] tracking-wider uppercase text-[#736355] font-sans font-medium">
+      <div className="w-full text-center pb-2 select-none pointer-events-none">
+        <span className="text-[11px] tracking-wider uppercase text-[#8c7a6b] font-sans font-medium">
           {label}
         </span>
       </div>
 
       {/* Manual Display Ad Unit Container */}
-      <div className="w-full max-w-full flex justify-center items-center min-h-[90px] bg-[#140f0c]/50 border border-[#261d17] rounded-xl p-2 sm:p-3 overflow-hidden">
+      <div className="w-full max-w-full flex justify-center items-center min-h-[100px] overflow-hidden">
         <ins
           ref={adRef}
           className="adsbygoogle"

@@ -5,6 +5,7 @@ import { FavoriteButton } from '../components/FavoriteButton';
 import { DownloadGate } from '../components/DownloadGate';
 import { exportElementToImage } from '../utils/exportCard';
 import { Download, Sparkles, Image as ImageIcon, Eye, ArrowRight } from 'lucide-react';
+import { AdSenseAd } from '../components/AdSenseAd';
 
 interface VintageGalleryProps {
   onCustomizeItem: (galleryItem: GalleryItem) => void;
@@ -194,6 +195,9 @@ export const VintageGallery: React.FC<VintageGalleryProps> = ({ onCustomizeItem 
           </div>
         ))}
       </div>
+
+      {/* Ad Unit 5: Magic Card - Vintage Gallery */}
+      <AdSenseAd adSlot="5978043926" />
 
       {/* Download Ad Gate Modal */}
       <DownloadGate

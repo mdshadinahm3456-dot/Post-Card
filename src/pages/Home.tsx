@@ -4,6 +4,7 @@ import { CardGrid } from '../components/CardGrid';
 import { SearchBar } from '../components/SearchBar';
 import { RecentlyUsed } from '../components/RecentlyUsed';
 import { HomeInfoSections } from '../components/HomeInfoSections';
+import { AdSenseAd } from '../components/AdSenseAd';
 import { postcards } from '../data/postcards';
 import { quotes } from '../data/quotes';
 import { gallery } from '../data/gallery';
@@ -75,6 +76,11 @@ export const Home: React.FC<HomeProps> = ({
         onStartCreate={() => onNavigate('generator')}
         onExploreGallery={() => onNavigate('gallery')}
       />
+
+      {/* Ad Unit 1: Magic Card - Home Featured Bottom */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AdSenseAd adSlot="2613513985" />
+      </div>
 
       {/* Global Search Bar Banner */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
@@ -287,6 +293,9 @@ export const Home: React.FC<HomeProps> = ({
           </div>
           <CardGrid cards={popularCards} onSelectCard={onSelectCardToCreate} />
         </section>
+
+        {/* Ad Unit 2: Magic Card - Home Popular Bottom */}
+        <AdSenseAd adSlot="7374886078" />
 
         {/* Romantic Collection */}
         <section className="space-y-6">

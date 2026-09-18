@@ -5,6 +5,7 @@ import { FavoriteButton } from '../components/FavoriteButton';
 import { quoteMatchesCategory } from '../data/categories';
 import { bengaliIncludes, toBengaliNumber } from '../utils/bengaliUtils';
 import { Search, Copy, Check, Sparkles, BookOpen, ArrowRight } from 'lucide-react';
+import { AdSenseAd } from '../components/AdSenseAd';
 
 interface QuotesProps {
   onUseQuote: (quote: Quote) => void;
@@ -104,9 +105,9 @@ export const Quotes: React.FC<QuotesProps> = ({ onUseQuote }) => {
         মোট উক্তি: <strong className="text-[#ffd166]">{toBengaliNumber(filteredQuotes.length)}টি</strong>
       </div>
 
-      {/* Quotes Masonry / Grid */}
+      {/* First Batch of Quotes */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {filteredQuotes.map((q) => (
+        {filteredQuotes.slice(0, 6).map((q) => (
           <div
             key={q.id}
             className="group relative bg-[#16110e] border border-[#2e231c] hover:border-[#d4af37]/50 rounded-2xl p-5 flex flex-col justify-between space-y-4 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl shadow-black/40"
@@ -163,6 +164,71 @@ export const Quotes: React.FC<QuotesProps> = ({ onUseQuote }) => {
           </div>
         ))}
       </div>
+
+      {/* Ad Unit 4: Magic Card - Quotes (Natural Content Break) */}
+      <AdSenseAd adSlot="3679183641" />
+
+      {/* Remaining Batch of Quotes */}
+      {filteredQuotes.length > 6 && (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {filteredQuotes.slice(6).map((q) => (
+            <div
+              key={q.id}
+              className="group relative bg-[#16110e] border border-[#2e231c] hover:border-[#d4af37]/50 rounded-2xl p-5 flex flex-col justify-between space-y-4 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl shadow-black/40"
+            >
+              {/* Top Bar: Category & Favorite */}
+              <div className="flex items-center justify-between">
+                <span className="px-2.5 py-1 rounded-full text-[11px] font-bengali-body bg-[#241a14] border border-[#3b2d24] text-[#d4af37]">
+                  {q.category}
+                </span>
+                <FavoriteButton id={q.id} type="quotes" size="sm" />
+              </div>
+
+              {/* Quote Body */}
+              <p className="font-bengali-serif text-base text-[#f4eee0] leading-relaxed italic">
+                “{q.text}”
+              </p>
+
+              {/* Author */}
+              {q.author && (
+                <div className="text-right text-xs font-bengali-body text-[#b8a791]">
+                  — {q.author}
+                </div>
+              )}
+
+              {/* Bottom Actions: Copy & Create Card */}
+              <div className="pt-3 border-t border-[#2a1f18] flex items-center justify-between gap-2">
+                <button
+                  type="button"
+                  onClick={() => handleCopy(q.text, q.id)}
+                  className="px-3 py-1.5 rounded-lg bg-[#241a14] hover:bg-[#33241b] text-xs font-bengali-body text-[#c8baa7] hover:text-[#f4eee0] border border-[#3a2c22] flex items-center gap-1.5 transition-colors cursor-pointer"
+                >
+                  {copiedId === q.id ? (
+                    <>
+                      <Check className="w-3.5 h-3.5 text-[#81c784]" />
+                      <span className="text-[#aef0bc]">কপি হয়েছে</span>
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="w-3.5 h-3.5" />
+                      <span>কপি করুন</span>
+                    </>
+                  )}
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => onUseQuote(q)}
+                  className="px-3 py-1.5 rounded-lg bg-[#7a1f26] hover:bg-[#91252d] text-xs font-bengali-body font-semibold text-[#f8edd6] border border-[#d4af37]/40 flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
+                >
+                  <Sparkles className="w-3.5 h-3.5 text-[#ffd166]" />
+                  <span>কার্ড তৈরি করুন</span>
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

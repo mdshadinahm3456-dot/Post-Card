@@ -3,6 +3,7 @@ import { postcards } from '../data/postcards';
 import { CardGrid } from '../components/CardGrid';
 import { CategoryFilter } from '../components/CategoryFilter';
 import { SearchBar } from '../components/SearchBar';
+import { AdSenseAd } from '../components/AdSenseAd';
 import { cardMatchesCategory } from '../data/categories';
 import { bengaliIncludes, toBengaliNumber } from '../utils/bengaliUtils';
 import { PostcardTemplate } from '../types';
@@ -92,6 +93,9 @@ export const Postcards: React.FC<PostcardsProps> = ({ onSelectCard, onNavigate }
 
       {/* Cards Grid */}
       <CardGrid cards={filteredCards} onSelectCard={onSelectCard} />
+
+      {/* Ad Unit 3: Magic Card - Postcards Bottom */}
+      <AdSenseAd adSlot="8604207266" />
     </div>
   );
 };
