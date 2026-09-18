@@ -91,6 +91,15 @@ export const PAGE_SEO_MAP: Record<string, PageSeoConfig> = {
     ogType: 'website',
     breadcrumbName: 'Contact'
   },
+  about: {
+    title: 'আমাদের সম্পর্কে (About Us) | Magic Card',
+    description:
+      'Magic Card-এর উদ্দেশ্য, বৈশিষ্ট্য ও বাংলাদেশ-ভিত্তিক বাংলা ভিন্টেজ কার্ড তৈরির অভিজ্ঞতা সম্পর্কে জানুন।',
+    canonicalPath: '/about',
+    robots: 'index, follow',
+    ogType: 'website',
+    breadcrumbName: 'About Us'
+  },
   favorites: {
     title: 'আমার পছন্দ (My Favorites) | Magic Card',
     description:

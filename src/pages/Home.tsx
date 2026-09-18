@@ -3,6 +3,7 @@ import { Hero } from '../components/Hero';
 import { CardGrid } from '../components/CardGrid';
 import { SearchBar } from '../components/SearchBar';
 import { RecentlyUsed } from '../components/RecentlyUsed';
+import { HomeInfoSections } from '../components/HomeInfoSections';
 import { postcards } from '../data/postcards';
 import { quotes } from '../data/quotes';
 import { gallery } from '../data/gallery';
@@ -542,6 +543,12 @@ export const Home: React.FC<HomeProps> = ({
             ))}
           </div>
         </section>
+
+        {/* Informational, How It Works & FAQ Sections */}
+        <HomeInfoSections
+          onStartCreate={() => onNavigate('generator')}
+          onNavigate={onNavigate}
+        />
       </div>
     </div>
   );

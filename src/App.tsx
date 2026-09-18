@@ -12,6 +12,7 @@ import { MyCreations } from './pages/MyCreations';
 import { Privacy } from './pages/Privacy';
 import { Terms } from './pages/Terms';
 import { Contact } from './pages/Contact';
+import { About } from './pages/About';
 
 import { PostcardTemplate, Quote, GalleryItem, SavedCreation, CardCustomizationState } from './types';
 import { postcards } from './data/postcards';
@@ -82,7 +83,8 @@ export default function App() {
               'my-creations',
               'privacy',
               'terms',
-              'contact'
+              'contact',
+              'about'
             ].includes(pathname)
           ) {
             targetPage = pathname;
@@ -100,7 +102,8 @@ export default function App() {
           'my-creations',
           'privacy',
           'terms',
-          'contact'
+          'contact',
+          'about'
         ];
 
         if (validPages.includes(targetPage)) {
@@ -285,6 +288,7 @@ export default function App() {
         {activePage === 'privacy' && <Privacy />}
         {activePage === 'terms' && <Terms />}
         {activePage === 'contact' && <Contact />}
+        {activePage === 'about' && <About onNavigate={handleNavigate} />}
       </main>
 
       {/* Persistent Footer */}

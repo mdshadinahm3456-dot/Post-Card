@@ -128,6 +128,18 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <ul className="space-y-2 text-sm font-bengali-body">
             <li>
               <a
+                href="/about"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('about');
+                }}
+                className="hover:text-[#f7f0df] transition-colors cursor-pointer"
+              >
+                আমাদের সম্পর্কে (About Us)
+              </a>
+            </li>
+            <li>
+              <a
                 href="/privacy"
                 onClick={(e) => {
                   e.preventDefault();
